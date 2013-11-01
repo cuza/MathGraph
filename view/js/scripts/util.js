@@ -348,9 +348,8 @@ function GraficarFuncEstudiante(func) {
             }
 
 
-            var plot = $.plot(
-                $(".simple-chart"), curvas,
-                options);
+            draw(curvas);
+
         }
     });
 }

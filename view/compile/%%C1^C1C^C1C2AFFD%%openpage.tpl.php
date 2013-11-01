@@ -1,6 +1,5 @@
-<?php /* Smarty version 2.6.26, created on 2013-05-31 04:41:05
-         compiled from openpage.tpl */
-?>
+<?php /* Smarty version 2.6.26, created on 2013-11-02 00:30:21
+         compiled from openpage.tpl */ ?>
 <html dir="ltr" lang="en-US" xml:lang="en">
 <head>
 
@@ -18,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="view/css/wizard.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="view/css/button.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="view/css/table.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="view/js/jquery/css/jquery.jqplot.min.css" media="screen"/>
 
     <link rel="stylesheet" type="text/css" href="view/js/jquery/css/ui-lightness/jquery-ui-1.8.18.custom.css"
           media="screen"/>
@@ -31,6 +31,8 @@
     <script type="text/javascript" src="view/js/scripts/dandelion.core.js"></script>
     <script type="text/javascript" src="view/js/scripts/validate/jquery.validate.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="view/js/jquery/js/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="view/js/jquery/js/plugins/jqplot.cursor.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.resize.js"></script>
     <script type="text/javascript" src="view/js/scripts/dandelion.wizard.js"></script>
     <script type="text/javascript" src="view/js/scripts/datatables/jquery.dataTables.min.js"></script>

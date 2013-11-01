@@ -387,12 +387,10 @@ function ProcesarPaso2()
     if ($x1 > 0 && $x2 > 0)
         $cero = $x1;
 
-    $escala = 0.001;
+
     $dif = abs($x2 - $x1);
     $dif = strlen($dif);
-    for ($i = 0; $i < $dif; $i++) {
-        $escala *= 10;
-    }
+    $escala =  abs($x2 - $x1)/200;
 
     //funcion reducida
     $func = $_POST['funcion'];

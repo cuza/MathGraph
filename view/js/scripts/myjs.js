@@ -1,48 +1,48 @@
 var chartColours = GetColorsRandom(7);
 //graph options
 var options = {
-    grid:{
-        show:true,
-        aboveData:true,
-        color:"#3f3f3f",
-        labelMargin:5,
-        axisMargin:0,
-        borderWidth:0,
-        borderColor:null,
-        minBorderMargin:5,
-        clickable:true,
-        hoverable:true,
-        autoHighlight:true,
-        mouseActiveRadius:20
+    grid: {
+        show: true,
+        aboveData: true,
+        color: "#3f3f3f",
+        labelMargin: 5,
+        axisMargin: 0,
+        borderWidth: 0,
+        borderColor: null,
+        minBorderMargin: 5,
+        clickable: true,
+        hoverable: true,
+        autoHighlight: true,
+        mouseActiveRadius: 20
     },
 
-    series:{
-        grow:{active:true},
-        lines:{
-            show:true,
-            fill:false,
-            lineWidth:2,
-            steps:false
+    series: {
+        grow: {active: true},
+        lines: {
+            show: true,
+            fill: false,
+            lineWidth: 2,
+            steps: false
         },
-        points:{
-            show:true,
-            radius:4,
-            symbol:"circle",
-            fill:true,
-            borderColor:"#fff"
+        points: {
+            show: true,
+            radius: 4,
+            symbol: "circle",
+            fill: true,
+            borderColor: "#fff"
         }
     },
-    xaxis:{show:true},
-    yaxis:{show:true},
-    legend:{ position:"se" },
-    colors:chartColours,
-    shadowSize:1,
-    tooltip:true, //activate tooltip
-    tooltipOpts:{
-        content:"%s : %y.3",
-        shifts:{
-            x:-30,
-            y:-50
+    xaxis: {show: true},
+    yaxis: {show: true},
+    legend: { position: "se" },
+    //colors:chartColours,
+    shadowSize: 1,
+    tooltip: true, //activate tooltip
+    tooltipOpts: {
+        content: "%s : %y.3",
+        shifts: {
+            x: -30,
+            y: -50
         }
     }
 };
@@ -74,12 +74,12 @@ $(function () {
 
 $(function () {
 
-    var v = $("#da-ex-wizard-form").validate({ onsubmit:false });
+    var v = $("#da-ex-wizard-form").validate({ onsubmit: false });
     $("#da-ex-wizard-form").daWizard({
-        onLeaveStep:function (index, elem) {
+        onLeaveStep: function (index, elem) {
             return v.form();
         },
-        onBeforeSubmit:function () {
+        onBeforeSubmit: function () {
             return v.form();
         }
     });
@@ -151,11 +151,11 @@ function IrPaso2() {
     $(".funcion-paso-x").html(funcion);
 
     $.ajax({
-        type:"POST",
-        url:"index.php",
-        dataType:"json",
-        data:{action:'procesar-paso-1', funcion:funcion},
-        success:function (responce) {
+        type: "POST",
+        url: "index.php",
+        dataType: "json",
+        data: {action: 'procesar-paso-1', funcion: funcion},
+        success: function (responce) {
             dominio = responce['dominio'];
             $("#funcion-paso-2-coment").html(responce['coment_dom']);
             y = responce['y'];
@@ -421,11 +421,11 @@ function IrPaso10() {
 
     //Para buscar los valores para graficar
     $.ajax({
-        type:"POST",
-        url:"index.php",
-        dataType:"json",
-        data:{action:'procesar-paso-2', funcion:funcionsimple, x1:x1, x2:x2, asintotaOblicua:asintotaOblicua},
-        success:function (responce) {
+        type: "POST",
+        url: "index.php",
+        dataType: "json",
+        data: {action: 'procesar-paso-2', funcion: funcionsimple, x1: x1, x2: x2, asintotaOblicua: asintotaOblicua},
+        success: function (responce) {
 
 
             //para la asintota oblicua
@@ -504,15 +504,15 @@ function DominioOk(id) {
 
 function showTooltip(x, y, contents) {
     $('<div id="tooltip">' + contents + '</div>').css({
-        position:'absolute',
-        display:'none',
-        top:y + 5,
-        left:x + 5,
-        padding:'4px',
-        color:"#ffffff",
-        'background-color':'#000',
-        opacity:0.75,
-        'border-radius':'3px'
+        position: 'absolute',
+        display: 'none',
+        top: y + 5,
+        left: x + 5,
+        padding: '4px',
+        color: "#ffffff",
+        'background-color': '#000',
+        opacity: 0.75,
+        'border-radius': '3px'
     }).appendTo("body").fadeIn(200);
 }
 
@@ -749,21 +749,21 @@ $(function () {
         $("#texto-funciondialog").val("");
 
         $("#dialog-funcion").dialog({
-            autoOpen:false,
-            title:'Escoja Función',
-            modal:true,
-            width:'640',
-            buttons:[
+            autoOpen: false,
+            title: 'Escoja Función',
+            modal: true,
+            width: '640',
+            buttons: [
                 {
-                    text:'Aceptar',
-                    click:function () {
+                    text: 'Aceptar',
+                    click: function () {
                         Potencia(obj);
                         $(this).dialog('close');
                     }
                 },
                 {
-                    text:'Cerrar',
-                    click:function () {
+                    text: 'Cerrar',
+                    click: function () {
                         $(this).dialog('close');
                     }
                 }
@@ -931,18 +931,14 @@ function PintarXY() {
     }
     if (ypt[0])
         arr.push([0, ypt[0][1]]);
-
-    options.series.lines.show = false;
-    var plot = $.plot(
-        $(".simple-chart"), [
-            {
-                label:"",
-                data:arr,
-                lines:{fillColor:"#f2f7f9"},
-                points:{fillColor:"#88bbc8"}
-            }
-        ],
-        options);
+    draw([
+        {
+            label: "",
+            data: arr,
+            lines: {fillColor: "#f2f7f9", show: false},
+            points: {fillColor: "#88bbc8"}
+        }
+    ]);
 }
 
 
@@ -1281,10 +1277,10 @@ function DevAsintotas() {
         arr.push([0, ypt[0][1]]);
 
     curvas.push({
-        label:"",
-        data:arr,
-        lines:{show:false},
-        points:{fillColor:"#edc240"}
+        label: "",
+        data: arr,
+        lines: {show: false},
+        points: {fillColor: "#edc240"}
     });
 
 
@@ -1309,14 +1305,14 @@ function DevAsintotas() {
         }
     }
     curvas.push({
-        label:"",
-        data:asintizq,
-        points:{fillColor:"#ffffff", lineWidth:1, show:false}
+        label: "",
+        data: asintizq,
+        points: {fillColor: "#ffffff", lineWidth: 1, show: false}
     });
     curvas.push({
-        label:"",
-        data:asintder,
-        points:{fillColor:"#ffffff", lineWidth:1, show:false}
+        label: "",
+        data: asintder,
+        points: {fillColor: "#ffffff", lineWidth: 1, show: false}
     });
 
 
@@ -1343,9 +1339,9 @@ function DevAsintotas() {
                 asintvert.push([asintotasVertical[j], i]);
             }
             curvas.push({
-                label:"",
-                data:asintvert,
-                points:{fillColor:"#ffffff", lineWidth:1, show:false}
+                label: "",
+                data: asintvert,
+                points: {fillColor: "#ffffff", lineWidth: 1, show: false}
             });
         }
     }
@@ -1359,9 +1355,9 @@ function DevAsintotas() {
         }
     }
     curvas.push({
-        label:"",
-        data:asintobl,
-        points:{fillColor:"#ffffff", lineWidth:1, show:false}
+        label: "",
+        data: asintobl,
+        points: {fillColor: "#ffffff", lineWidth: 1, show: false}
     });
 
     return curvas;
@@ -1379,9 +1375,7 @@ function PintarAsintotas() {
         col.push("#edc240");
     options.colors = col;
 
-    var plot = $.plot(
-        $(".simple-chart"), curvas,
-        options);
+    draw(curvas);
 
 }
 
@@ -1400,10 +1394,10 @@ function DevExtremos() {
         }
     });
     curvas.push({
-        label:"",
-        data:arr,
-        lines:{show:false},
-        points:{fillColor:"#edc240", show:true}
+        label: "",
+        data: arr,
+        lines: {show: false},
+        points: {fillColor: "#edc240", show: true}
     });
 
     return curvas;
@@ -1420,9 +1414,7 @@ function PintarExtremos() {
         col.push("#edc240");
     options.colors = col;
 
-    var plot = $.plot(
-        $(".simple-chart"), curvas,
-        options);
+    draw(curvas);
 
 }
 
@@ -1440,10 +1432,10 @@ function DevInflexion() {
         }
     });
     curvas.push({
-        label:"",
-        data:arr,
-        lines:{show:false},
-        points:{fillColor:"#edc240", show:true}
+        label: "",
+        data: arr,
+        lines: {show: false},
+        points: {fillColor: "#edc240", show: true}
     });
 
     return curvas;
@@ -1460,9 +1452,7 @@ function PintarInflexion() {
         col.push("#edc240");
     options.colors = col;
 
-    var plot = $.plot(
-        $(".simple-chart"), curvas,
-        options);
+    draw(curvas);
 }
 
 function Graficar(grafico) {
@@ -1471,13 +1461,6 @@ function Graficar(grafico) {
     //opciones del gráfico
     options.series.lines.show = true;
     options.series.points.show = true;
-    var col = [];
-    for (var i = 0; i < curvas.length; i++)
-        col.push("#edc240");
-    for (var i = 0; i < grafico.length; i++)
-        col.push("#000000");
-    options.colors = col;
-
 
     //para graficar la funcion
     var label = funcionsimple;
@@ -1489,16 +1472,90 @@ function Graficar(grafico) {
             ptos.push([grafico[i][j][0], grafico[i][j][1]]);
         }
         curvas.push({
-            label:label,
-            data:ptos,
-            points:{fillColor:"#ffffff", show:false}
+            label: label,
+            data: ptos,
+            color: "#444444",
+            points: {fillColor: "#ffffff", show: false}
         });
     }
+    draw(curvas);
+}
+
+function draw(curvas) {
+    var xmin = 9999999, xmax = -9999999, ymin = 9999999, ymax = -9999999;
+    var plot = [];
+    var series = [
+        {showMarker: false,color:"#999999"},//Axis
+        {showMarker: false,color:"#999999"}//Axis
+    ];
+    for (var i = 0; i < curvas.length; i++) {
+        plot[i] = [];
+        if(curvas[i].points.show==undefined)
+            curvas[i].points.show=true;
+        series[i+2]={
+            showMarker:curvas[i].points.show,
+            showLine:!curvas[i].points.show,
+            color: "#555555"
+        };
+        for (var j = 0; j < curvas[i].data.length; j++) {
+            plot[i][j] = curvas[i].data[j];
+            if (curvas[i].data[j][0] > xmax)xmax = curvas[i].data[j][0];
+            if (curvas[i].data[j][1] > ymax)ymax = curvas[i].data[j][1];
+            if (curvas[i].data[j][0] < xmin)xmin = curvas[i].data[j][0];
+            if (curvas[i].data[j][1] < ymin)ymin = curvas[i].data[j][1];
+        }
+    }
+    if (xmin == xmax) {
+        xmin -= 1;
+        xmax += 1;
+    }
+    if (ymin == ymax) {
+        ymin -= 1;
+        ymax += 1;
+    }
+    options.xaxis.min = xmin;
+    options.xaxis.max = xmax;
+    options.yaxis.min = ymin;
+    options.yaxis.max = ymax;
+    curvas.push({
+        data: [
+            [xmin, 0],
+            [xmax, 0]
+        ],
+        color: "#ff0000",
+        points: {show: false}
+    });
+    curvas.push({
+        data: [
+            [0, ymin],
+            [0, ymax]
+        ],
+        color: "#00ff00",
+        points: {show: false}
+    });
     console.log(curvas);
-    var plot = $.plot(
+    $.plot(
         $(".simple-chart"), curvas,
         options);
 
+    for (var i = plot.length + 1; i >= 2; i--)
+        plot[i] = plot[i - 2];
+    plot[0] = [
+        [xmin, 0],
+        [xmax, 0]
+    ];
+    plot[1] = [
+        [0, ymin],
+        [0, ymax]
+    ];
+    $.jqplot('chart1', plot, {
+        series: series,
+        axes: {
+            xaxis: {min: xmin, max: xmax},
+            yaxis: {min: ymin, max: ymax}
+        },
+        cursor: {show: true, zoom: true}
+    });
 }
 
 

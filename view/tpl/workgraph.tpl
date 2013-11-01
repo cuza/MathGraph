@@ -15,6 +15,9 @@
             <div class="simple-chart" style="height: 230px; width:100%;">
 
             </div>
+            <div id="chart1" class="simple-chart-2" style="height: 230px; width:100%;">
+
+            </div>
         </div>
 
     </div>
