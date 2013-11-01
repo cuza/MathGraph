@@ -1485,16 +1485,16 @@ function draw(curvas) {
     var xmin = 9999999, xmax = -9999999, ymin = 9999999, ymax = -9999999;
     var plot = [];
     var series = [
-        {showMarker: false,color:"#999999"},//Axis
-        {showMarker: false,color:"#999999"}//Axis
+        {showMarker: false, color: "#999999"},//Axis
+        {showMarker: false, color: "#999999"}//Axis
     ];
     for (var i = 0; i < curvas.length; i++) {
         plot[i] = [];
-        if(curvas[i].points.show==undefined)
-            curvas[i].points.show=true;
-        series[i+2]={
-            showMarker:curvas[i].points.show,
-            showLine:!curvas[i].points.show,
+        if (curvas[i].points.show == undefined)
+            curvas[i].points.show = true;
+        series[i + 2] = {
+            showMarker: curvas[i].points.show,
+            showLine: !curvas[i].points.show,
             color: "#555555"
         };
         for (var j = 0; j < curvas[i].data.length; j++) {
@@ -1553,6 +1553,10 @@ function draw(curvas) {
         axes: {
             xaxis: {min: xmin, max: xmax},
             yaxis: {min: ymin, max: ymax}
+        },
+        highlighter: {
+            show: true,
+            sizeAdjust: 7.5
         },
         cursor: {show: true, zoom: true}
     });

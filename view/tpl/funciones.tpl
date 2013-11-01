@@ -1,8 +1,8 @@
 <div class="editor">
 
-{if $men}
-    {$men.texto}
-{/if}
+    {if $men}
+        {$men.texto}
+    {/if}
 
     <div class="da-panel">
 
@@ -40,33 +40,26 @@
                     <tbody>
 
                     {foreach from=$funciones item=f}
-                    <tr>
+                        <tr>
 
-                        <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
-                                                 value="{$f.id}"/></td>
-                        <td>{$f.funcion}</td>
-                        <td>{$f.desc}</td>
+                            <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
+                                                     value="{$f.id}"/></td>
+                            <td>{$f.funcion}</td>
+                            <td>{$f.desc}</td>
 
-                        <td class="center peque">
-
-                            <a onclick="EditFuncion('{$f.id}','{$f.funcion}','{$f.desc}')" href="#"
-                               class="da-button gray"> Editar</a>
-                            <br>
-                            <a onclick="Eliminar('Funcion','{$f.id}')" href="#" class="da-button gray"> Eliminar </a>
-
-                        </td>
-                    </tr>
+                            <td class="center peque">
+                                <a onclick="Ver('Funcion','{$f.id}')" href="#" class="da-button gray"> Ver </a>
+                                <a onclick="EditFuncion('{$f.id}','{$f.funcion}','{$f.desc}')" href="#"
+                                   class="da-button gray"> Editar</a>
+                                <br>
+                                <a onclick="Eliminar('Funcion','{$f.id}')" href="#" class="da-button gray">
+                                    Eliminar </a>
+                            </td>
+                        </tr>
                     {/foreach}
-
                     </tbody>
                 </table>
-
             </form>
-
         </div>
-
-
     </div>
-
-
 </div>

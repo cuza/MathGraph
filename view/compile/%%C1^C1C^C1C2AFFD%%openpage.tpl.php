@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-11-02 00:30:21
+<?php /* Smarty version 2.6.26, created on 2013-11-02 01:36:38
          compiled from openpage.tpl */ ?>
 <html dir="ltr" lang="en-US" xml:lang="en">
 <head>
@@ -32,6 +32,7 @@
     <script type="text/javascript" src="view/js/scripts/validate/jquery.validate.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.min.js"></script>
     <script type="text/javascript" src="view/js/jquery/js/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="view/js/jquery/js/plugins/jqplot.highlighter.min.js"></script>
     <script type="text/javascript" src="view/js/jquery/js/plugins/jqplot.cursor.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.resize.js"></script>
     <script type="text/javascript" src="view/js/scripts/dandelion.wizard.js"></script>

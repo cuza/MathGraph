@@ -30,6 +30,7 @@
     <script type="text/javascript" src="view/js/scripts/validate/jquery.validate.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.min.js"></script>
     <script type="text/javascript" src="view/js/jquery/js/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="view/js/jquery/js/plugins/jqplot.highlighter.min.js"></script>
     <script type="text/javascript" src="view/js/jquery/js/plugins/jqplot.cursor.min.js"></script>
     <script type="text/javascript" src="view/js/scripts/flot/jquery.flot.resize.js"></script>
     <script type="text/javascript" src="view/js/scripts/dandelion.wizard.js"></script>

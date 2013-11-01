@@ -80,7 +80,9 @@ function DespacharUser()
                     case 'delFunciones':
                         delFunciones();
                         break;
-
+                    case 'procesar-paso-2':
+                        ProcesarPaso2();
+                        break;
                     //Errores
                     case 'buscar-errores':
                         Mostrar('errores');

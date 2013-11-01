@@ -3,21 +3,21 @@ function EliminarSel(action) {
 
     //Dialog Modal
     $("#dialog-ui").dialog({
-        autoOpen:false,
-        title:"Alerta",
-        modal:true,
-        width:"300",
-        buttons:[
+        autoOpen: false,
+        title: "Alerta",
+        modal: true,
+        width: "300",
+        buttons: [
             {
-                text:"Aceptar",
-                click:function () {
+                text: "Aceptar",
+                click: function () {
                     $("#check-form-action").val(action);
                     $("#check-form").submit();
                 }
             },
             {
-                text:"Cerrar",
-                click:function () {
+                text: "Cerrar",
+                click: function () {
                     $(this).dialog("close");
                 }
             }
@@ -36,25 +36,51 @@ function Eliminar(tipo, item) {
 
     //Dialog Modal
     $("#dialog-ui").dialog({
-        autoOpen:false,
-        title:"Alerta",
-        modal:true,
-        width:"300",
-        buttons:[
+        autoOpen: false,
+        title: "Alerta",
+        modal: true,
+        width: "300",
+        buttons: [
             {
-                text:"Aceptar",
-                click:function () {
+                text: "Aceptar",
+                click: function () {
                     $("#send-form").submit();
                 }
             },
             {
-                text:"Cerrar",
-                click:function () {
+                text: "Cerrar",
+                click: function () {
                     $(this).dialog("close");
                 }
             }
         ]
     }).dialog("open");
+}
+
+function Ver(tipo, item) {
+    console.log(tipo, item)
+    var html = "<div class=\"graph\">" +
+        "<div class=\"box chart\" align=\"left\">" +
+        "<h4>" +
+        "<span class=\"icon16 icomoon-icon-bars\"></span>" +
+        "</h4>" +
+        "</div>" +
+        "<div class=\"content\">" +
+        "<div class=\"simple-chart\" style=\"height: 230px; width:450px;\">" +
+        "</div>" +
+        "<div id=\"chart1\" class=\"simple-chart-2\" style=\"height: 230px; width:450px;\">" +
+        "</div>" +
+        "</div>"
+    $("#dialog-ui").html(html);
+    //Dialog Modal
+    $("#dialog-ui").dialog({
+        autoOpen: false,
+        title: "Grafica",
+        modal: true,
+        width: "500",
+        resizable:false
+    }).dialog("open");
+    GraficarFuncEstudiante("(x)^(2)")
 }
 
 
@@ -243,20 +269,20 @@ function MostrarDialog(title, width, html, form) {
 
     //Dialog Modal
     $("#dialog-ui").dialog({
-        autoOpen:false,
-        title:title,
-        modal:true,
-        width:width,
-        buttons:[
+        autoOpen: false,
+        title: title,
+        modal: true,
+        width: width,
+        buttons: [
             {
-                text:"Aceptar",
-                click:function () {
+                text: "Aceptar",
+                click: function () {
                     $("#" + form).submit();
                 }
             },
             {
-                text:"Cerrar",
-                click:function () {
+                text: "Cerrar",
+                click: function () {
                     $(this).dialog("close");
                 }
             }
@@ -265,6 +291,7 @@ function MostrarDialog(title, width, html, form) {
 }
 
 function GraficarFuncEstudiante(func) {
+    console.log(func)
     $(".button-funcion").attr('onclick', '');
 
     var x1 = $('#escx1').val();
@@ -274,11 +301,11 @@ function GraficarFuncEstudiante(func) {
     $('.graph').append(html1);
 
     $.ajax({
-        type:"POST",
-        url:"index.php",
-        dataType:"json",
-        data:{action:'procesar-paso-2', funcion:func, x1:x1, x2:x2},
-        success:function (responce) {
+        type: "POST",
+        url: "index.php",
+        dataType: "json",
+        data: {action: 'procesar-paso-2', funcion: func, x1: x1, x2: x2},
+        success: function (responce) {
 
             $('#wait').remove();
             $('#escala-row').remove();
@@ -341,9 +368,9 @@ function GraficarFuncEstudiante(func) {
                     ptos.push([grafico[i][j][0], grafico[i][j][1]]);
                 }
                 curvas.push({
-                    label:label,
-                    data:ptos,
-                    points:{fillColor:"#ffffff", show:false}
+                    label: label,
+                    data: ptos,
+                    points: {fillColor: "#ffffff", show: false}
                 });
             }
 
@@ -356,11 +383,11 @@ function GraficarFuncEstudiante(func) {
 
 $(function () {
     var dates = $("#from, #to").datepicker({
-        defaultDate:"+1w",
-        changeMonth:true,
-        numberOfMonths:1,
-        dateFormat:'dd-mm-yy',
-        onSelect:function (selectedDate) {
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1,
+        dateFormat: 'dd-mm-yy',
+        onSelect: function (selectedDate) {
             var option = this.id == "from" ? "minDate" : "maxDate",
                 instance = $(this).data("datepicker"),
                 date = $.datepicker.parseDate(
@@ -382,11 +409,11 @@ $(function () {
 
 function MarcarError(paso) {
     $.ajax({
-        type:"POST",
-        url:"index.php",
-        dataType:"json",
-        data:{action:'marcar-error', paso:paso},
-        success:function () {
+        type: "POST",
+        url: "index.php",
+        dataType: "json",
+        data: {action: 'marcar-error', paso: paso},
+        success: function () {
 
         }
     });
