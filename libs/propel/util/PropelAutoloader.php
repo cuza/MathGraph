@@ -76,7 +76,7 @@ class PropelAutoloader
      * Sets the path for a particular class.
      *
      * @param string $class A PHP class name
-     * @param string $path  A path (absolute or relative to the include path)
+     * @param string $path A path (absolute or relative to the include path)
      */
     public function addClassPath($class, $path)
     {
@@ -98,7 +98,7 @@ class PropelAutoloader
     /**
      * Handles autoloading of classes that have been registered in this instance
      *
-     * @param  string  $class  A class name.
+     * @param  string $class A class name.
      *
      * @return boolean Returns true if the class has been loaded
      */

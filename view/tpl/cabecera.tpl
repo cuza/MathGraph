@@ -7,9 +7,9 @@
 
     <div class="menu">
         <ul>
-        {foreach from=$menu item=m }
-            <li><a {if $m.select == $select}class="select"{/if} href="{$m.url}">{$m.texto}</a></li>
-        {/foreach}
+            {foreach from=$menu item=m }
+                <li><a {if $m.select == $select}class="select"{/if} href="{$m.url}">{$m.texto}</a></li>
+            {/foreach}
         </ul>
     </div>
 

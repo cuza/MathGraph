@@ -822,7 +822,7 @@ class Criteria implements IteratorAggregate
      *
      * @see        addJoin()
      * @param      array $conditions An array of conditions, each condition being an array (left, right, operator)
-     * @param      string $joinType  A String with the join operator. Defaults to an implicit join.
+     * @param      string $joinType A String with the join operator. Defaults to an implicit join.
      *
      * @return     Criteria A modified Criteria object.
      */

@@ -78,8 +78,8 @@ class PropelConfiguration implements ArrayAccess
     /**
      * Get parameter value from the container
      *
-     * @param      string $name    Parameter name
-     * @param      mixed  $default Default value to be used if the
+     * @param      string $name Parameter name
+     * @param      mixed $default Default value to be used if the
      *                             requested value is not found
      * @return     mixed           Parameter value or the default
      */

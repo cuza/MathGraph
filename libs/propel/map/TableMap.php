@@ -315,7 +315,7 @@ class TableMap
     /**
      * Does this table contain the specified column?
      *
-     * @param      mixed   $name name of the column or ColumnMap instance
+     * @param      mixed $name name of the column or ColumnMap instance
      * @param      boolean $normalize Normalize the column name (if column name not like FIRST_NAME)
      * @return     boolean True if the table contains the column.
      */
@@ -332,8 +332,8 @@ class TableMap
     /**
      * Get a ColumnMap for the table.
      *
-     * @param      string    $name A String with the name of the table.
-     * @param      boolean   $normalize Normalize the column name (if column name not like FIRST_NAME)
+     * @param      string $name A String with the name of the table.
+     * @param      boolean $normalize Normalize the column name (if column name not like FIRST_NAME)
      * @return     ColumnMap A ColumnMap.
      * @throws     PropelException if the column is undefined
      */
@@ -351,7 +351,7 @@ class TableMap
     /**
      * Does this table contain the specified column?
      *
-     * @param      mixed   $phpName name of the column
+     * @param      mixed $phpName name of the column
      * @return     boolean True if the table contains the column.
      */
     public function hasColumnByPhpName($phpName)
@@ -362,7 +362,7 @@ class TableMap
     /**
      * Get a ColumnMap for the table.
      *
-     * @param      string    $phpName A String with the name of the table.
+     * @param      string $phpName A String with the name of the table.
      * @return     ColumnMap A ColumnMap.
      * @throws     PropelException if the column is undefined
      */
@@ -585,7 +585,7 @@ class TableMap
      * Does this table contain the specified column?
      *
      * @deprecated Use hasColumn instead
-     * @param      mixed   $name name of the column or ColumnMap instance
+     * @param      mixed $name name of the column or ColumnMap instance
      * @param      boolean $normalize Normalize the column name (if column name not like FIRST_NAME)
      * @return     boolean True if the table contains the column.
      */

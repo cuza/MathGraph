@@ -440,8 +440,8 @@ class Criterion
         $crit = $obj;
 
         $isEquiv = ((($this->table === null && $crit->getTable() === null)
-            || ($this->table !== null && $this->table === $crit->getTable())
-        )
+                || ($this->table !== null && $this->table === $crit->getTable())
+            )
             && $this->column === $crit->getColumn()
             && $this->comparison === $crit->getComparison());
 

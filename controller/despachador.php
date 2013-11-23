@@ -392,7 +392,7 @@ function ProcesarPaso2()
 
     $dif = abs($x2 - $x1);
     $dif = strlen($dif);
-    $escala =  abs($x2 - $x1)/200;
+    $escala = abs($x2 - $x1) / 200;
 
     //funcion reducida
     $func = $_POST['funcion'];
@@ -515,6 +515,5 @@ function ProcesarPaso2()
 
     echo json_encode(array("grafico" => $responce, "ptosasintotaOblicua" => $ptosasintotaOblicua));
 }
-
 
 ?>

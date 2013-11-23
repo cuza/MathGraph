@@ -171,16 +171,16 @@
     }
 
     var options = {
-        series:{
-            bars:{order:null} // or number/string
+        series: {
+            bars: {order: null} // or number/string
         }
     };
 
     $.plot.plugins.push({
-        init:init,
-        options:options,
-        name:"orderBars",
-        version:"0.2"
+        init: init,
+        options: options,
+        name: "orderBars",
+        version: "0.2"
     });
 
 })(jQuery)

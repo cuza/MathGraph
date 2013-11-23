@@ -10,17 +10,20 @@
 
     <div class="menu">
         <ul>
-            <?php $_from = $this->_tpl_vars['menu']; if (!is_array($_from) && !is_object($_from)) {
-            settype($_from, 'array');
-        }if (count($_from)):
-            foreach ($_from as $this->_tpl_vars['m']):
-                ?>
-                <li>
-                    <a <?php if ($this->_tpl_vars['m']['select'] == $this->_tpl_vars['select']): ?>class="select"<?php endif; ?>
-                            href="<?php echo $this->_tpl_vars['m']['url']; ?>
+            <?php $_from = $this->_tpl_vars['menu'];
+            if (!is_array($_from) && !is_object($_from)) {
+                settype($_from, 'array');
+            }
+            if (count($_from)):
+                foreach ($_from as $this->_tpl_vars['m']):
+                    ?>
+                    <li>
+                        <a <?php if ($this->_tpl_vars['m']['select'] == $this->_tpl_vars['select']): ?>class="select"<?php endif; ?>
+                           href="<?php echo $this->_tpl_vars['m']['url']; ?>
 "><?php echo $this->_tpl_vars['m']['texto']; ?>
-                    </a></li>
-                <?php endforeach; endif; unset($_from); ?>
+                        </a></li>
+                <?php endforeach; endif;
+            unset($_from); ?>
         </ul>
     </div>
 

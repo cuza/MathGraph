@@ -86,7 +86,7 @@ abstract class BaseAlumnoPeer
      * @param      string $name field name
      * @param      string $fromType One of the class type constants BasePeer::TYPE_PHPNAME, BasePeer::TYPE_STUDLYPHPNAME
      *                         BasePeer::TYPE_COLNAME, BasePeer::TYPE_FIELDNAME, BasePeer::TYPE_NUM
-     * @param      string $toType   One of the class type constants
+     * @param      string $toType One of the class type constants
      * @return     string translated name of the field.
      * @throws     PropelException - if the specified name could not be found in the fieldname mappings.
      */
@@ -142,7 +142,7 @@ abstract class BaseAlumnoPeer
      * on demand.
      *
      * @param      Criteria $criteria object containing the columns to add.
-     * @param      string   $alias    optional table alias
+     * @param      string $alias optional table alias
      * @throws     PropelException Any exceptions caught during processing will be
      *         rethrown wrapped into a PropelException.
      */

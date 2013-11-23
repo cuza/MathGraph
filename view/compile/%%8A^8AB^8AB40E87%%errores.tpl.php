@@ -4,7 +4,7 @@
 <div class="editor">
 
     <?php if ($this->_tpl_vars['men']): ?>
-    <?php echo $this->_tpl_vars['men']['texto']; ?>
+        <?php echo $this->_tpl_vars['men']['texto']; ?>
 
     <?php endif; ?>
 
@@ -38,77 +38,80 @@
                 </div>
 
                 <div class="da-form-row">
-                    <?php $_from = $this->_tpl_vars['errores']; if (!is_array($_from) && !is_object($_from)) {
-                    settype($_from, 'array');
-                }if (count($_from)):
-                    foreach ($_from as $this->_tpl_vars['e']):
-                        ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 2): ?>
-                        <div class="da-form-row">
-                            <label>Dominio: </label><label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                    <?php $_from = $this->_tpl_vars['errores'];
+                    if (!is_array($_from) && !is_object($_from)) {
+                        settype($_from, 'array');
+                    }
+                    if (count($_from)):
+                        foreach ($_from as $this->_tpl_vars['e']):
+                            ?>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 2): ?>
+                            <div class="da-form-row">
+                                <label>Dominio: </label><label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 3): ?>
-                        <div class="da-form-row">
-                            <label>Interceptos:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 3): ?>
+                            <div class="da-form-row">
+                                <label>Interceptos:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 4): ?>
-                        <div class="da-form-row">
-                            <label>Signos:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 4): ?>
+                            <div class="da-form-row">
+                                <label>Signos:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 5): ?>
-                        <div class="da-form-row">
-                            <label>Asíntotas:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 5): ?>
+                            <div class="da-form-row">
+                                <label>Asíntotas:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 6): ?>
-                        <div class="da-form-row">
-                            <label>Extremos:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 6): ?>
+                            <div class="da-form-row">
+                                <label>Extremos:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 7): ?>
-                        <div class="da-form-row">
-                            <label>Monotonía:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 7): ?>
+                            <div class="da-form-row">
+                                <label>Monotonía:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 8): ?>
-                        <div class="da-form-row">
-                            <label>Inflexión:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 8): ?>
+                            <div class="da-form-row">
+                                <label>Inflexión:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 9): ?>
-                        <div class="da-form-row">
-                            <label>Concavidad y Convexidad:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 9): ?>
+                            <div class="da-form-row">
+                                <label>Concavidad y Convexidad:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
-                        <?php if ($this->_tpl_vars['e']['ind'] == 1): ?>
-                        <div class="da-form-row">
-                            <label>Gráfico a la función:</label> <label
-                                style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
-                        </label>
-                        </div>
+                            <?php if ($this->_tpl_vars['e']['ind'] == 1): ?>
+                            <div class="da-form-row">
+                                <label>Gráfico a la función:</label> <label
+                                    style="padding-left: 0px"><?php echo $this->_tpl_vars['e']['value']; ?>
+                                </label>
+                            </div>
                         <?php endif; ?>
 
 
-                        <?php endforeach; endif; unset($_from); ?>
+                        <?php endforeach; endif;
+                    unset($_from); ?>
                 </div>
 
 

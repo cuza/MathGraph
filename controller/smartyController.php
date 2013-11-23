@@ -3,7 +3,7 @@
 function GeneraSmarty()
 {
     if (!class_exists("Smarty"))
-        require_once (dirname(__FILE__) . "/../libs/Smarty/Smarty.class.php");
+        require_once(dirname(__FILE__) . "/../libs/Smarty/Smarty.class.php");
 
     $s = new Smarty();
     $s->template_dir = dirname(__FILE__) . "/../view/tpl/";

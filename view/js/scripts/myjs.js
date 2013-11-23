@@ -1522,7 +1522,7 @@ function draw(curvas) {
             [xmin, 0],
             [xmax, 0]
         ],
-        color: "#ff0000",
+        color: "#999999",
         points: {show: false}
     });
     curvas.push({
@@ -1530,7 +1530,7 @@ function draw(curvas) {
             [0, ymin],
             [0, ymax]
         ],
-        color: "#00ff00",
+        color: "#999999",
         points: {show: false}
     });
     console.log(curvas);

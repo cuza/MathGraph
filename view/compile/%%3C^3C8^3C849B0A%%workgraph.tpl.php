@@ -1,5 +1,6 @@
 <?php /* Smarty version 2.6.26, created on 2013-11-02 02:06:36
-         compiled from workgraph.tpl */ ?>
+         compiled from workgraph.tpl */
+?>
 <div class="graph">
 
     <div class="box chart" align="left">

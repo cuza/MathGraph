@@ -4,17 +4,17 @@ $(function () {
     var dontSort = [];
     $('table#da-ex-datatable thead th').each(function () {
         if ($(this).hasClass('no_sort')) {
-            dontSort.push({"bSortable":false});
+            dontSort.push({"bSortable": false});
         } else {
             dontSort.push(null);
         }
     });
     $("table#da-ex-datatable").dataTable({
-        sPaginationType:"two_button",
-        "aaSorting":[
+        sPaginationType: "two_button",
+        "aaSorting": [
             [1, "asc"]
         ],
-        "aoColumns":dontSort
+        "aoColumns": dontSort
     });
 
 

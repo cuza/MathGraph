@@ -508,7 +508,7 @@ abstract class BaseAlumno extends BaseObject implements Persistent
      * You can specify the key type of the array by passing one of the class
      * type constants.
      *
-     * @param     string  $keyType (optional) One of the class type constants BasePeer::TYPE_PHPNAME, BasePeer::TYPE_STUDLYPHPNAME,
+     * @param     string $keyType (optional) One of the class type constants BasePeer::TYPE_PHPNAME, BasePeer::TYPE_STUDLYPHPNAME,
      *                    BasePeer::TYPE_COLNAME, BasePeer::TYPE_FIELDNAME, BasePeer::TYPE_NUM.
      *                    Defaults to BasePeer::TYPE_PHPNAME.
      * @param     boolean $includeLazyLoadColumns (optional) Whether to include lazy loaded columns. Defaults to TRUE.
@@ -578,7 +578,7 @@ abstract class BaseAlumno extends BaseObject implements Persistent
      * BasePeer::TYPE_COLNAME, BasePeer::TYPE_FIELDNAME, BasePeer::TYPE_NUM.
      * The default key type is the column's phpname (e.g. 'AuthorId')
      *
-     * @param      array  $arr     An array to populate the object from.
+     * @param      array $arr An array to populate the object from.
      * @param      string $keyType The type of keys the array uses.
      * @return     void
      */

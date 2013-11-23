@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53691474-93b0-4f96-9389-4951a9e7bd25" name="Default" comment="1.04">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/._classmap-mathgraph-conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/Smarty/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/propel/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/._.DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._excanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.colorhelpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.colorhelpers.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.canvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.categories.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.categories.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.crosshair.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.crosshair.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.errorbars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.errorbars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.fillbetween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.fillbetween.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.image.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.navigate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.navigate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.pie.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.resize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.resize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.selection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.selection.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.stack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.stack.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.symbol.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.threshold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.threshold.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.flot.time.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/js/scripts/flot/._jquery.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/Thumbs.db" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/accept.png" afterPath="$PROJECT_DIR$/view/images/accept.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/asterisk_orange.png" afterPath="$PROJECT_DIR$/view/images/asterisk_orange.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/dt-arrow-left.png" afterPath="$PROJECT_DIR$/view/images/dt-arrow-left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/dt-arrow-right.png" afterPath="$PROJECT_DIR$/view/images/dt-arrow-right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/imagen.jpg" afterPath="$PROJECT_DIR$/view/images/imagen.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/info_about.png" afterPath="$PROJECT_DIR$/view/images/info_about.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/large-loading.gif" afterPath="$PROJECT_DIR$/view/images/large-loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/logo.png" afterPath="$PROJECT_DIR$/view/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/sort.png" afterPath="$PROJECT_DIR$/view/images/sort.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/sort_asc.png" afterPath="$PROJECT_DIR$/view/images/sort_asc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/sort_desc.png" afterPath="$PROJECT_DIR$/view/images/sort_desc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_222222_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_228ef1_256x240.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/wizard-nav.png" afterPath="$PROJECT_DIR$/view/images/wizard-nav.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%24^24A^24AB7336%%alumnos.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%24^24A^24AB7336%%alumnos.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%31^318^318F27E1%%dialog.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%31^318^318F27E1%%dialog.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%34^342^34212B0D%%usuarios.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%34^342^34212B0D%%usuarios.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%3C^3C8^3C849B0A%%workgraph.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%3C^3C8^3C849B0A%%workgraph.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%56^56C^56C2C77B%%workpanel.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%56^56C^56C2C77B%%workpanel.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%6A^6A5^6A537DD8%%login.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%6A^6A5^6A537DD8%%login.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%6B^6BD^6BD95BE0%%cabecera.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%6B^6BD^6BD95BE0%%cabecera.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%86^864^8644F0D6%%home.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%86^864^8644F0D6%%home.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%8A^8AB^8AB40E87%%errores.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%8A^8AB^8AB40E87%%errores.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%99^991^991E4D0A%%funciones.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%99^991^991E4D0A%%funciones.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%9E^9E6^9E6653AD%%funcAlumno.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%9E^9E6^9E6653AD%%funcAlumno.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%9F^9FA^9FAD1FD0%%openarea.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%9F^9FA^9FAD1FD0%%openarea.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%C1^C1C^C1C2AFFD%%openpage.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%C1^C1C^C1C2AFFD%%openpage.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/compile/%%E4^E42^E42F140F%%closepage.tpl.php" afterPath="$PROJECT_DIR$/view/compile/%%E4^E42^E42F140F%%closepage.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/.htaccess" afterPath="$PROJECT_DIR$/controller/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/.htaccess" afterPath="$PROJECT_DIR$/libs/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/.htaccess" afterPath="$PROJECT_DIR$/view/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/.htaccess" afterPath="$PROJECT_DIR$/view/tpl/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Alumno.php" afterPath="$PROJECT_DIR$/model/Alumno.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/AlumnoPeer.php" afterPath="$PROJECT_DIR$/model/AlumnoPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/AlumnoQuery.php" afterPath="$PROJECT_DIR$/model/AlumnoQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/map/AlumnoTableMap.php" afterPath="$PROJECT_DIR$/model/map/AlumnoTableMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseAlumno.php" afterPath="$PROJECT_DIR$/model/om/BaseAlumno.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseAlumnoPeer.php" afterPath="$PROJECT_DIR$/model/om/BaseAlumnoPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseAlumnoQuery.php" afterPath="$PROJECT_DIR$/model/om/BaseAlumnoQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseError.php" afterPath="$PROJECT_DIR$/model/om/BaseError.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseErrorPeer.php" afterPath="$PROJECT_DIR$/model/om/BaseErrorPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseErrorQuery.php" afterPath="$PROJECT_DIR$/model/om/BaseErrorQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseFunc.php" afterPath="$PROJECT_DIR$/model/om/BaseFunc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseFuncPeer.php" afterPath="$PROJECT_DIR$/model/om/BaseFuncPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseFuncQuery.php" afterPath="$PROJECT_DIR$/model/om/BaseFuncQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/om/BaseObject.php" afterPath="$PROJECT_DIR$/libs/propel/om/BaseObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/BasePeer.php" afterPath="$PROJECT_DIR$/libs/propel/util/BasePeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseUser.php" afterPath="$PROJECT_DIR$/model/om/BaseUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseUserPeer.php" afterPath="$PROJECT_DIR$/model/om/BaseUserPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/om/BaseUserQuery.php" afterPath="$PROJECT_DIR$/model/om/BaseUserQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/logger/BasicLogger.php" afterPath="$PROJECT_DIR$/libs/propel/logger/BasicLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/BasicValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/BasicValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/map/ColumnMap.php" afterPath="$PROJECT_DIR$/libs/propel/map/ColumnMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/Config_File.class.php" afterPath="$PROJECT_DIR$/libs/Smarty/Config_File.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/Criteria.php" afterPath="$PROJECT_DIR$/libs/propel/query/Criteria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/Criterion.php" afterPath="$PROJECT_DIR$/libs/propel/query/Criterion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/CriterionIterator.php" afterPath="$PROJECT_DIR$/libs/propel/query/CriterionIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBAdapter.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBAdapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBMSSQL.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBMSSQL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBMySQL.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBMySQL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBNone.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBNone.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBOracle.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBOracle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBPostgres.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBPostgres.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/DBSQLite.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/DBSQLite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/map/DatabaseMap.php" afterPath="$PROJECT_DIR$/libs/propel/map/DatabaseMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/connection/DebugPDO.php" afterPath="$PROJECT_DIR$/libs/propel/connection/DebugPDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/connection/DebugPDOStatement.php" afterPath="$PROJECT_DIR$/libs/propel/connection/DebugPDOStatement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Error.php" afterPath="$PROJECT_DIR$/model/Error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ErrorPeer.php" afterPath="$PROJECT_DIR$/model/ErrorPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ErrorQuery.php" afterPath="$PROJECT_DIR$/model/ErrorQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/map/ErrorTableMap.php" afterPath="$PROJECT_DIR$/model/map/ErrorTableMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Func.php" afterPath="$PROJECT_DIR$/model/Func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/FuncPeer.php" afterPath="$PROJECT_DIR$/model/FuncPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/FuncQuery.php" afterPath="$PROJECT_DIR$/model/FuncQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/map/FuncTableMap.php" afterPath="$PROJECT_DIR$/model/map/FuncTableMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/Join.php" afterPath="$PROJECT_DIR$/libs/propel/query/Join.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/MatchValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/MatchValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/MaxLengthValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/MaxLengthValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/MaxValueValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/MaxValueValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/MinLengthValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/MinLengthValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/MinValueValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/MinValueValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/ModelCriteria.php" afterPath="$PROJECT_DIR$/libs/propel/query/ModelCriteria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/ModelCriterion.php" afterPath="$PROJECT_DIR$/libs/propel/query/ModelCriterion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/ModelJoin.php" afterPath="$PROJECT_DIR$/libs/propel/query/ModelJoin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/ModelWith.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/ModelWith.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/logger/MojaviLogAdapter.php" afterPath="$PROJECT_DIR$/libs/propel/logger/MojaviLogAdapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlDateTime.class.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlDateTime.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlDebugPDO.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlDebugPDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlPropelPDO.php" afterPath="$PROJECT_DIR$/libs/propel/adapter/MSSQL/MssqlPropelPDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/om/NestedSetRecursiveIterator.php" afterPath="$PROJECT_DIR$/libs/propel/om/NestedSetRecursiveIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/om/NodeObject.php" afterPath="$PROJECT_DIR$/libs/propel/om/NodeObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/NodePeer.php" afterPath="$PROJECT_DIR$/libs/propel/util/NodePeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/NotMatchValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/NotMatchValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/om/Persistent.php" afterPath="$PROJECT_DIR$/libs/propel/om/Persistent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/om/PreOrderNodeIterator.php" afterPath="$PROJECT_DIR$/libs/propel/om/PreOrderNodeIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/Propel.php" afterPath="$PROJECT_DIR$/libs/propel/Propel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/collection/PropelArrayCollection.php" afterPath="$PROJECT_DIR$/libs/propel/collection/PropelArrayCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/PropelArrayFormatter.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/PropelArrayFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelAutoloader.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelAutoloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/collection/PropelCollection.php" afterPath="$PROJECT_DIR$/libs/propel/collection/PropelCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelColumnTypes.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelColumnTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelConditionalProxy.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelConditionalProxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/config/PropelConfiguration.php" afterPath="$PROJECT_DIR$/libs/propel/config/PropelConfiguration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/config/PropelConfigurationIterator.php" afterPath="$PROJECT_DIR$/libs/propel/config/PropelConfigurationIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelDateTime.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelDateTime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/exception/PropelException.php" afterPath="$PROJECT_DIR$/libs/propel/exception/PropelException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/PropelFormatter.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/PropelFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelModelPager.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelModelPager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/collection/PropelObjectCollection.php" afterPath="$PROJECT_DIR$/libs/propel/collection/PropelObjectCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/PropelObjectFormatter.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/PropelObjectFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/collection/PropelOnDemandCollection.php" afterPath="$PROJECT_DIR$/libs/propel/collection/PropelOnDemandCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/PropelOnDemandFormatter.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/PropelOnDemandFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/collection/PropelOnDemandIterator.php" afterPath="$PROJECT_DIR$/libs/propel/collection/PropelOnDemandIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/connection/PropelPDO.php" afterPath="$PROJECT_DIR$/libs/propel/connection/PropelPDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/util/PropelPager.php" afterPath="$PROJECT_DIR$/libs/propel/util/PropelPager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/query/PropelQuery.php" afterPath="$PROJECT_DIR$/libs/propel/query/PropelQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/formatter/PropelStatementFormatter.php" afterPath="$PROJECT_DIR$/libs/propel/formatter/PropelStatementFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/map/RelationMap.php" afterPath="$PROJECT_DIR$/libs/propel/map/RelationMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/RequiredValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/RequiredValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/Smarty.class.php" afterPath="$PROJECT_DIR$/libs/Smarty/Smarty.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/Smarty_Compiler.class.php" afterPath="$PROJECT_DIR$/libs/Smarty/Smarty_Compiler.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/map/TableMap.php" afterPath="$PROJECT_DIR$/libs/propel/map/TableMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/TypeValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/TypeValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/UniqueValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/UniqueValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/User.php" afterPath="$PROJECT_DIR$/model/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/UserPeer.php" afterPath="$PROJECT_DIR$/model/UserPeer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/UserQuery.php" afterPath="$PROJECT_DIR$/model/UserQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/map/UserTableMap.php" afterPath="$PROJECT_DIR$/model/map/UserTableMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/ValidValuesValidator.php" afterPath="$PROJECT_DIR$/libs/propel/validator/ValidValuesValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/validator/ValidationFailed.php" afterPath="$PROJECT_DIR$/libs/propel/validator/ValidationFailed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/propel/map/ValidatorMap.php" afterPath="$PROJECT_DIR$/libs/propel/map/ValidatorMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/alumnos.tpl" afterPath="$PROJECT_DIR$/view/tpl/alumnos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/appController.php" afterPath="$PROJECT_DIR$/controller/appController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/block.textformat.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/block.textformat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/button.css" afterPath="$PROJECT_DIR$/view/css/button.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/cabecera.tpl" afterPath="$PROJECT_DIR$/view/tpl/cabecera.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/classmap-mathgraph-conf.php" afterPath="$PROJECT_DIR$/conf/classmap-mathgraph-conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/closearea.tpl" afterPath="$PROJECT_DIR$/view/tpl/closearea.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/closepage.tpl" afterPath="$PROJECT_DIR$/view/tpl/closepage.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/compiler.assign.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/compiler.assign.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.assemble_plugin_filepath.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.assemble_plugin_filepath.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.assign_smarty_interface.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.assign_smarty_interface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.create_dir_structure.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.create_dir_structure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/core.css" afterPath="$PROJECT_DIR$/view/css/core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.display_debug_console.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.display_debug_console.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.get_include_path.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.get_include_path.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.get_microtime.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.get_microtime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.get_php_resource.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.get_php_resource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.is_secure.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.is_secure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.is_trusted.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.is_trusted.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.load_plugins.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.load_plugins.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.load_resource_plugin.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.load_resource_plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.process_cached_inserts.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.process_cached_inserts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.process_compiled_include.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.process_compiled_include.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.read_cache_file.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.read_cache_file.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.rm_auto.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.rm_auto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.rmdir.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.rmdir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.run_insert_handler.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.run_insert_handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.smarty_include_php.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.smarty_include_php.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.write_cache_file.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.write_cache_file.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.write_compiled_include.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.write_compiled_include.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.write_compiled_resource.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.write_compiled_resource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/internals/core.write_file.php" afterPath="$PROJECT_DIR$/libs/Smarty/internals/core.write_file.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/dandelion.core.js" afterPath="$PROJECT_DIR$/view/js/scripts/dandelion.core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/dandelion.wizard.js" afterPath="$PROJECT_DIR$/view/js/scripts/dandelion.wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/debug.tpl" afterPath="$PROJECT_DIR$/libs/Smarty/debug.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/despachador.php" afterPath="$PROJECT_DIR$/controller/despachador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/dialog.tpl" afterPath="$PROJECT_DIR$/view/tpl/dialog.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/error.php" afterPath="$PROJECT_DIR$/view/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/errores.tpl" afterPath="$PROJECT_DIR$/view/tpl/errores.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/excanvas.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/excanvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/excanvas.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/excanvas.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/fluid.css" afterPath="$PROJECT_DIR$/view/css/fluid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/form-elements.css" afterPath="$PROJECT_DIR$/view/css/form-elements.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/form-message.css" afterPath="$PROJECT_DIR$/view/css/form-message.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/form-structure.css" afterPath="$PROJECT_DIR$/view/css/form-structure.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/funcAlumno.tpl" afterPath="$PROJECT_DIR$/view/tpl/funcAlumno.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/funcion.php" afterPath="$PROJECT_DIR$/controller/funcion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/funciones.tpl" afterPath="$PROJECT_DIR$/view/tpl/funciones.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.assign_debug_info.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.assign_debug_info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.config_load.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.config_load.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.counter.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.counter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.cycle.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.cycle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.debug.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.debug.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.eval.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.eval.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.fetch.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.fetch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_checkboxes.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_checkboxes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_image.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_options.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_options.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_radios.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_radios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_select_date.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_select_date.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_select_time.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_select_time.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_table.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.html_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.mailto.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.mailto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.math.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.math.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.popup.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.popup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/function.popup_init.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/function.popup_init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/home.tpl" afterPath="$PROJECT_DIR$/view/tpl/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/index.html" afterPath="$PROJECT_DIR$/view/js/scripts/flot/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/jLoad.js" afterPath="$PROJECT_DIR$/view/js/scripts/jLoad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/jLoad.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/jLoad.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.BezierCurveRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.BezierCurveRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.BezierCurveRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.BezierCurveRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.barRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.barRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.barRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.barRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.blockRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.blockRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.blockRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.blockRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.bubbleRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.bubbleRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.bubbleRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.bubbleRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisLabelRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisLabelRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisLabelRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisLabelRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisTickRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisTickRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisTickRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasAxisTickRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasOverlay.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasOverlay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasOverlay.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasOverlay.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasTextRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasTextRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasTextRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.canvasTextRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.categoryAxisRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.categoryAxisRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.categoryAxisRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.categoryAxisRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ciParser.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ciParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ciParser.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ciParser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.cursor.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.cursor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.cursor.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.cursor.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dateAxisRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dateAxisRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dateAxisRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dateAxisRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.donutRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.donutRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.donutRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.donutRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dragable.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dragable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dragable.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.dragable.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.enhancedLegendRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.enhancedLegendRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.enhancedLegendRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.enhancedLegendRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.funnelRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.funnelRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.funnelRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.funnelRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.highlighter.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.highlighter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.highlighter.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.highlighter.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.json2.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.json2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.json2.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.json2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.logAxisRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.logAxisRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.logAxisRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.logAxisRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoAxisRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoAxisRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoAxisRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoAxisRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mekkoRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.meterGaugeRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.meterGaugeRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.meterGaugeRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.meterGaugeRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mobile.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mobile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mobile.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.mobile.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ohlcRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ohlcRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ohlcRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.ohlcRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pieRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pieRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pieRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pieRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pointLabels.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pointLabels.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pointLabels.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pointLabels.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidAxisRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidAxisRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidAxisRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidAxisRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidGridRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidGridRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidGridRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidGridRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidRenderer.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidRenderer.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.pyramidRenderer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.trendline.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.trendline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.trendline.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/plugins/jqplot.trendline.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/jquery-1.7.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/jquery-ui-1.8.18.custom.css" afterPath="$PROJECT_DIR$/view/js/jquery/css/ui-lightness/jquery-ui-1.8.18.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/jquery-ui-1.8.18.custom.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/jquery-ui-1.8.18.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.colorhelpers.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.colorhelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.colorhelpers.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.colorhelpers.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/view/js/scripts/datatables/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/datatables/jquery.dataTables.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/jquery.effects.shake.js" afterPath="$PROJECT_DIR$/view/js/scripts/jquery.effects.shake.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.canvas.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.canvas.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.canvas.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.categories.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.categories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.categories.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.categories.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.crosshair.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.crosshair.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.crosshair.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.crosshair.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.errorbars.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.errorbars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.errorbars.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.errorbars.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.fillbetween.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.fillbetween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.fillbetween.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.fillbetween.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.grow.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.grow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.image.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.image.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.image.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.navigate.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.navigate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.navigate.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.navigate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.orderBars.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.orderBars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.pie.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.pie.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.resize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.resize.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.resize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.selection.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.selection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.selection.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.selection.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.stack.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.stack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.stack.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.stack.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.symbol.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.symbol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.symbol.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.symbol.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.threshold.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.threshold.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.threshold.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.threshold.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.time.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.time.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.time.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.tooltip_0.4.4.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.flot.tooltip_0.4.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/css/jquery.jqplot.min.css" afterPath="$PROJECT_DIR$/view/js/jquery/css/jquery.jqplot.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/jquery/js/jquery.jqplot.min.js" afterPath="$PROJECT_DIR$/view/js/jquery/js/jquery.jqplot.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/flot/jquery.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/flot/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/validate/jquery.validate.js" afterPath="$PROJECT_DIR$/view/js/scripts/validate/jquery.validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/validate/jquery.validate.min.js" afterPath="$PROJECT_DIR$/view/js/scripts/validate/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/login.tpl" afterPath="$PROJECT_DIR$/view/tpl/login.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/mathgraph-conf.php" afterPath="$PROJECT_DIR$/conf/mathgraph-conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mathgraph.iml" afterPath="$PROJECT_DIR$/.idea/mathgraph.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.capitalize.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.capitalize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.cat.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.cat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_characters.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_characters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_paragraphs.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_paragraphs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_sentences.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_sentences.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_words.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.count_words.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.date_format.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.date_format.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.debug_print_var.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.debug_print_var.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.default.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.escape.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.escape.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.indent.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.indent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.lower.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.lower.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.nl2br.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.nl2br.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.regex_replace.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.regex_replace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.replace.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.replace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.spacify.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.spacify.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.string_format.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.string_format.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.strip.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.strip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.strip_tags.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.strip_tags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.truncate.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.truncate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.upper.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.upper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.wordwrap.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/modifier.wordwrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/myjs.js" afterPath="$PROJECT_DIR$/view/js/scripts/myjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/openarea.tpl" afterPath="$PROJECT_DIR$/view/tpl/openarea.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/openpage.tpl" afterPath="$PROJECT_DIR$/view/tpl/openpage.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/outputfilter.trimwhitespace.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/outputfilter.trimwhitespace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/panel-toolbar.css" afterPath="$PROJECT_DIR$/view/css/panel-toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/panel.css" afterPath="$PROJECT_DIR$/view/css/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/profesor.php" afterPath="$PROJECT_DIR$/controller/profesor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/reset.css" afterPath="$PROJECT_DIR$/view/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/shared.escape_special_chars.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/shared.escape_special_chars.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Smarty/plugins/shared.make_timestamp.php" afterPath="$PROJECT_DIR$/libs/Smarty/plugins/shared.make_timestamp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/smartyController.php" afterPath="$PROJECT_DIR$/controller/smartyController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/style.css" afterPath="$PROJECT_DIR$/view/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/table.css" afterPath="$PROJECT_DIR$/view/css/table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/table.js" afterPath="$PROJECT_DIR$/view/js/scripts/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/user.php" afterPath="$PROJECT_DIR$/controller/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/usuarios.tpl" afterPath="$PROJECT_DIR$/view/tpl/usuarios.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/util.js" afterPath="$PROJECT_DIR$/view/js/scripts/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/js/scripts/valid.js" afterPath="$PROJECT_DIR$/view/js/scripts/valid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/css/wizard.css" afterPath="$PROJECT_DIR$/view/css/wizard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/workgraph.tpl" afterPath="$PROJECT_DIR$/view/tpl/workgraph.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/tpl/workpanel.tpl" afterPath="$PROJECT_DIR$/view/tpl/workpanel.tpl" />
+    </list>
+    <ignored path="mathgraph.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mathgraph" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="workpanel.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/tpl/workpanel.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="6" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="5325">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="despachador.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/despachador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="390" column="0" selection-start="10557" selection-end="10557" vertical-scroll-proportion="0.0" vertical-offset="5565" max-vertical-offset="7860">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mathgraph-conf.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/mathgraph-conf.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="53" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/view/tpl/usuarios.tpl" />
+        <option value="$PROJECT_DIR$/view/tpl/alumnos.tpl" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/css/button.css" />
+        <option value="$PROJECT_DIR$/libs/Smarty/Smarty.class.php" />
+        <option value="$PROJECT_DIR$/view/tpl/openpage.tpl" />
+        <option value="$PROJECT_DIR$/view/tpl/workgraph.tpl" />
+        <option value="$PROJECT_DIR$/view/js/scripts/util.js" />
+        <option value="$PROJECT_DIR$/view/tpl/funciones.tpl" />
+        <option value="$PROJECT_DIR$/conf/mathgraph-conf.php" />
+        <option value="$PROJECT_DIR$/view/js/scripts/myjs.js" />
+        <option value="dbtable:/4e16a5f9/2f3425d7-f7a4-4ff9-aba7-2b7b342260d2/mathgraph..alumno" />
+        <option value="dbtable:/4e16a5f9/2f3425d7-f7a4-4ff9-aba7-2b7b342260d2/mathgraph..func" />
+        <option value="$PROJECT_DIR$/controller/despachador.php" />
+        <option value="dbtable:/4e16a5f9/2f3425d7-f7a4-4ff9-aba7-2b7b342260d2/mathgraph..user" />
+        <option value="$PROJECT_DIR$/view/tpl/workpanel.tpl" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="http://www.mathgraph.com/" name="Unnamed" />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1366" />
+    <option name="height" value="673" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathgraph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathgraph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mathgraph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="109" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="126" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="121" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="/Volumes/Pink Floyd/Progs/Dev/Conectores Base Datos/MySQL/mysql-connector-java-5.1.16-bin.jar" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="924" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="920" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="123" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="options.lastSelected" value="preferences.remoteExternalTools" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Winginx\home\mathgraph.com\public_html\view\js\jquery\js" />
+      <recent name="C:\Winginx\home\mathgraph.com\public_html\view\js\jquery" />
+      <recent name="C:\Winginx\home\mathgraph.com\public_html\view\js" />
+      <recent name="C:\Winginx\home\mathgraph.com\public_html\view\js\jquery\css" />
+      <recent name="$PROJECT_DIR$/view/js/scripts/flot" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Oviedo\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53691474-93b0-4f96-9389-4951a9e7bd25" name="Default" comment="" />
+      <created>1353683885267</created>
+      <updated>1353683885267</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit Inicial">
+      <created>1383328950879</created>
+      <updated>1383328950879</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.01">
+      <created>1383341465982</created>
+      <updated>1383341465982</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.02">
+      <created>1383345441439</created>
+      <updated>1383345441439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.03">
+      <created>1383345482807</created>
+      <updated>1383345482807</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1366" height="673" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3243243" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35530302" sideWeight="0.44324324" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36136365" sideWeight="0.6756757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39904988" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41136363" sideWeight="0.32608697" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3979239" sideWeight="0.4943274" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32733813" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32660332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Commit Inicial" />
+    <MESSAGE value="1.01" />
+    <MESSAGE value="1.02" />
+    <MESSAGE value="1.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.03" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mathgraph" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mathgraph" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view/js/scripts/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1547" column="18" selection-start="45946" selection-end="45946" vertical-scroll-proportion="0.0" vertical-offset="23205" max-vertical-offset="23730" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/appController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="24" selection-start="2810" selection-end="2813" vertical-scroll-proportion="-3.0588236" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/jquery/js/jquery-ui-1.8.18.custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="733" selection-end="733" vertical-scroll-proportion="0.29032257" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/jquery/css/ui-lightness/jquery-ui-1.8.18.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.5873494" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/tpl/openpage.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.046728972" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/tpl/funciones.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="20" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.2897196" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/scripts/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="45" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="547" selection-end="547" vertical-scroll-proportion="0.33273056" vertical-offset="311" max-vertical-offset="2865" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/scripts/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1557" column="23" selection-start="46184" selection-end="46185" vertical-scroll-proportion="25.683594" vertical-offset="10205" max-vertical-offset="23730" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/despachador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="390" column="0" selection-start="10557" selection-end="10557" vertical-scroll-proportion="0.0" vertical-offset="5565" max-vertical-offset="7860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/tpl/workpanel.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="5325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/mathgraph-conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="53" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="514">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

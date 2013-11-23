@@ -17,18 +17,21 @@
             <form class="da-form" id="func-form">
                 <div class="da-form-row">
                     <?php if (count($this->_tpl_vars['funciones']) == 0): ?>
-                    El Profesor no ha insertado ninguna funcion.
+                        El Profesor no ha insertado ninguna funcion.
                     <?php endif; ?>
-                    <?php $_from = $this->_tpl_vars['funciones']; if (!is_array($_from) && !is_object($_from)) {
-                    settype($_from, 'array');
-                }if (count($_from)):
-                    foreach ($_from as $this->_tpl_vars['f']):
-                        ?>
-                        <a class="da-button gray small button-funcion" item="normal" href="#"
-                           onclick='GraficarFuncEstudiante("<?php echo $this->_tpl_vars['f']['funcion']; ?>
+                    <?php $_from = $this->_tpl_vars['funciones'];
+                    if (!is_array($_from) && !is_object($_from)) {
+                        settype($_from, 'array');
+                    }
+                    if (count($_from)):
+                        foreach ($_from as $this->_tpl_vars['f']):
+                            ?>
+                            <a class="da-button gray small button-funcion" item="normal" href="#"
+                               onclick='GraficarFuncEstudiante("<?php echo $this->_tpl_vars['f']['funcion']; ?>
                                    ")'><?php echo $this->_tpl_vars['f']['desc']; ?>
-                        </a>
-                        <?php endforeach; endif; unset($_from); ?>
+                            </a>
+                        <?php endforeach; endif;
+                    unset($_from); ?>
                 </div>
 
                 <div class="da-form-row" id="escala-row">

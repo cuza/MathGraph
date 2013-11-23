@@ -102,7 +102,8 @@ function ReducirFuncion($f)
                 if ($i == 0 && $j != 0)
                     $s = $mder['signos'][$j - 1];
                 elseif ($i != 0 && $j == 0)
-                    $s = $mizq['signos'][$i - 1]; elseif ($i != 0 && $j != 0)
+                    $s = $mizq['signos'][$i - 1];
+                elseif ($i != 0 && $j != 0)
                     $s = ObtenerSigno($mizq['signos'][$i - 1], $mder['signos'][$j - 1]);
 
 
@@ -2282,7 +2283,8 @@ class Trigonometricas extends Funcion
             if ($tipo == "sen")
                 $this->resultadoY = sin($this->valorX);
             elseif ($tipo == "cos")
-                $this->resultadoY = cos($this->valorX); else
+                $this->resultadoY = cos($this->valorX);
+            else
                 $this->resultadoY = tan($this->valorX);
         }
     }

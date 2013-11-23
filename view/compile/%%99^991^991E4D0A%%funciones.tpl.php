@@ -1,5 +1,6 @@
-<?php /* Smarty version 2.6.26, created on 2013-11-02 02:34:40
-         compiled from funciones.tpl */ ?>
+<?php /* Smarty version 2.6.26, created on 2013-11-02 18:44:49
+         compiled from funciones.tpl */
+?>
 <div class="editor">
 
     <?php if ($this->_tpl_vars['men']): ?>
@@ -42,44 +43,42 @@
                     </thead>
                     <tbody>
 
-                    <?php $_from = $this->_tpl_vars['funciones']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
-    foreach ($_from as $this->_tpl_vars['f']):
-?>
-                        <tr>
+                    <?php $_from = $this->_tpl_vars['funciones'];
+                    if (!is_array($_from) && !is_object($_from)) {
+                        settype($_from, 'array');
+                    }
+                    if (count($_from)):
+                        foreach ($_from as $this->_tpl_vars['f']):
+                            ?>
+                            <tr>
 
-                            <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
-                                                     value="<?php echo $this->_tpl_vars['f']['id']; ?>
+                                <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
+                                                         value="<?php echo $this->_tpl_vars['f']['id']; ?>
 "/></td>
-                            <td><?php echo $this->_tpl_vars['f']['funcion']; ?>
-</td>
-                            <td><?php echo $this->_tpl_vars['f']['desc']; ?>
-</td>
+                                <td><?php echo $this->_tpl_vars['f']['funcion']; ?>
+                                </td>
+                                <td><?php echo $this->_tpl_vars['f']['desc']; ?>
+                                </td>
 
-                            <td class="center peque">
-                                <a onclick="Ver('Funcion','<?php echo $this->_tpl_vars['f']['id']; ?>
-')" href="#" class="da-button gray"> Ver </a>
-                                <a onclick="EditFuncion('<?php echo $this->_tpl_vars['f']['id']; ?>
-','<?php echo $this->_tpl_vars['f']['funcion']; ?>
-','<?php echo $this->_tpl_vars['f']['desc']; ?>
-')" href="#"
-                                   class="da-button gray"> Editar</a>
-                                <br>
-                                <a onclick="Eliminar('Funcion','<?php echo $this->_tpl_vars['f']['id']; ?>
-')" href="#" class="da-button gray">
-                                    Eliminar </a>
-                            </td>
-                        </tr>
-                    <?php endforeach; endif; unset($_from); ?>
-
+                                <td class="center peque">
+                                    <a onclick="Ver('Funcion','<?php echo $this->_tpl_vars['f']['id']; ?>
+                                        ')" href="#" class="da-button gray"> Ver </a>
+                                    <a onclick="EditFuncion('<?php echo $this->_tpl_vars['f']['id']; ?>
+                                        ','<?php echo $this->_tpl_vars['f']['funcion']; ?>
+                                        ','<?php echo $this->_tpl_vars['f']['desc']; ?>
+                                        ')" href="#"
+                                       class="da-button gray"> Editar</a>
+                                    <br>
+                                    <a onclick="Eliminar('Funcion','<?php echo $this->_tpl_vars['f']['id']; ?>
+                                        ')" href="#" class="da-button gray">
+                                        Eliminar </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; endif;
+                    unset($_from); ?>
                     </tbody>
                 </table>
-
             </form>
-
         </div>
-
-
     </div>
-
-
 </div>

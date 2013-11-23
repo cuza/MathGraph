@@ -849,7 +849,6 @@ div#da-footer p {
 @media only screen and (max-width: 1023px) {
     /* Main Container
     ================================================== */
-
     div#da-wrapper.fixed {
         min-width: 0;
     }
@@ -869,21 +868,18 @@ div#da-footer p {
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
     /* Search
     ================================================== */
-
     div#da-header #da-header-bottom #da-search {
         width: 115px;
     }
 
     /* Breadcrumbs
     ================================================== */
-
     div#da-header #da-header-bottom #da-breadcrumb {
         margin-left: 165px;
     }
 
     /* Sidebar
     ================================================== */
-
     div#da-content #da-sidebar-separator {
         left: 115px !important;
     }
@@ -898,7 +894,6 @@ div#da-footer p {
 
     /* Main Navigation
     ================================================== */
-
     div#da-content #da-main-nav ul li span.da-nav-icon {
         position: relative;
         width: auto;
@@ -934,7 +929,6 @@ div#da-footer p {
 
     /* Main Container
     ================================================== */
-
     div#da-content #da-content-wrap {
         margin-left: 165px;
     }
@@ -974,14 +968,12 @@ div#da-footer p {
 @media only screen and (max-width: 480px) {
     /* Main Container
     ================================================== */
-
     div#da-wrapper .da-container {
         width: 100% !important;
     }
 
     /* Header
     ================================================== */
-
     div#da-header #da-header-bottom {
         height: auto;
     }
@@ -1003,7 +995,6 @@ div#da-footer p {
 
     /* Header Toolbar
     ================================================== */
-
     div#da-header #da-header-top #da-header-toolbar {
         border: 0;
         width: 100%;
@@ -1034,21 +1025,18 @@ div#da-footer p {
 
     /* Search
     ================================================== */
-
     div#da-header #da-header-bottom #da-search {
         display: none;
     }
 
     /* Breadcrumbs
     ================================================== */
-
     div#da-header #da-header-bottom #da-breadcrumb {
         display: none;
     }
 
     /* Sidebar
     ================================================== */
-
     div#da-content #da-sidebar-separator {
         display: none;
     }
@@ -1087,7 +1075,6 @@ div#da-footer p {
 
     /* Main Navigation
     ================================================== */
-
     div#da-content #da-main-nav {
         position: absolute;
         display: none;
@@ -1100,21 +1087,18 @@ div#da-footer p {
 
     /* Main Content
     ================================================== */
-
     div#da-content {
         margin-top: auto;
     }
 
     /* Main Container
     ================================================== */
-
     div#da-content #da-content-wrap {
         margin: 0 2%;
     }
 
     /* Customizer
     ================================================== */
-
     #da-customizer {
         display: none;
     }

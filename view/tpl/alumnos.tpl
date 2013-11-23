@@ -1,9 +1,9 @@
 <div id="efecto">
     <div class="editor">
 
-    {if $men}
-        {$men.texto}
-    {/if}
+        {if $men}
+            {$men.texto}
+        {/if}
 
 
         <div class="da-panel">
@@ -41,22 +41,23 @@
                         <tbody>
 
                         {foreach from=$alumnos item=a}
-                        <tr>
+                            <tr>
 
-                            <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
-                                                     value="{$a.id}"/></td>
-                            <td>{$a.nick}</td>
-                            <td>{$a.name}</td>
+                                <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
+                                                         value="{$a.id}"/></td>
+                                <td>{$a.nick}</td>
+                                <td>{$a.name}</td>
 
-                            <td class="center peque">
+                                <td class="center peque">
 
-                                <a onclick="EditAlumno('{$a.id}','{$a.name}','{$a.nick}','{$a.pass}')" href="#"
-                                   class="da-button gray"> Editar</a>
-                                <br>
-                                <a onclick="Eliminar('Alumno','{$a.id}')" href="#" class="da-button gray"> Eliminar </a>
+                                    <a onclick="EditAlumno('{$a.id}','{$a.name}','{$a.nick}','{$a.pass}')" href="#"
+                                       class="da-button gray"> Editar</a>
+                                    <br>
+                                    <a onclick="Eliminar('Alumno','{$a.id}')" href="#" class="da-button gray">
+                                        Eliminar </a>
 
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
                         {/foreach}
 
                         </tbody>
@@ -72,5 +73,5 @@
     </div>
 </div>
 {if $error=="si"}
-<script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
+    <script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
 {/if}

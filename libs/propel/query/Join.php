@@ -50,11 +50,11 @@ class Join
      * Use it preferably with no arguments, and then use addCondition() and setJoinType()
      * Syntax with arguments used mainly for backwards compatibility
      *
-     * @param string $leftColumn  The left column of the join condition
+     * @param string $leftColumn The left column of the join condition
      *                            (may contain an alias name)
      * @param string $rightColumn The right column of the join condition
      *                            (may contain an alias name)
-     * @param string $joinType    The type of the join. Valid join types are null (implicit join),
+     * @param string $joinType The type of the join. Valid join types are null (implicit join),
      *                            Criteria::LEFT_JOIN, Criteria::RIGHT_JOIN, and Criteria::INNER_JOIN
      */
     public function __construct($leftColumn = null, $rightColumn = null, $joinType = null)
@@ -79,9 +79,9 @@ class Join
     /**
      * Join condition definition
      *
-     * @param string $left     The left column of the join condition
+     * @param string $left The left column of the join condition
      *                         (may contain an alias name)
-     * @param string $right    The right column of the join condition
+     * @param string $right The right column of the join condition
      *                         (may contain an alias name)
      * @param string $operator The comparison operator of the join condition, default Join::EQUAL
      */
@@ -137,7 +137,7 @@ class Join
     /**
      * Set the join type
      *
-     * @param string  $joinType The type of the join. Valid join types are
+     * @param string $joinType The type of the join. Valid join types are
      *        null (adding the join condition to the where clause),
      *        Criteria::LEFT_JOIN(), Criteria::RIGHT_JOIN(), and Criteria::INNER_JOIN()
      */
@@ -213,9 +213,9 @@ class Join
     public function equals($join)
     {
         return $join !== null
-            && $join instanceof Join
-            && $this->joinType == $join->getJoinType()
-            && $this->getConditions() == $join->getConditions();
+        && $join instanceof Join
+        && $this->joinType == $join->getJoinType()
+        && $this->getConditions() == $join->getConditions();
     }
 
     /**

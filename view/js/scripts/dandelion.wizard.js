@@ -26,23 +26,23 @@
 
     // the plugin prototype
     daWizard.prototype = {
-        defaults:{
-            element:'fieldset',
-            labelElement:'legend',
-            buttonContainerClass:'da-button-row',
-            nextButtonClass:'da-button boton-next green',
-            prevButtonClass:'da-button red left',
-            submitButtonClass:'da-button boton-terminar blue',
-            nextButtonLabel:'Siguiente',
-            prevButtonLabel:'Anterior',
-            submitButtonLabel:'Graficar',
-            forwardOnly:true,
-            onLeaveStep:null,
-            onShowStep:null,
-            onBeforeSubmit:null
+        defaults: {
+            element: 'fieldset',
+            labelElement: 'legend',
+            buttonContainerClass: 'da-button-row',
+            nextButtonClass: 'da-button boton-next green',
+            prevButtonClass: 'da-button red left',
+            submitButtonClass: 'da-button boton-terminar blue',
+            nextButtonLabel: 'Siguiente',
+            prevButtonLabel: 'Anterior',
+            submitButtonLabel: 'Graficar',
+            forwardOnly: true,
+            onLeaveStep: null,
+            onShowStep: null,
+            onBeforeSubmit: null
         },
 
-        init:function () {
+        init: function () {
             // Introduce defaults that can be extended either
             // globally or using an object literal.
             this.config = $.extend({}, this.defaults, this.options);
@@ -60,12 +60,12 @@
 
         // Public methods
 
-        initSteps:function () {
+        initSteps: function () {
             this.steps.hide().first().show();
 
             this.wizardNav.find('.da-wizard-progress')
                 .animate({
-                    width:Math.floor(100 / this.steps.size()).toString() + "%"
+                    width: Math.floor(100 / this.steps.size()).toString() + "%"
                 }, 'slow')
                 .end()
                 .find('ul').children('li').first().addClass('active');
@@ -74,7 +74,7 @@
             this._processSteps();
         },
 
-        goTo:function (stepNumber) {
+        goTo: function (stepNumber) {
             if (stepNumber !== this.data.activeStep) {
                 if (this.config.forwardOnly && stepNumber < this.data.activeStep)
                     return;
@@ -90,7 +90,7 @@
                     self.steps.eq(stepNumber).fadeIn('fast');
                     self.wizardNav.find('.da-wizard-progress')
                         .animate({
-                            width:Math.floor((100 / self.steps.size()) * (stepNumber + 1)).toString() + "%"
+                            width: Math.floor((100 / self.steps.size()) * (stepNumber + 1)).toString() + "%"
                         }, 'slow')
                         .end()
                         .find('ul')
@@ -109,19 +109,19 @@
             }
         },
 
-        goBackward:function () {
+        goBackward: function () {
             if (this.data.activeStep > 0) {
                 this.goTo(this.data.activeStep - 1);
             }
         },
 
-        goForward:function () {
+        goForward: function () {
             if (this.data.activeStep < this.steps.size() - 1) {
                 this.goTo(this.data.activeStep + 1);
             }
         },
 
-        submitForm:function () {
+        submitForm: function () {
             var shouldSubmit = true;
             if (this.config.onBeforeSubmit && $.isFunction(this.config.onBeforeSubmit)) {
                 shouldSubmit = this.config.onBeforeSubmit.apply(this, []);
@@ -132,21 +132,21 @@
 
         // Private methods
 
-        _navigate:function (stepNumber) {
+        _navigate: function (stepNumber) {
             if (this._isStepDone(stepNumber))
                 this.goTo(stepNumber);
         },
 
-        _isStepDone:function (stepNumber) {
+        _isStepDone: function (stepNumber) {
             return (typeof(this.steps.eq(stepNumber).data('done')) !== 'undefined');
         },
 
-        _buildNavigation:function () {
+        _buildNavigation: function () {
             var
                 self = this,
                 $ul = $('<ul></ul>'),
                 $li = $('<li></li>').css({
-                    width:Math.floor(100 / this.steps.size()).toString() + "%"
+                    width: Math.floor(100 / this.steps.size()).toString() + "%"
                 }),
                 $span = $('<span></span>'),
                 $a = $('<a href="#"></a>');
@@ -158,14 +158,14 @@
                 $ul.append(
                     $li.clone()
                         .append(
-                        $a.clone().text(index + 1).bind('click', function (event) {
-                            self._navigate(index);
-                            event.preventDefault();
-                        })
-                    )
+                            $a.clone().text(index + 1).bind('click', function (event) {
+                                self._navigate(index);
+                                event.preventDefault();
+                            })
+                        )
                         .append(
-                        $span.clone().addClass('da-wizard-label').text(val.length != 0 ? val.text() : ('Step ' + (index + 1).toString()))
-                    )
+                            $span.clone().addClass('da-wizard-label').text(val.length != 0 ? val.text() : ('Step ' + (index + 1).toString()))
+                        )
                 );
             });
 
@@ -175,10 +175,10 @@
                 .append($span.clone().addClass('da-wizard-progress'))
                 .insertBefore(this.$elem);
 
-            return { activeStep:-1 };
+            return { activeStep: -1 };
         },
 
-        _buildButtons:function () {
+        _buildButtons: function () {
             var btnContainer = $(this.config.buttonContainer, this.$elem),
                 self = this,
                 $button = $('<input />').attr('type', 'button'),
@@ -204,10 +204,10 @@
                 btnContainer.append($prevButton);
             btnContainer.append($nextButton).append($submitButton);
 
-            return { nextButton:$nextButton, prevButton:$prevButton, submitButton:$submitButton };
+            return { nextButton: $nextButton, prevButton: $prevButton, submitButton: $submitButton };
         },
 
-        _processSteps:function () {
+        _processSteps: function () {
             this.data.prevButton.toggle((this.data.activeStep > 0) && !this.data.forwardOnly);
             this.data.nextButton.toggle((this.data.activeStep < this.steps.size() - 1));
             this.data.submitButton.toggle((this.data.activeStep >= this.steps.size() - 1));

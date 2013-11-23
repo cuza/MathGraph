@@ -1,8 +1,8 @@
 <div class="panellogin">
 
-{if $men}
-    {$men.texto}
-{/if}
+    {if $men}
+        {$men.texto}
+    {/if}
 
     <div id="efecto">
 
@@ -55,5 +55,5 @@
 </div>
 
 {if $men}
-<script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
+    <script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
 {/if}

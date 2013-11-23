@@ -53,7 +53,7 @@
 
         /* Notification Messages */
         $(".da-message").live('click', function (e) {
-            $(this).animate({opacity:0}, function () {
+            $(this).animate({opacity: 0}, function () {
                 $(this).slideUp('normal', function () {
                     $(this).css("opacity", '');
                 });
@@ -114,7 +114,7 @@
                             .find('.viewport').css('height', height)
                             .end()
                             .append('<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>')
-                            .tinyscrollbar({axis:'x'});
+                            .tinyscrollbar({axis: 'x'});
 
                 $(window).resize(function () {
                     o.tinyscrollbar_update();
@@ -127,9 +127,9 @@
         if ($.fn.tipsy) {
             var gravity = ['n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw'];
             for (var i in gravity)
-                $(".da-tooltip-" + gravity[i]).tipsy({gravity:gravity[i]});
+                $(".da-tooltip-" + gravity[i]).tipsy({gravity: gravity[i]});
 
-            $('input[title], select[title], textarea[title]').tipsy({trigger:'focus', gravity:'w'});
+            $('input[title], select[title], textarea[title]').tipsy({trigger: 'focus', gravity: 'w'});
         }
 
         /* File Input */

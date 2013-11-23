@@ -78,7 +78,7 @@ function Ver(tipo, item) {
         title: "Grafica",
         modal: true,
         width: "500",
-        resizable:false
+        resizable: false
     }).dialog("open");
     GraficarFuncEstudiante("(x)^(2)")
 }

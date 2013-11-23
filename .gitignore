@@ -1,0 +1,10 @@
+*~
+*.o
+*.out
+.nfs*
+tags
+CVS
+.svn
+.git
+.DS_Store
+._*

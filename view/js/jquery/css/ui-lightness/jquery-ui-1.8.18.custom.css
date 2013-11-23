@@ -51,7 +51,7 @@
     left: 0;
     position: absolute;
     opacity: 0;
-    filter: Alpha(Opacity = 0);
+    filter: Alpha(Opacity=0);
 }
 
 /* Interaction Cues
@@ -206,13 +206,13 @@
 
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
     opacity: .7;
-    filter: Alpha(Opacity = 70);
+    filter: Alpha(Opacity=70);
     font-weight: normal;
 }
 
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
     opacity: .35;
-    filter: Alpha(Opacity = 35);
+    filter: Alpha(Opacity=35);
     background-image: none;
 }
 
@@ -988,7 +988,7 @@
 .ui-widget-overlay {
     background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
     opacity: .50;
-    filter: Alpha(Opacity = 50);
+    filter: Alpha(Opacity=50);
 }
 
 .ui-widget-shadow {
@@ -996,7 +996,7 @@
     padding: 5px;
     background: #000000 url(images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
     opacity: .20;
-    filter: Alpha(Opacity = 20);
+    filter: Alpha(Opacity=20);
     -moz-border-radius: 5px;
     -khtml-border-radius: 5px;
     -webkit-border-radius: 5px;

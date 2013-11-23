@@ -1,9 +1,9 @@
 <div id="efecto">
     <div class="editor">
 
-    {if $men}
-        {$men.texto}
-    {/if}
+        {if $men}
+            {$men.texto}
+        {/if}
 
         <div class="da-panel">
 
@@ -42,24 +42,24 @@
                         <tbody>
 
                         {foreach from=$users item=u}
-                        <tr>
+                            <tr>
 
-                            <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
-                                                     value="{$u.id}"/></td>
-                            <td>{$u.nick}</td>
-                            <td>{$u.name}</td>
-                            <td>{$u.role}</td>
+                                <td class="peque"><input type="checkbox" name="check_item[]" class="check_item"
+                                                         value="{$u.id}"/></td>
+                                <td>{$u.nick}</td>
+                                <td>{$u.name}</td>
+                                <td>{$u.role}</td>
 
-                            <td class="center peque">
+                                <td class="center peque">
 
-                                <a onclick="EditUsuario('{$u.id}','{$u.name}','{$u.nick}','{$u.pass}','{$u.role}')"
-                                   href="#" class="da-button gray"> Editar</a>
-                                <br>
-                                <a onclick="Eliminar('Usuario','{$u.id}')" href="#" class="da-button gray">
-                                    Eliminar </a>
+                                    <a onclick="EditUsuario('{$u.id}','{$u.name}','{$u.nick}','{$u.pass}','{$u.role}')"
+                                       href="#" class="da-button gray"> Editar</a>
+                                    <br>
+                                    <a onclick="Eliminar('Usuario','{$u.id}')" href="#" class="da-button gray">
+                                        Eliminar </a>
 
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
                         {/foreach}
 
                         </tbody>
@@ -76,5 +76,5 @@
     </div>
 </div>
 {if $error=="si"}
-<script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
+    <script type="text/javascript"> $("#efecto").effect("shake", 100); </script>
 {/if}

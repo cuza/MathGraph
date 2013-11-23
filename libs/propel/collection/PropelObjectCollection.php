@@ -200,9 +200,9 @@ class PropelObjectCollection extends PropelCollection
      * Makes an additional query to populate the objects related to the collection objects
      * by a certain relation
      *
-     * @param     string    $relation Relation name (e.g. 'Book')
-     * @param     Criteria  $criteria Optional Criteria object to filter the related object collection
-     * @param     PropelPDO $con      Optional connection object
+     * @param     string $relation Relation name (e.g. 'Book')
+     * @param     Criteria $criteria Optional Criteria object to filter the related object collection
+     * @param     PropelPDO $con Optional connection object
      *
      * @return    PropelObjectCollection the list of related objects
      */

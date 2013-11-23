@@ -1,25 +1,25 @@
 $(function () {
     $("#login-form").validate({
-        rules:{
-            nick:{
-                required:true
+        rules: {
+            nick: {
+                required: true
             },
-            pass:{
-                required:true
+            pass: {
+                required: true
             }
         }
     });
 
     $("#add-form").validate({
-        rules:{
-            name:{
-                required:true
+        rules: {
+            name: {
+                required: true
             },
-            nick:{
-                required:true
+            nick: {
+                required: true
             },
-            pass:{
-                required:true
+            pass: {
+                required: true
             }
         }
     });
@@ -27,21 +27,21 @@ $(function () {
 
 function Validar() {
     $("#add-form").validate({
-        rules:{
-            name:{
-                required:true
+        rules: {
+            name: {
+                required: true
             },
-            nick:{
-                required:true
+            nick: {
+                required: true
             },
-            pass:{
-                required:true
+            pass: {
+                required: true
             },
-            funcion:{
-                required:true
+            funcion: {
+                required: true
             },
-            desc:{
-                required:true
+            desc: {
+                required: true
             }
         }
     });

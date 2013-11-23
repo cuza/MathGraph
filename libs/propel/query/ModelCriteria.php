@@ -189,7 +189,7 @@ class ModelCriteria extends Criteria
      *
      * @param      string $conditionName A name to store the condition for a later combination with combine()
      * @param      string $clause The pseudo SQL clause, e.g. 'AuthorId = ?'
-     * @param      mixed  $value A value for the condition
+     * @param      mixed $value A value for the condition
      *
      * @return     ModelCriteria The current object, for fluid interface
      */
@@ -210,8 +210,8 @@ class ModelCriteria extends Criteria
      *
      * @see        Criteria::add()
      *
-     * @param      string $column     A string representing thecolumn phpName, e.g. 'AuthorId'
-     * @param      mixed  $value      A value for the condition
+     * @param      string $column A string representing thecolumn phpName, e.g. 'AuthorId'
+     * @param      mixed $value A value for the condition
      * @param      string $comparison What to use for the column comparison, defaults to Criteria::EQUAL
      *
      * @return     ModelCriteria The current object, for fluid interface
@@ -263,7 +263,7 @@ class ModelCriteria extends Criteria
      *
      * @param      mixed $clause A string representing the pseudo SQL clause, e.g. 'Book.AuthorId = ?'
      *                           Or an array of condition names
-     * @param      mixed  $value A value for the condition
+     * @param      mixed $value A value for the condition
      *
      * @return     ModelCriteria The current object, for fluid interface
      */
@@ -296,7 +296,7 @@ class ModelCriteria extends Criteria
      * @see Criteria::addOr()
      *
      * @param      string $clause The pseudo SQL clause, e.g. 'AuthorId = ?'
-     * @param      mixed  $value A value for the condition
+     * @param      mixed $value A value for the condition
      *
      * @return     ModelCriteria The current object, for fluid interface
      */
@@ -330,7 +330,7 @@ class ModelCriteria extends Criteria
      *
      * @param      mixed $clause A string representing the pseudo SQL clause, e.g. 'Book.AuthorId = ?'
      *                           Or an array of condition names
-     * @param      mixed  $value A value for the condition
+     * @param      mixed $value A value for the condition
      *
      * @return     ModelCriteria The current object, for fluid interface
      */
@@ -359,7 +359,7 @@ class ModelCriteria extends Criteria
      *    => $c->addDescendingOrderByColumn(BookPeer::CATEGORY_ID)
      *
      * @param string $columnName The column to order by
-     * @param string $order      The sorting order. Criteria::ASC by default, also accepts Criteria::DESC
+     * @param string $order The sorting order. Criteria::ASC by default, also accepts Criteria::DESC
      *
      * @return     ModelCriteria The current object, for fluid interface
      */
@@ -469,7 +469,7 @@ class ModelCriteria extends Criteria
     /**
      * This method returns an already defined join clause from the query
      *
-     * @param      string $name    The name of the join clause
+     * @param      string $name The name of the join clause
      *
      * @return Join A join object
      */
@@ -656,7 +656,7 @@ class ModelCriteria extends Criteria
      *
      * @param     string $clause The SQL clause with object model column names
      *                           e.g. 'UPPER(Author.FirstName)'
-     * @param     string $name   Optional alias for the added column
+     * @param     string $name Optional alias for the added column
      *                           If no alias is provided, the clause is used as a column alias
      *                           This alias is used for retrieving the column via BaseObject::getVirtualColumn($alias)
      *
@@ -1055,9 +1055,9 @@ class ModelCriteria extends Criteria
      * @see       filterBy()
      * @see       find()
      *
-     * @param     string    $column A string representing the column phpName, e.g. 'AuthorId'
-     * @param     mixed     $value  A value for the condition
-     * @param     PropelPDO $con    An optional connection object
+     * @param     string $column A string representing the column phpName, e.g. 'AuthorId'
+     * @param     mixed $value A value for the condition
+     * @param     PropelPDO $con An optional connection object
      *
      * @return    mixed the list of results, formatted by the current formatter
      */
@@ -1100,7 +1100,7 @@ class ModelCriteria extends Criteria
      * @see       findOne()
      *
      * @param     mixed $column A string representing thecolumn phpName, e.g. 'AuthorId'
-     * @param     mixed  $value A value for the condition
+     * @param     mixed $value A value for the condition
      * @param     PropelPDO $con an optional connection object
      *
      * @return    mixed the result, formatted by the current formatter
@@ -1484,7 +1484,7 @@ class ModelCriteria extends Criteria
      * Creates a Criterion object based on a list of existing condition names and a comparator
      *
      * @param      array $conditions The list of condition names, e.g. array('cond1', 'cond2')
-     * @param      string  $comparator A comparator, Criteria::LOGICAL_AND (default) or Criteria::LOGICAL_OR
+     * @param      string $comparator A comparator, Criteria::LOGICAL_AND (default) or Criteria::LOGICAL_OR
      *
      * @return     Criterion a Criterion or ModelCriterion object
      */
@@ -1503,7 +1503,7 @@ class ModelCriteria extends Criteria
      * Uses introspection to translate the column phpName into a fully qualified name
      *
      * @param      string $clause The pseudo SQL clause, e.g. 'AuthorId = ?'
-     * @param      mixed  $value A value for the condition
+     * @param      mixed $value A value for the condition
      *
      * @return     Criterion a Criterion or ModelCriterion object
      */

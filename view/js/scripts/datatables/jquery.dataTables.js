@@ -69,12 +69,12 @@
             var oDefaults = DataTable.defaults.columns;
             var iCol = oSettings.aoColumns.length;
             var oCol = $.extend({}, DataTable.models.oColumn, oDefaults, {
-                "sSortingClass":oSettings.oClasses.sSortable,
-                "sSortingClassJUI":oSettings.oClasses.sSortJUI,
-                "nTh":nTh ? nTh : document.createElement('th'),
-                "sTitle":oDefaults.sTitle ? oDefaults.sTitle : nTh ? nTh.innerHTML : '',
-                "aDataSort":oDefaults.aDataSort ? oDefaults.aDataSort : [iCol],
-                "mDataProp":oDefaults.mDataProp ? oDefaults.oDefaults : iCol
+                "sSortingClass": oSettings.oClasses.sSortable,
+                "sSortingClassJUI": oSettings.oClasses.sSortJUI,
+                "nTh": nTh ? nTh : document.createElement('th'),
+                "sTitle": oDefaults.sTitle ? oDefaults.sTitle : nTh ? nTh.innerHTML : '',
+                "aDataSort": oDefaults.aDataSort ? oDefaults.aDataSort : [iCol],
+                "mDataProp": oDefaults.mDataProp ? oDefaults.oDefaults : iCol
             });
             oSettings.aoColumns.push(oCol);
 
@@ -459,7 +459,7 @@
                         iThisIndex = oSettings.aoData.length;
                         nTrs[i]._DT_RowIndex = iThisIndex;
                         oSettings.aoData.push($.extend(true, {}, DataTable.models.oRow, {
-                            "nTr":nTrs[i]
+                            "nTr": nTrs[i]
                         }));
 
                         oSettings.aiDisplayMaster.push(iThisIndex);
@@ -836,11 +836,11 @@
             var oCol = oSettings.aoColumns[iCol];
 
             return oCol.fnRender({
-                "iDataRow":iRow,
-                "iDataColumn":iCol,
-                "oSettings":oSettings,
-                "aData":oSettings.aoData[iRow]._aData,
-                "mDataProp":oCol.mDataProp
+                "iDataRow": iRow,
+                "iDataColumn": iCol,
+                "oSettings": oSettings,
+                "aData": oSettings.aoData[iRow]._aData,
+                "mDataProp": oCol.mDataProp
             }, _fnGetCellData(oSettings, iRow, iCol, 'display'));
         }
 
@@ -1481,8 +1481,8 @@
                         for (l = 0; l < iColspan; l++) {
                             for (k = 0; k < iRowspan; k++) {
                                 aLayout[i + k][iColShifted + l] = {
-                                    "cell":nCell,
-                                    "unique":iColspan == 1 ? true : false
+                                    "cell": nCell,
+                                    "unique": iColspan == 1 ? true : false
                                 };
                                 aLayout[i + k].nTr = nTrs[i];
                             }
@@ -1561,26 +1561,26 @@
             var aoData = [], mDataProp, aaSort, aDataSort;
             var i, j;
 
-            aoData.push({ "name":"sEcho", "value":oSettings.iDraw });
-            aoData.push({ "name":"iColumns", "value":iColumns });
-            aoData.push({ "name":"sColumns", "value":_fnColumnOrdering(oSettings) });
-            aoData.push({ "name":"iDisplayStart", "value":oSettings._iDisplayStart });
-            aoData.push({ "name":"iDisplayLength", "value":oSettings.oFeatures.bPaginate !== false ?
+            aoData.push({ "name": "sEcho", "value": oSettings.iDraw });
+            aoData.push({ "name": "iColumns", "value": iColumns });
+            aoData.push({ "name": "sColumns", "value": _fnColumnOrdering(oSettings) });
+            aoData.push({ "name": "iDisplayStart", "value": oSettings._iDisplayStart });
+            aoData.push({ "name": "iDisplayLength", "value": oSettings.oFeatures.bPaginate !== false ?
                 oSettings._iDisplayLength : -1 });
 
             for (i = 0; i < iColumns; i++) {
                 mDataProp = oSettings.aoColumns[i].mDataProp;
-                aoData.push({ "name":"mDataProp_" + i, "value":typeof(mDataProp) === "function" ? 'function' : mDataProp });
+                aoData.push({ "name": "mDataProp_" + i, "value": typeof(mDataProp) === "function" ? 'function' : mDataProp });
             }
 
             /* Filtering */
             if (oSettings.oFeatures.bFilter !== false) {
-                aoData.push({ "name":"sSearch", "value":oSettings.oPreviousSearch.sSearch });
-                aoData.push({ "name":"bRegex", "value":oSettings.oPreviousSearch.bRegex });
+                aoData.push({ "name": "sSearch", "value": oSettings.oPreviousSearch.sSearch });
+                aoData.push({ "name": "bRegex", "value": oSettings.oPreviousSearch.bRegex });
                 for (i = 0; i < iColumns; i++) {
-                    aoData.push({ "name":"sSearch_" + i, "value":oSettings.aoPreSearchCols[i].sSearch });
-                    aoData.push({ "name":"bRegex_" + i, "value":oSettings.aoPreSearchCols[i].bRegex });
-                    aoData.push({ "name":"bSearchable_" + i, "value":oSettings.aoColumns[i].bSearchable });
+                    aoData.push({ "name": "sSearch_" + i, "value": oSettings.aoPreSearchCols[i].sSearch });
+                    aoData.push({ "name": "bRegex_" + i, "value": oSettings.aoPreSearchCols[i].bRegex });
+                    aoData.push({ "name": "bSearchable_" + i, "value": oSettings.aoColumns[i].bSearchable });
                 }
             }
 
@@ -1596,15 +1596,15 @@
                     aDataSort = oSettings.aoColumns[ aaSort[i][0] ].aDataSort;
 
                     for (j = 0; j < aDataSort.length; j++) {
-                        aoData.push({ "name":"iSortCol_" + iCounter, "value":aDataSort[j] });
-                        aoData.push({ "name":"sSortDir_" + iCounter, "value":aaSort[i][1] });
+                        aoData.push({ "name": "iSortCol_" + iCounter, "value": aDataSort[j] });
+                        aoData.push({ "name": "sSortDir_" + iCounter, "value": aaSort[i][1] });
                         iCounter++;
                     }
                 }
-                aoData.push({ "name":"iSortingCols", "value":iCounter });
+                aoData.push({ "name": "iSortingCols", "value": iCounter });
 
                 for (i = 0; i < iColumns; i++) {
-                    aoData.push({ "name":"bSortable_" + i, "value":oSettings.aoColumns[i].bSortable });
+                    aoData.push({ "name": "bSortable_" + i, "value": oSettings.aoColumns[i].bSortable });
                 }
             }
 
@@ -1728,10 +1728,10 @@
                 /* Now do the filter */
                 if (val != oPreviousSearch.sSearch) {
                     _fnFilterComplete(oSettings, {
-                        "sSearch":val,
-                        "bRegex":oPreviousSearch.bRegex,
-                        "bSmart":oPreviousSearch.bSmart,
-                        "bCaseInsensitive":oPreviousSearch.bCaseInsensitive
+                        "sSearch": val,
+                        "bRegex": oPreviousSearch.bRegex,
+                        "bSmart": oPreviousSearch.bSmart,
+                        "bCaseInsensitive": oPreviousSearch.bCaseInsensitive
                     });
                 }
             });
@@ -2058,8 +2058,8 @@
             if (!oSettings.aanFeatures.i) {
                 /* Add draw callback */
                 oSettings.aoDrawCallback.push({
-                    "fn":_fnUpdateInfo,
-                    "sName":"information"
+                    "fn": _fnUpdateInfo,
+                    "sName": "information"
                 });
 
                 /* Add id */
@@ -2417,13 +2417,13 @@
             /* Add a draw callback for the pagination on first instance, to update the paging display */
             if (!oSettings.aanFeatures.p) {
                 oSettings.aoDrawCallback.push({
-                    "fn":function (oSettings) {
+                    "fn": function (oSettings) {
                         DataTable.ext.oPagination[ oSettings.sPaginationType ].fnUpdate(oSettings, function (oSettings) {
                             _fnCalculateEnd(oSettings);
                             _fnDraw(oSettings);
                         });
                     },
-                    "sName":"pagination"
+                    "sName": "pagination"
                 });
             }
             return nPaginate;
@@ -2654,8 +2654,8 @@
 
             /* Redraw - align columns across the tables */
             oSettings.aoDrawCallback.push({
-                "fn":_fnScrollDraw,
-                "sName":"scrolling"
+                "fn": _fnScrollDraw,
+                "sName": "scrolling"
             });
 
             /* Infinite scrolling event handlers */
@@ -3732,14 +3732,14 @@
             /* Store the interesting variables */
             var i, iLen, bInfinite = oSettings.oScroll.bInfinite;
             var oState = {
-                "iCreate":new Date().getTime(),
-                "iStart":(bInfinite ? 0 : oSettings._iDisplayStart),
-                "iEnd":(bInfinite ? oSettings._iDisplayLength : oSettings._iDisplayEnd),
-                "iLength":oSettings._iDisplayLength,
-                "aaSorting":$.extend(true, [], oSettings.aaSorting),
-                "oSearch":$.extend(true, {}, oSettings.oPreviousSearch),
-                "aoSearchCols":$.extend(true, [], oSettings.aoPreSearchCols),
-                "abVisCols":[]
+                "iCreate": new Date().getTime(),
+                "iStart": (bInfinite ? 0 : oSettings._iDisplayStart),
+                "iEnd": (bInfinite ? oSettings._iDisplayLength : oSettings._iDisplayEnd),
+                "iLength": oSettings._iDisplayLength,
+                "aaSorting": $.extend(true, [], oSettings.aaSorting),
+                "oSearch": $.extend(true, {}, oSettings.oPreviousSearch),
+                "aoSearchCols": $.extend(true, [], oSettings.aoPreSearchCols),
+                "abVisCols": []
             };
 
             for (i = 0, iLen = oSettings.aoColumns.length; i < iLen; i++) {
@@ -4100,8 +4100,8 @@
         function _fnCallbackReg(oSettings, sStore, fn, sName) {
             if (fn) {
                 oSettings[sStore].push({
-                    "fn":fn,
-                    "sName":sName
+                    "fn": fn,
+                    "sName": sName
                 });
             }
         }
@@ -4224,9 +4224,9 @@
             }
 
             oOpts = $.extend({}, {
-                "filter":"none", // applied
-                "order":"current", // "original"
-                "page":"all" // current
+                "filter": "none", // applied
+                "order": "current", // "original"
+                "page": "all" // current
             }, oOpts);
 
             // Current page implies that order=current and fitler=applied, since it is fairly
@@ -4760,10 +4760,10 @@
             if (iColumn === undefined || iColumn === null) {
                 /* Global filter */
                 _fnFilterComplete(oSettings, {
-                    "sSearch":sInput + "",
-                    "bRegex":bRegex,
-                    "bSmart":bSmart,
-                    "bCaseInsensitive":bCaseInsensitive
+                    "sSearch": sInput + "",
+                    "bRegex": bRegex,
+                    "bSmart": bSmart,
+                    "bCaseInsensitive": bCaseInsensitive
                 }, 1);
 
                 if (bShowGlobal && oSettings.aanFeatures.f) {
@@ -4776,10 +4776,10 @@
             else {
                 /* Single column filter */
                 $.extend(oSettings.aoPreSearchCols[ iColumn ], {
-                    "sSearch":sInput + "",
-                    "bRegex":bRegex,
-                    "bSmart":bSmart,
-                    "bCaseInsensitive":bCaseInsensitive
+                    "sSearch": sInput + "",
+                    "bRegex": bRegex,
+                    "bSmart": bSmart,
+                    "bCaseInsensitive": bCaseInsensitive
                 });
                 _fnFilterComplete(oSettings, oSettings.oPreviousSearch, 1);
             }
@@ -5015,8 +5015,8 @@
             }
 
             oSettings.aoOpenRows.push({
-                "nTr":nNewRow,
-                "nParent":nTr
+                "nTr": nNewRow,
+                "nParent": nTr
             });
 
             return nNewRow;
@@ -5346,91 +5346,91 @@
          *  @namespace
          */
         this.oApi = {
-            "_fnExternApiFunc":_fnExternApiFunc,
-            "_fnInitialise":_fnInitialise,
-            "_fnInitComplete":_fnInitComplete,
-            "_fnLanguageCompat":_fnLanguageCompat,
-            "_fnAddColumn":_fnAddColumn,
-            "_fnColumnOptions":_fnColumnOptions,
-            "_fnAddData":_fnAddData,
-            "_fnCreateTr":_fnCreateTr,
-            "_fnGatherData":_fnGatherData,
-            "_fnBuildHead":_fnBuildHead,
-            "_fnDrawHead":_fnDrawHead,
-            "_fnDraw":_fnDraw,
-            "_fnReDraw":_fnReDraw,
-            "_fnAjaxUpdate":_fnAjaxUpdate,
-            "_fnAjaxParameters":_fnAjaxParameters,
-            "_fnAjaxUpdateDraw":_fnAjaxUpdateDraw,
-            "_fnServerParams":_fnServerParams,
-            "_fnAddOptionsHtml":_fnAddOptionsHtml,
-            "_fnFeatureHtmlTable":_fnFeatureHtmlTable,
-            "_fnScrollDraw":_fnScrollDraw,
-            "_fnAdjustColumnSizing":_fnAdjustColumnSizing,
-            "_fnFeatureHtmlFilter":_fnFeatureHtmlFilter,
-            "_fnFilterComplete":_fnFilterComplete,
-            "_fnFilterCustom":_fnFilterCustom,
-            "_fnFilterColumn":_fnFilterColumn,
-            "_fnFilter":_fnFilter,
-            "_fnBuildSearchArray":_fnBuildSearchArray,
-            "_fnBuildSearchRow":_fnBuildSearchRow,
-            "_fnFilterCreateSearch":_fnFilterCreateSearch,
-            "_fnDataToSearch":_fnDataToSearch,
-            "_fnSort":_fnSort,
-            "_fnSortAttachListener":_fnSortAttachListener,
-            "_fnSortingClasses":_fnSortingClasses,
-            "_fnFeatureHtmlPaginate":_fnFeatureHtmlPaginate,
-            "_fnPageChange":_fnPageChange,
-            "_fnFeatureHtmlInfo":_fnFeatureHtmlInfo,
-            "_fnUpdateInfo":_fnUpdateInfo,
-            "_fnFeatureHtmlLength":_fnFeatureHtmlLength,
-            "_fnFeatureHtmlProcessing":_fnFeatureHtmlProcessing,
-            "_fnProcessingDisplay":_fnProcessingDisplay,
-            "_fnVisibleToColumnIndex":_fnVisibleToColumnIndex,
-            "_fnColumnIndexToVisible":_fnColumnIndexToVisible,
-            "_fnNodeToDataIndex":_fnNodeToDataIndex,
-            "_fnVisbleColumns":_fnVisbleColumns,
-            "_fnCalculateEnd":_fnCalculateEnd,
-            "_fnConvertToWidth":_fnConvertToWidth,
-            "_fnCalculateColumnWidths":_fnCalculateColumnWidths,
-            "_fnScrollingWidthAdjust":_fnScrollingWidthAdjust,
-            "_fnGetWidestNode":_fnGetWidestNode,
-            "_fnGetMaxLenString":_fnGetMaxLenString,
-            "_fnStringToCss":_fnStringToCss,
-            "_fnDetectType":_fnDetectType,
-            "_fnSettingsFromNode":_fnSettingsFromNode,
-            "_fnGetDataMaster":_fnGetDataMaster,
-            "_fnGetTrNodes":_fnGetTrNodes,
-            "_fnGetTdNodes":_fnGetTdNodes,
-            "_fnEscapeRegex":_fnEscapeRegex,
-            "_fnDeleteIndex":_fnDeleteIndex,
-            "_fnReOrderIndex":_fnReOrderIndex,
-            "_fnColumnOrdering":_fnColumnOrdering,
-            "_fnLog":_fnLog,
-            "_fnClearTable":_fnClearTable,
-            "_fnSaveState":_fnSaveState,
-            "_fnLoadState":_fnLoadState,
-            "_fnCreateCookie":_fnCreateCookie,
-            "_fnReadCookie":_fnReadCookie,
-            "_fnDetectHeader":_fnDetectHeader,
-            "_fnGetUniqueThs":_fnGetUniqueThs,
-            "_fnScrollBarWidth":_fnScrollBarWidth,
-            "_fnApplyToChildren":_fnApplyToChildren,
-            "_fnMap":_fnMap,
-            "_fnGetRowData":_fnGetRowData,
-            "_fnGetCellData":_fnGetCellData,
-            "_fnSetCellData":_fnSetCellData,
-            "_fnGetObjectDataFn":_fnGetObjectDataFn,
-            "_fnSetObjectDataFn":_fnSetObjectDataFn,
-            "_fnApplyColumnDefs":_fnApplyColumnDefs,
-            "_fnBindAction":_fnBindAction,
-            "_fnExtend":_fnExtend,
-            "_fnCallbackReg":_fnCallbackReg,
-            "_fnCallbackFire":_fnCallbackFire,
-            "_fnJsonString":_fnJsonString,
-            "_fnRender":_fnRender,
-            "_fnNodeToColumnIndex":_fnNodeToColumnIndex,
-            "_fnInfoMacros":_fnInfoMacros
+            "_fnExternApiFunc": _fnExternApiFunc,
+            "_fnInitialise": _fnInitialise,
+            "_fnInitComplete": _fnInitComplete,
+            "_fnLanguageCompat": _fnLanguageCompat,
+            "_fnAddColumn": _fnAddColumn,
+            "_fnColumnOptions": _fnColumnOptions,
+            "_fnAddData": _fnAddData,
+            "_fnCreateTr": _fnCreateTr,
+            "_fnGatherData": _fnGatherData,
+            "_fnBuildHead": _fnBuildHead,
+            "_fnDrawHead": _fnDrawHead,
+            "_fnDraw": _fnDraw,
+            "_fnReDraw": _fnReDraw,
+            "_fnAjaxUpdate": _fnAjaxUpdate,
+            "_fnAjaxParameters": _fnAjaxParameters,
+            "_fnAjaxUpdateDraw": _fnAjaxUpdateDraw,
+            "_fnServerParams": _fnServerParams,
+            "_fnAddOptionsHtml": _fnAddOptionsHtml,
+            "_fnFeatureHtmlTable": _fnFeatureHtmlTable,
+            "_fnScrollDraw": _fnScrollDraw,
+            "_fnAdjustColumnSizing": _fnAdjustColumnSizing,
+            "_fnFeatureHtmlFilter": _fnFeatureHtmlFilter,
+            "_fnFilterComplete": _fnFilterComplete,
+            "_fnFilterCustom": _fnFilterCustom,
+            "_fnFilterColumn": _fnFilterColumn,
+            "_fnFilter": _fnFilter,
+            "_fnBuildSearchArray": _fnBuildSearchArray,
+            "_fnBuildSearchRow": _fnBuildSearchRow,
+            "_fnFilterCreateSearch": _fnFilterCreateSearch,
+            "_fnDataToSearch": _fnDataToSearch,
+            "_fnSort": _fnSort,
+            "_fnSortAttachListener": _fnSortAttachListener,
+            "_fnSortingClasses": _fnSortingClasses,
+            "_fnFeatureHtmlPaginate": _fnFeatureHtmlPaginate,
+            "_fnPageChange": _fnPageChange,
+            "_fnFeatureHtmlInfo": _fnFeatureHtmlInfo,
+            "_fnUpdateInfo": _fnUpdateInfo,
+            "_fnFeatureHtmlLength": _fnFeatureHtmlLength,
+            "_fnFeatureHtmlProcessing": _fnFeatureHtmlProcessing,
+            "_fnProcessingDisplay": _fnProcessingDisplay,
+            "_fnVisibleToColumnIndex": _fnVisibleToColumnIndex,
+            "_fnColumnIndexToVisible": _fnColumnIndexToVisible,
+            "_fnNodeToDataIndex": _fnNodeToDataIndex,
+            "_fnVisbleColumns": _fnVisbleColumns,
+            "_fnCalculateEnd": _fnCalculateEnd,
+            "_fnConvertToWidth": _fnConvertToWidth,
+            "_fnCalculateColumnWidths": _fnCalculateColumnWidths,
+            "_fnScrollingWidthAdjust": _fnScrollingWidthAdjust,
+            "_fnGetWidestNode": _fnGetWidestNode,
+            "_fnGetMaxLenString": _fnGetMaxLenString,
+            "_fnStringToCss": _fnStringToCss,
+            "_fnDetectType": _fnDetectType,
+            "_fnSettingsFromNode": _fnSettingsFromNode,
+            "_fnGetDataMaster": _fnGetDataMaster,
+            "_fnGetTrNodes": _fnGetTrNodes,
+            "_fnGetTdNodes": _fnGetTdNodes,
+            "_fnEscapeRegex": _fnEscapeRegex,
+            "_fnDeleteIndex": _fnDeleteIndex,
+            "_fnReOrderIndex": _fnReOrderIndex,
+            "_fnColumnOrdering": _fnColumnOrdering,
+            "_fnLog": _fnLog,
+            "_fnClearTable": _fnClearTable,
+            "_fnSaveState": _fnSaveState,
+            "_fnLoadState": _fnLoadState,
+            "_fnCreateCookie": _fnCreateCookie,
+            "_fnReadCookie": _fnReadCookie,
+            "_fnDetectHeader": _fnDetectHeader,
+            "_fnGetUniqueThs": _fnGetUniqueThs,
+            "_fnScrollBarWidth": _fnScrollBarWidth,
+            "_fnApplyToChildren": _fnApplyToChildren,
+            "_fnMap": _fnMap,
+            "_fnGetRowData": _fnGetRowData,
+            "_fnGetCellData": _fnGetCellData,
+            "_fnSetCellData": _fnSetCellData,
+            "_fnGetObjectDataFn": _fnGetObjectDataFn,
+            "_fnSetObjectDataFn": _fnSetObjectDataFn,
+            "_fnApplyColumnDefs": _fnApplyColumnDefs,
+            "_fnBindAction": _fnBindAction,
+            "_fnExtend": _fnExtend,
+            "_fnCallbackReg": _fnCallbackReg,
+            "_fnCallbackFire": _fnCallbackFire,
+            "_fnJsonString": _fnJsonString,
+            "_fnRender": _fnRender,
+            "_fnNodeToColumnIndex": _fnNodeToColumnIndex,
+            "_fnInfoMacros": _fnInfoMacros
         };
 
         $.extend(DataTable.ext.oApi, this.oApi);
@@ -5496,12 +5496,12 @@
 
             /* Create the settings object for this table and set some of the default parameters */
             var oSettings = $.extend(true, {}, DataTable.models.oSettings, {
-                "nTable":this,
-                "oApi":_that.oApi,
-                "oInit":oInit,
-                "sDestroyWidth":$(this).width(),
-                "sInstance":sId,
-                "sTableId":sId
+                "nTable": this,
+                "oApi": _that.oApi,
+                "oInit": oInit,
+                "sDestroyWidth": $(this).width(),
+                "sInstance": sId,
+                "sTableId": sId
             });
             DataTable.settings.push(oSettings);
 
@@ -6020,7 +6020,7 @@
 		 *      }
          *    );
          */
-        "afnFiltering":[],
+        "afnFiltering": [],
 
 
         /**
@@ -6068,7 +6068,7 @@
 		 *      return aData;
 		 *    }
          */
-        "afnSortData":[],
+        "afnSortData": [],
 
 
         /**
@@ -6113,7 +6113,7 @@
 		 *      "sFeature": "TableTools"
 		 *    } );
          */
-        "aoFeatures":[],
+        "aoFeatures": [],
 
 
         /**
@@ -6163,7 +6163,7 @@
 		 *      }
          *    );
          */
-        "aTypes":[],
+        "aTypes": [],
 
 
         /**
@@ -6181,7 +6181,7 @@
 		 *      alert( oTable.fnVersionCheck( '1.9.0' ) );
 		 *    } );
          */
-        "fnVersionCheck":DataTable.fnVersionCheck,
+        "fnVersionCheck": DataTable.fnVersionCheck,
 
 
         /**
@@ -6189,7 +6189,7 @@
          *  @type int
          *  @default 0
          */
-        "iApiIndex":0,
+        "iApiIndex": 0,
 
 
         /**
@@ -6228,7 +6228,7 @@
 		 *      return sData.replace(/\n/g," ").replace( /<.*?>/g, "" );
 		 *    }
          */
-        "ofnSearch":{},
+        "ofnSearch": {},
 
 
         /**
@@ -6236,7 +6236,7 @@
          *  @type object
          *  @default {}
          */
-        "oApi":{},
+        "oApi": {},
 
 
         /**
@@ -6244,7 +6244,7 @@
          *  @type object
          *  @default {}
          */
-        "oStdClasses":{},
+        "oStdClasses": {},
 
 
         /**
@@ -6252,7 +6252,7 @@
          *  @type object
          *  @default {}
          */
-        "oJUIClasses":{},
+        "oJUIClasses": {},
 
 
         /**
@@ -6394,7 +6394,7 @@
 		 *      }
 		 *    };
          */
-        "oPagination":{},
+        "oPagination": {},
 
 
         /**
@@ -6451,7 +6451,7 @@
 		 *      }
 		 *    } );
          */
-        "oSort":{},
+        "oSort": {},
 
 
         /**
@@ -6461,7 +6461,7 @@
          *  @type string
          *  @default Version number
          */
-        "sVersion":DataTable.version,
+        "sVersion": DataTable.version,
 
 
         /**
@@ -6469,7 +6469,7 @@
          *  @type string
          *  @default alert
          */
-        "sErrMode":"alert",
+        "sErrMode": "alert",
 
 
         /**
@@ -6477,9 +6477,9 @@
          *  @namespace
          *  @private
          */
-        "_oExternConfig":{
+        "_oExternConfig": {
             /* int:iNextUnique - next unique number for an instance */
-            "iNextUnique":0
+            "iNextUnique": 0
         }
     };
 
@@ -6495,14 +6495,14 @@
          *  @type boolean
          *  @default true
          */
-        "bCaseInsensitive":true,
+        "bCaseInsensitive": true,
 
         /**
          * Applied search term
          *  @type string
          *  @default <i>Empty string</i>
          */
-        "sSearch":"",
+        "sSearch": "",
 
         /**
          * Flag to indicate if the search term should be interpreted as a
@@ -6511,14 +6511,14 @@
          *  @type boolean
          *  @default false
          */
-        "bRegex":false,
+        "bRegex": false,
 
         /**
          * Flag to indicate if DataTables is to use its smart filtering or not.
          *  @type boolean
          *  @default true
          */
-        "bSmart":true
+        "bSmart": true
     };
 
 
@@ -6534,7 +6534,7 @@
          *  @type node
          *  @default null
          */
-        "nTr":null,
+        "nTr": null,
 
         /**
          * Data object from the original data source for the row. This is either
@@ -6545,7 +6545,7 @@
          *  @type array|object
          *  @default []
          */
-        "_aData":[],
+        "_aData": [],
 
         /**
          * Sorting data cache - this array is ostensibly the same length as the
@@ -6559,7 +6559,7 @@
          *  @default []
          *  @private
          */
-        "_aSortData":[],
+        "_aSortData": [],
 
         /**
          * Array of TD elements that are cached for hidden rows, so they can be
@@ -6571,7 +6571,7 @@
          *  @default []
          *  @private
          */
-        "_anHidden":[],
+        "_anHidden": [],
 
         /**
          * Cache of the class name that DataTables has applied to the row, so we
@@ -6581,7 +6581,7 @@
          *  @default <i>Empty string</i>
          *  @private
          */
-        "_sRowStripe":""
+        "_sRowStripe": ""
     };
 
 
@@ -6606,7 +6606,7 @@
          * at itself, but that doesn't need to be the case).
          *  @type array
          */
-        "aDataSort":null,
+        "aDataSort": null,
 
         /**
          * Define the sorting directions that are applied to the column, in sequence
@@ -6616,20 +6616,20 @@
          * Repeat until loop.
          *  @type array
          */
-        "asSorting":null,
+        "asSorting": null,
 
         /**
          * Flag to indicate if the column is searchable, and thus should be included
          * in the filtering or not.
          *  @type boolean
          */
-        "bSearchable":null,
+        "bSearchable": null,
 
         /**
          * Flag to indicate if the column is sortable or not.
          *  @type boolean
          */
-        "bSortable":null,
+        "bSortable": null,
 
         /**
          * When using fnRender, you have two options for what to do with the data,
@@ -6643,13 +6643,13 @@
          *  @type boolean
          *  @deprecated
          */
-        "bUseRendered":null,
+        "bUseRendered": null,
 
         /**
          * Flag to indicate if the column is currently visible in the table or not
          *  @type boolean
          */
-        "bVisible":null,
+        "bVisible": null,
 
         /**
          * Flag to indicate to the type detection method if the automatic type
@@ -6658,7 +6658,7 @@
          *  @default true
          *  @private
          */
-        "_bAutoType":true,
+        "_bAutoType": true,
 
         /**
          * Developer definable function that is called whenever a cell is created (Ajax source,
@@ -6672,7 +6672,7 @@
          *  @param {int} iRow The row index for the aoData data store
          *  @default null
          */
-        "fnCreatedCell":null,
+        "fnCreatedCell": null,
 
         /**
          * Function to get data from a cell in a column. You should <b>never</b>
@@ -6688,7 +6688,7 @@
          *  @returns {*} The data for the cell from the given row's data
          *  @default null
          */
-        "fnGetData":null,
+        "fnGetData": null,
 
         /**
          * Custom display function that will be called for the display of each cell
@@ -6702,7 +6702,7 @@
          *  @returns {string} The string you which to use in the display
          *  @default null
          */
-        "fnRender":null,
+        "fnRender": null,
 
         /**
          * Function to set data for a cell in the column. You should <b>never</b>
@@ -6715,7 +6715,7 @@
          *  @param {*} sValue Value to set
          *  @default null
          */
-        "fnSetData":null,
+        "fnSetData": null,
 
         /**
          * Property to read the value for the cells in the column from the data
@@ -6724,7 +6724,7 @@
          *  @type function|int|string|null
          *  @default null
          */
-        "mDataProp":null,
+        "mDataProp": null,
 
         /**
          * Unique header TH/TD element for this column - this is what the sorting
@@ -6732,7 +6732,7 @@
          *  @type node
          *  @default null
          */
-        "nTh":null,
+        "nTh": null,
 
         /**
          * Unique footer TH/TD element for this column (if there is one). Not used
@@ -6741,14 +6741,14 @@
          *  @type node
          *  @default null
          */
-        "nTf":null,
+        "nTf": null,
 
         /**
          * The class to apply to all TD elements in the table's TBODY for the column
          *  @type string
          *  @default null
          */
-        "sClass":null,
+        "sClass": null,
 
         /**
          * When DataTables calculates the column widths to assign to each column,
@@ -6761,7 +6761,7 @@
          * text that is found to be the longest string for the column - i.e. padding.
          *  @type string
          */
-        "sContentPadding":null,
+        "sContentPadding": null,
 
         /**
          * Allows a default value to be given for a column's data, and will be used
@@ -6770,14 +6770,14 @@
          *  @type string
          *  @default null
          */
-        "sDefaultContent":null,
+        "sDefaultContent": null,
 
         /**
          * Name for the column, allowing reference to the column by name as well as
          * by index (needs a lookup to work by name).
          *  @type string
          */
-        "sName":null,
+        "sName": null,
 
         /**
          * Custom sorting data type - defines which of the available plug-ins in
@@ -6785,14 +6785,14 @@
          *  @type string
          *  @default std
          */
-        "sSortDataType":'std',
+        "sSortDataType": 'std',
 
         /**
          * Class to be applied to the header element when sorting on this column
          *  @type string
          *  @default null
          */
-        "sSortingClass":null,
+        "sSortingClass": null,
 
         /**
          * Class to be applied to the header element when sorting on this column -
@@ -6800,34 +6800,34 @@
          *  @type string
          *  @default null
          */
-        "sSortingClassJUI":null,
+        "sSortingClassJUI": null,
 
         /**
          * Title of the column - what is seen in the TH element (nTh).
          *  @type string
          */
-        "sTitle":null,
+        "sTitle": null,
 
         /**
          * Column sorting and filtering type
          *  @type string
          *  @default null
          */
-        "sType":null,
+        "sType": null,
 
         /**
          * Width of the column
          *  @type string
          *  @default null
          */
-        "sWidth":null,
+        "sWidth": null,
 
         /**
          * Width of the column when it was first "encountered"
          *  @type string
          *  @default null
          */
-        "sWidthOrig":null
+        "sWidthOrig": null
     };
 
 
@@ -6894,7 +6894,7 @@
 		 *      } );
 		 *    } );
          */
-        "aaData":null,
+        "aaData": null,
 
 
         /**
@@ -6922,7 +6922,7 @@
 		 *      } );
 		 *    } );
          */
-        "aaSorting":[
+        "aaSorting": [
             [0, 'asc']
         ],
 
@@ -6945,7 +6945,7 @@
 		 *      } );
 		 *    } )
          */
-        "aaSortingFixed":null,
+        "aaSortingFixed": null,
 
 
         /**
@@ -6977,7 +6977,7 @@
 		 *      } );
 		 *    } );
          */
-        "aLengthMenu":[ 10, 25, 50, 100 ],
+        "aLengthMenu": [ 10, 25, 50, 100 ],
 
 
         /**
@@ -6990,7 +6990,7 @@
          * to specify any options).
          *  @member
          */
-        "aoColumns":null,
+        "aoColumns": null,
 
         /**
          * Very similar to aoColumns, aoColumnDefs allows you to target a specific
@@ -7009,7 +7009,7 @@
          *   </ul>
          *  @member
          */
-        "aoColumnDefs":null,
+        "aoColumnDefs": null,
 
 
         /**
@@ -7034,7 +7034,7 @@
 		 *      } );
 		 *    } )
          */
-        "aoSearchCols":[],
+        "aoSearchCols": [],
 
 
         /**
@@ -7053,7 +7053,7 @@
 		 *      } );
 		 *    } )
          */
-        "asStripeClasses":null,
+        "asStripeClasses": null,
 
 
         /**
@@ -7071,7 +7071,7 @@
 		 *      } );
 		 *    } );
          */
-        "bAutoWidth":true,
+        "bAutoWidth": true,
 
 
         /**
@@ -7092,7 +7092,7 @@
 		 *      } );
 		 *    } );
          */
-        "bDeferRender":false,
+        "bDeferRender": false,
 
 
         /**
@@ -7118,7 +7118,7 @@
 		 *      } );
 		 *    } );
          */
-        "bDestroy":false,
+        "bDestroy": false,
 
 
         /**
@@ -7140,7 +7140,7 @@
 		 *      } );
 		 *    } );
          */
-        "bFilter":true,
+        "bFilter": true,
 
 
         /**
@@ -7158,7 +7158,7 @@
 		 *      } );
 		 *    } );
          */
-        "bInfo":true,
+        "bInfo": true,
 
 
         /**
@@ -7176,7 +7176,7 @@
 		 *      } );
 		 *    } );
          */
-        "bJQueryUI":false,
+        "bJQueryUI": false,
 
 
         /**
@@ -7193,7 +7193,7 @@
 		 *      } );
 		 *    } );
          */
-        "bLengthChange":true,
+        "bLengthChange": true,
 
 
         /**
@@ -7209,7 +7209,7 @@
 		 *      } );
 		 *    } );
          */
-        "bPaginate":true,
+        "bPaginate": true,
 
 
         /**
@@ -7228,7 +7228,7 @@
 		 *      } );
 		 *    } );
          */
-        "bProcessing":false,
+        "bProcessing": false,
 
 
         /**
@@ -7264,7 +7264,7 @@
 		 *      // perform API operations with oTable 
 		 *    }
          */
-        "bRetrieve":false,
+        "bRetrieve": false,
 
 
         /**
@@ -7283,7 +7283,7 @@
 		 *      } );
 		 *    } );
          */
-        "bScrollAutoCss":true,
+        "bScrollAutoCss": true,
 
 
         /**
@@ -7305,7 +7305,7 @@
 		 *      } );
 		 *    } );
          */
-        "bScrollCollapse":false,
+        "bScrollCollapse": false,
 
 
         /**
@@ -7328,7 +7328,7 @@
 		 *      } );
 		 *    } );
          */
-        "bScrollInfinite":false,
+        "bScrollInfinite": false,
 
 
         /**
@@ -7348,7 +7348,7 @@
 		 *      } );
 		 *    } );
          */
-        "bServerSide":false,
+        "bServerSide": false,
 
 
         /**
@@ -7365,7 +7365,7 @@
 		 *      } );
 		 *    } );
          */
-        "bSort":true,
+        "bSort": true,
 
 
         /**
@@ -7383,7 +7383,7 @@
 		 *      } );
 		 *    } );
          */
-        "bSortCellsTop":false,
+        "bSortCellsTop": false,
 
 
         /**
@@ -7403,7 +7403,7 @@
 		 *      } );
 		 *    } );
          */
-        "bSortClasses":true,
+        "bSortClasses": true,
 
 
         /**
@@ -7422,7 +7422,7 @@
 		 *      } );
 		 *    } );
          */
-        "bStateSave":false,
+        "bStateSave": false,
 
 
         /**
@@ -7450,7 +7450,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnCookieCallback":null,
+        "fnCookieCallback": null,
 
 
         /**
@@ -7476,7 +7476,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnCreatedRow":null,
+        "fnCreatedRow": null,
 
 
         /**
@@ -7495,7 +7495,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnDrawCallback":null,
+        "fnDrawCallback": null,
 
 
         /**
@@ -7521,7 +7521,7 @@
 		 *      } );
 		 *    } )
          */
-        "fnFooterCallback":null,
+        "fnFooterCallback": null,
 
 
         /**
@@ -7560,7 +7560,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnFormatNumber":function (iIn) {
+        "fnFormatNumber": function (iIn) {
             if (iIn < 1000) {
                 // A small optimisation for what is likely to be the majority of use cases
                 return iIn;
@@ -7602,7 +7602,7 @@
 		 *      } );
 		 *    } )
          */
-        "fnHeaderCallback":null,
+        "fnHeaderCallback": null,
 
 
         /**
@@ -7630,7 +7630,7 @@
 		 *      }
 		 *    } );
          */
-        "fnInfoCallback":null,
+        "fnInfoCallback": null,
 
 
         /**
@@ -7653,7 +7653,7 @@
 		 *      } );
 		 *    } )
          */
-        "fnInitComplete":null,
+        "fnInitComplete": null,
 
 
         /**
@@ -7677,7 +7677,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnPreDrawCallback":null,
+        "fnPreDrawCallback": null,
 
 
         /**
@@ -7705,7 +7705,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnRowCallback":null,
+        "fnRowCallback": null,
 
 
         /**
@@ -7743,18 +7743,18 @@
 		 *      } );
 		 *    } );
          */
-        "fnServerData":function (sUrl, aoData, fnCallback, oSettings) {
+        "fnServerData": function (sUrl, aoData, fnCallback, oSettings) {
             oSettings.jqXHR = $.ajax({
-                "url":sUrl,
-                "data":aoData,
-                "success":function (json) {
+                "url": sUrl,
+                "data": aoData,
+                "success": function (json) {
                     $(oSettings.oInstance).trigger('xhr', oSettings);
                     fnCallback(json);
                 },
-                "dataType":"json",
-                "cache":false,
-                "type":oSettings.sServerMethod,
-                "error":function (xhr, error, thrown) {
+                "dataType": "json",
+                "cache": false,
+                "type": oSettings.sServerMethod,
+                "error": function (xhr, error, thrown) {
                     if (error == "parsererror") {
                         oSettings.oApi._fnLog(oSettings, 0, "DataTables warning: JSON data from " +
                             "server could not be parsed. This is caused by a JSON formatting error.");
@@ -7793,7 +7793,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnServerParams":null,
+        "fnServerParams": null,
 
 
         /**
@@ -7829,7 +7829,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnStateLoad":function (oSettings) {
+        "fnStateLoad": function (oSettings) {
             var sData = this.oApi._fnReadCookie(oSettings.sCookiePrefix + oSettings.sInstance);
             var oData;
 
@@ -7875,7 +7875,7 @@
 		 *      } );
 		 *    } );
 		 */
-        "fnStateLoadParams":null,
+        "fnStateLoadParams": null,
 
 
         /**
@@ -7896,7 +7896,7 @@
 		 *      } );
 		 *    } );
 		 */
-        "fnStateLoaded":null,
+        "fnStateLoaded": null,
 
 
         /**
@@ -7926,7 +7926,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnStateSave":function (oSettings, oData) {
+        "fnStateSave": function (oSettings, oData) {
             this.oApi._fnCreateCookie(
                 oSettings.sCookiePrefix + oSettings.sInstance,
                 this.oApi._fnJsonString(oData),
@@ -7958,7 +7958,7 @@
 		 *      } );
 		 *    } );
 		 */
-        "fnStateSaveParams":null,
+        "fnStateSaveParams": null,
 
 
         /**
@@ -7975,7 +7975,7 @@
 		 *      } );
 		 *    } )
          */
-        "iCookieDuration":7200,
+        "iCookieDuration": 7200,
 
 
         /**
@@ -8017,7 +8017,7 @@
 		 *      } );
 		 *    } );
          */
-        "iDeferLoading":null,
+        "iDeferLoading": null,
 
 
         /**
@@ -8035,7 +8035,7 @@
 		 *      } );
 		 *    } )
          */
-        "iDisplayLength":10,
+        "iDisplayLength": 10,
 
 
         /**
@@ -8054,7 +8054,7 @@
 		 *      } );
 		 *    } )
          */
-        "iDisplayStart":0,
+        "iDisplayStart": 0,
 
 
         /**
@@ -8076,7 +8076,7 @@
 		 *      } );
 		 *    } );
          */
-        "iScrollLoadGap":100,
+        "iScrollLoadGap": 100,
 
 
         /**
@@ -8097,7 +8097,7 @@
 		 *      } );
 		 *    } );
          */
-        "iTabIndex":0,
+        "iTabIndex": 0,
 
 
         /**
@@ -8106,14 +8106,14 @@
          * completely replace them all as required.
          *  @namespace
          */
-        "oLanguage":{
+        "oLanguage": {
             /**
              * Strings that are used for WAI-ARIA labels and controls only (these are not
              * actually visible on the page, but will be read by screenreaders, and thus
              * must be internationalised as well).
              *  @namespace
              */
-            "oAria":{
+            "oAria": {
                 /**
                  * ARIA label that is added to the table headers when the column may be
                  * sorted ascending by activing the column (click or return when focused).
@@ -8133,7 +8133,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sSortAscending":": activate to sort column ascending",
+                "sSortAscending": ": activate to sort column ascending",
 
                 /**
                  * ARIA label that is added to the table headers when the column may be
@@ -8154,7 +8154,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sSortDescending":": activate to sort column descending"
+                "sSortDescending": ": activate to sort column descending"
             },
 
             /**
@@ -8162,7 +8162,7 @@
              * control types ("two_button" and "full_numbers")
              *  @namespace
              */
-            "oPaginate":{
+            "oPaginate": {
                 /**
                  * Text to use when using the 'full_numbers' type of pagination for the
                  * button to take the user to the first page.
@@ -8181,7 +8181,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sFirst":"First",
+                "sFirst": "First",
 
 
                 /**
@@ -8202,7 +8202,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sLast":"Last",
+                "sLast": "Last",
 
 
                 /**
@@ -8223,7 +8223,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sNext":"Next",
+                "sNext": "Next",
 
 
                 /**
@@ -8244,7 +8244,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sPrevious":"Previous"
+                "sPrevious": "Previous"
             },
 
             /**
@@ -8265,7 +8265,7 @@
 			 *      } );
 			 *    } );
              */
-            "sEmptyTable":"No data available in table",
+            "sEmptyTable": "No data available in table",
 
 
             /**
@@ -8286,7 +8286,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfo":"Showing _START_ to _END_ of _TOTAL_ entries",
+            "sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
 
 
             /**
@@ -8305,7 +8305,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfoEmpty":"Showing 0 to 0 of 0 entries",
+            "sInfoEmpty": "Showing 0 to 0 of 0 entries",
 
 
             /**
@@ -8325,7 +8325,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfoFiltered":"(filtered from _MAX_ total entries)",
+            "sInfoFiltered": "(filtered from _MAX_ total entries)",
 
 
             /**
@@ -8346,7 +8346,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfoPostFix":"",
+            "sInfoPostFix": "",
 
 
             /**
@@ -8367,7 +8367,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfoThousands":",",
+            "sInfoThousands": ",",
 
 
             /**
@@ -8406,7 +8406,7 @@
 			 *      } );
 			 *    } );
              */
-            "sLengthMenu":"Show _MENU_ entries",
+            "sLengthMenu": "Show _MENU_ entries",
 
 
             /**
@@ -8428,7 +8428,7 @@
 			 *      } );
 			 *    } );
              */
-            "sLoadingRecords":"Loading...",
+            "sLoadingRecords": "Loading...",
 
 
             /**
@@ -8447,7 +8447,7 @@
 			 *      } );
 			 *    } );
              */
-            "sProcessing":"Processing...",
+            "sProcessing": "Processing...",
 
 
             /**
@@ -8480,7 +8480,7 @@
 			 *      } );
 			 *    } );
              */
-            "sSearch":"Search:",
+            "sSearch": "Search:",
 
 
             /**
@@ -8503,7 +8503,7 @@
 			 *      } );
 			 *    } );
              */
-            "sUrl":"",
+            "sUrl": "",
 
 
             /**
@@ -8523,7 +8523,7 @@
 			 *      } );
 			 *    } );
              */
-            "sZeroRecords":"No matching records found"
+            "sZeroRecords": "No matching records found"
         },
 
 
@@ -8546,7 +8546,7 @@
 		 *      } );
 		 *    } )
          */
-        "oSearch":$.extend({}, DataTable.models.oSearch),
+        "oSearch": $.extend({}, DataTable.models.oSearch),
 
 
         /**
@@ -8577,7 +8577,7 @@
 		 *      } );
 		 *    } );
          */
-        "sAjaxDataProp":"aaData",
+        "sAjaxDataProp": "aaData",
 
 
         /**
@@ -8597,7 +8597,7 @@
 		 *      } );
 		 *    } )
          */
-        "sAjaxSource":null,
+        "sAjaxSource": null,
 
 
         /**
@@ -8614,7 +8614,7 @@
 		 *      } );
 		 *    } );
          */
-        "sCookiePrefix":"SpryMedia_DataTables_",
+        "sCookiePrefix": "SpryMedia_DataTables_",
 
 
         /**
@@ -8666,7 +8666,7 @@
 		 *      } );
 		 *    } );
          */
-        "sDom":"lfrtip",
+        "sDom": "lfrtip",
 
 
         /**
@@ -8684,7 +8684,7 @@
 		 *      } );
 		 *    } )
          */
-        "sPaginationType":"two_button",
+        "sPaginationType": "two_button",
 
 
         /**
@@ -8705,7 +8705,7 @@
 		 *      } );
 		 *    } );
          */
-        "sScrollX":"",
+        "sScrollX": "",
 
 
         /**
@@ -8727,7 +8727,7 @@
 		 *      } );
 		 *    } );
          */
-        "sScrollXInner":"",
+        "sScrollXInner": "",
 
 
         /**
@@ -8749,7 +8749,7 @@
 		 *      } );
 		 *    } );
          */
-        "sScrollY":"",
+        "sScrollY": "",
 
 
         /**
@@ -8769,7 +8769,7 @@
 		 *      } );
 		 *    } );
          */
-        "sServerMethod":"GET"
+        "sServerMethod": "GET"
     };
 
 
@@ -8812,7 +8812,7 @@
 		 *      } );
 		 *    } );
          */
-        "aDataSort":null,
+        "aDataSort": null,
 
 
         /**
@@ -8849,7 +8849,7 @@
 		 *      } );
 		 *    } );
          */
-        "asSorting":[ 'asc', 'desc' ],
+        "asSorting": [ 'asc', 'desc' ],
 
 
         /**
@@ -8880,7 +8880,7 @@
 		 *        ] } );
 		 *    } );
          */
-        "bSearchable":true,
+        "bSearchable": true,
 
 
         /**
@@ -8911,7 +8911,7 @@
 		 *        ] } );
 		 *    } );
          */
-        "bSortable":true,
+        "bSortable": true,
 
 
         /**
@@ -8961,7 +8961,7 @@
 		 *      } );
 		 *    } );
          */
-        "bUseRendered":true,
+        "bUseRendered": true,
 
 
         /**
@@ -8992,7 +8992,7 @@
 		 *        ] } );
 		 *    } );
          */
-        "bVisible":true,
+        "bVisible": true,
 
 
         /**
@@ -9022,7 +9022,7 @@
 		 *      });
 		 *    } );
          */
-        "fnCreatedCell":null,
+        "fnCreatedCell": null,
 
 
         /**
@@ -9070,7 +9070,7 @@
 		 *      } );
 		 *    } );
          */
-        "fnRender":null,
+        "fnRender": null,
 
 
         /**
@@ -9105,7 +9105,7 @@
 		 *      } );
 		 *    } );
          */
-        "iDataSort":-1,
+        "iDataSort": -1,
 
 
         /**
@@ -9185,7 +9185,7 @@
 		 *      } );
 		 *    } );
 		 */
-        "mDataProp":null,
+        "mDataProp": null,
 
 
         /**
@@ -9208,7 +9208,7 @@
 		 *      } );
 		 *    } );
 		 */
-        "sCellType":"td",
+        "sCellType": "td",
 
 
         /**
@@ -9241,7 +9241,7 @@
 		 *      } );
 		 *    } );
          */
-        "sClass":"",
+        "sClass": "",
 
         /**
          * When DataTables calculates the column widths to assign to each column,
@@ -9273,7 +9273,7 @@
 		 *      } );
 		 *    } );
          */
-        "sContentPadding":"",
+        "sContentPadding": "",
 
 
         /**
@@ -9314,7 +9314,7 @@
 		 *      } );
 		 *    } );
          */
-        "sDefaultContent":null,
+        "sDefaultContent": null,
 
 
         /**
@@ -9356,7 +9356,7 @@
 		 *      } );
 		 *    } );
          */
-        "sName":"",
+        "sName": "",
 
 
         /**
@@ -9396,7 +9396,7 @@
 		 *      } );
 		 *    } );
          */
-        "sSortDataType":"std",
+        "sSortDataType": "std",
 
 
         /**
@@ -9430,7 +9430,7 @@
 		 *      } );
 		 *    } );
          */
-        "sTitle":null,
+        "sTitle": null,
 
 
         /**
@@ -9469,7 +9469,7 @@
 		 *      } );
 		 *    } );
          */
-        "sType":null,
+        "sType": null,
 
 
         /**
@@ -9505,7 +9505,7 @@
 		 *      } );
 		 *    } );
          */
-        "sWidth":null
+        "sWidth": null
     };
 
 
@@ -9536,7 +9536,7 @@
          * Primary features of DataTables and their enablement state.
          *  @namespace
          */
-        "oFeatures":{
+        "oFeatures": {
 
             /**
              * Flag to say if DataTables should automatically try to calculate the
@@ -9545,7 +9545,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bAutoWidth":null,
+            "bAutoWidth": null,
 
             /**
              * Delay the creation of TR and TD elements until they are actually
@@ -9556,7 +9556,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bDeferRender":null,
+            "bDeferRender": null,
 
             /**
              * Enable filtering on the table or not. Note that if this is disabled
@@ -9566,7 +9566,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bFilter":null,
+            "bFilter": null,
 
             /**
              * Table information element (the 'Showing x of y records' div) enable
@@ -9575,7 +9575,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bInfo":null,
+            "bInfo": null,
 
             /**
              * Present a user control allowing the end user to change the page size
@@ -9584,7 +9584,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bLengthChange":null,
+            "bLengthChange": null,
 
             /**
              * Pagination enabled or not. Note that if this is disabled then length
@@ -9593,7 +9593,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bPaginate":null,
+            "bPaginate": null,
 
             /**
              * Processing indicator enable flag whenever DataTables is enacting a
@@ -9602,7 +9602,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bProcessing":null,
+            "bProcessing": null,
 
             /**
              * Server-side processing enabled flag - when enabled DataTables will
@@ -9612,7 +9612,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bServerSide":null,
+            "bServerSide": null,
 
             /**
              * Sorting enablement flag.
@@ -9620,7 +9620,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bSort":null,
+            "bSort": null,
 
             /**
              * Apply a class to the columns which are being sorted to provide a
@@ -9630,7 +9630,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bSortClasses":null,
+            "bSortClasses": null,
 
             /**
              * State saving enablement flag.
@@ -9638,7 +9638,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bStateSave":null
+            "bStateSave": null
         },
 
 
@@ -9646,7 +9646,7 @@
          * Scrolling settings for a table.
          *  @namespace
          */
-        "oScroll":{
+        "oScroll": {
             /**
              * Indicate if DataTables should be allowed to set the padding / margin
              * etc for the scrolling header elements or not. Typically you will want
@@ -9655,7 +9655,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bAutoCss":null,
+            "bAutoCss": null,
 
             /**
              * When the table is shorter in height than sScrollY, collapse the
@@ -9664,7 +9664,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bCollapse":null,
+            "bCollapse": null,
 
             /**
              * Infinite scrolling enablement flag. Now deprecated in favour of
@@ -9673,7 +9673,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type boolean
              */
-            "bInfinite":null,
+            "bInfinite": null,
 
             /**
              * Width of the scrollbar for the web-browser's platform. Calculated
@@ -9681,7 +9681,7 @@
              *  @type int
              *  @default 0
              */
-            "iBarWidth":0,
+            "iBarWidth": 0,
 
             /**
              * Space (in pixels) between the bottom of the scrolling container and
@@ -9691,7 +9691,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type int
              */
-            "iLoadGap":null,
+            "iLoadGap": null,
 
             /**
              * Viewport width for horizontal scrolling. Horizontal scrolling is
@@ -9700,7 +9700,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type string
              */
-            "sX":null,
+            "sX": null,
 
             /**
              * Width to expand the table to when using x-scrolling. Typically you
@@ -9710,7 +9710,7 @@
              *  @type string
              *  @deprecated
              */
-            "sXInner":null,
+            "sXInner": null,
 
             /**
              * Viewport height for vertical scrolling. Vertical scrolling is disabled
@@ -9719,7 +9719,7 @@
              * set a default use {@link DataTable.defaults}.
              *  @type string
              */
-            "sY":null
+            "sY": null
         },
 
         /**
@@ -9727,14 +9727,14 @@
          *  @namespace
          *  @extends DataTable.defaults.oLanguage
          */
-        "oLanguage":{
+        "oLanguage": {
             /**
              * Information callback function. See
              * {@link DataTable.defaults.fnInfoCallback}
              *  @type function
              *  @default
              */
-            "fnInfoCallback":null
+            "fnInfoCallback": null
         },
 
         /**
@@ -9751,7 +9751,7 @@
          *  @type array
          *  @default []
          */
-        "aanFeatures":[],
+        "aanFeatures": [],
 
         /**
          * Store data information - see {@link DataTable.models.oRow} for detailed
@@ -9759,49 +9759,49 @@
          *  @type array
          *  @default []
          */
-        "aoData":[],
+        "aoData": [],
 
         /**
          * Array of indexes which are in the current display (after filtering etc)
          *  @type array
          *  @default []
          */
-        "aiDisplay":[],
+        "aiDisplay": [],
 
         /**
          * Array of indexes for display - no filtering
          *  @type array
          *  @default []
          */
-        "aiDisplayMaster":[],
+        "aiDisplayMaster": [],
 
         /**
          * Store information about each column that is in use
          *  @type array
          *  @default []
          */
-        "aoColumns":[],
+        "aoColumns": [],
 
         /**
          * Store information about the table's header
          *  @type array
          *  @default []
          */
-        "aoHeader":[],
+        "aoHeader": [],
 
         /**
          * Store information about the table's footer
          *  @type array
          *  @default []
          */
-        "aoFooter":[],
+        "aoFooter": [],
 
         /**
          * Search data array for regular expression searching
          *  @type array
          *  @default []
          */
-        "asDataSearch":[],
+        "asDataSearch": [],
 
         /**
          * Store the applied global search information in case we want to force a
@@ -9811,7 +9811,7 @@
          *  @namespace
          *  @extends DataTable.models.oSearch
          */
-        "oPreviousSearch":{},
+        "oPreviousSearch": {},
 
         /**
          * Store the applied search for each column - see
@@ -9820,7 +9820,7 @@
          *  @type array
          *  @default []
          */
-        "aoPreSearchCols":[],
+        "aoPreSearchCols": [],
 
         /**
          * Sorting that is applied to the table. Note that the inner arrays are
@@ -9835,7 +9835,7 @@
          *  @type array
          *  @todo These inner arrays should really be objects
          */
-        "aaSorting":null,
+        "aaSorting": null,
 
         /**
          * Sorting that is always applied to the table (i.e. prefixed in front of
@@ -9845,7 +9845,7 @@
          *  @type array|null
          *  @default null
          */
-        "aaSortingFixed":null,
+        "aaSortingFixed": null,
 
         /**
          * Classes to use for the striping of a table.
@@ -9854,56 +9854,56 @@
          *  @type array
          *  @default []
          */
-        "asStripeClasses":null,
+        "asStripeClasses": null,
 
         /**
          * If restoring a table - we should restore its striping classes as well
          *  @type array
          *  @default []
          */
-        "asDestroyStripes":[],
+        "asDestroyStripes": [],
 
         /**
          * If restoring a table - we should restore its width
          *  @type int
          *  @default 0
          */
-        "sDestroyWidth":0,
+        "sDestroyWidth": 0,
 
         /**
          * Callback functions array for every time a row is inserted (i.e. on a draw).
          *  @type array
          *  @default []
          */
-        "aoRowCallback":[],
+        "aoRowCallback": [],
 
         /**
          * Callback functions for the header on each draw.
          *  @type array
          *  @default []
          */
-        "aoHeaderCallback":[],
+        "aoHeaderCallback": [],
 
         /**
          * Callback function for the footer on each draw.
          *  @type array
          *  @default []
          */
-        "aoFooterCallback":[],
+        "aoFooterCallback": [],
 
         /**
          * Array of callback functions for draw callback functions
          *  @type array
          *  @default []
          */
-        "aoDrawCallback":[],
+        "aoDrawCallback": [],
 
         /**
          * Array of callback functions for row created function
          *  @type array
          *  @default []
          */
-        "aoRowCreatedCallback":[],
+        "aoRowCreatedCallback": [],
 
         /**
          * Callback functions for just before the table is redrawn. A return of
@@ -9911,14 +9911,14 @@
          *  @type array
          *  @default []
          */
-        "aoPreDrawCallback":[],
+        "aoPreDrawCallback": [],
 
         /**
          * Callback functions for when the table has been initialised.
          *  @type array
          *  @default []
          */
-        "aoInitComplete":[],
+        "aoInitComplete": [],
 
 
         /**
@@ -9927,7 +9927,7 @@
          *  @type array
          *  @default []
          */
-        "aoStateSaveParams":[],
+        "aoStateSaveParams": [],
 
         /**
          * Callbacks for modifying the settings that have been stored for state saving
@@ -9935,7 +9935,7 @@
          *  @type array
          *  @default []
          */
-        "aoStateLoadParams":[],
+        "aoStateLoadParams": [],
 
         /**
          * Callbacks for operating on the settings object once the saved state has been
@@ -9943,49 +9943,49 @@
          *  @type array
          *  @default []
          */
-        "aoStateLoaded":[],
+        "aoStateLoaded": [],
 
         /**
          * Cache the table ID for quick access
          *  @type string
          *  @default <i>Empty string</i>
          */
-        "sTableId":"",
+        "sTableId": "",
 
         /**
          * The TABLE node for the main table
          *  @type node
          *  @default null
          */
-        "nTable":null,
+        "nTable": null,
 
         /**
          * Permanent ref to the thead element
          *  @type node
          *  @default null
          */
-        "nTHead":null,
+        "nTHead": null,
 
         /**
          * Permanent ref to the tfoot element - if it exists
          *  @type node
          *  @default null
          */
-        "nTFoot":null,
+        "nTFoot": null,
 
         /**
          * Permanent ref to the tbody element
          *  @type node
          *  @default null
          */
-        "nTBody":null,
+        "nTBody": null,
 
         /**
          * Cache the wrapper node (contains all DataTables controlled elements)
          *  @type node
          *  @default null
          */
-        "nTableWrapper":null,
+        "nTableWrapper": null,
 
         /**
          * Indicate if when using server-side processing the loading of data
@@ -9995,14 +9995,14 @@
          *  @type boolean
          *  @default false
          */
-        "bDeferLoading":false,
+        "bDeferLoading": false,
 
         /**
          * Indicate if all required information has been read in
          *  @type boolean
          *  @default false
          */
-        "bInitialised":false,
+        "bInitialised": false,
 
         /**
          * Information about open rows. Each object in the array has the parameters
@@ -10010,7 +10010,7 @@
          *  @type array
          *  @default []
          */
-        "aoOpenRows":[],
+        "aoOpenRows": [],
 
         /**
          * Dictate the positioning of DataTables' control elements - see
@@ -10020,7 +10020,7 @@
          *  @type string
          *  @default null
          */
-        "sDom":null,
+        "sDom": null,
 
         /**
          * Which type of pagination should be used.
@@ -10029,7 +10029,7 @@
          *  @type string
          *  @default two_button
          */
-        "sPaginationType":"two_button",
+        "sPaginationType": "two_button",
 
         /**
          * The cookie duration (for bStateSave) in seconds.
@@ -10038,7 +10038,7 @@
          *  @type int
          *  @default 0
          */
-        "iCookieDuration":0,
+        "iCookieDuration": 0,
 
         /**
          * The cookie name prefix.
@@ -10047,7 +10047,7 @@
          *  @type string
          *  @default <i>Empty string</i>
          */
-        "sCookiePrefix":"",
+        "sCookiePrefix": "",
 
         /**
          * Callback function for cookie creation.
@@ -10056,7 +10056,7 @@
          *  @type function
          *  @default null
          */
-        "fnCookieCallback":null,
+        "fnCookieCallback": null,
 
         /**
          * Array of callback functions for state saving. Each array element is an
@@ -10071,7 +10071,7 @@
          *  @type array
          *  @default []
          */
-        "aoStateSave":[],
+        "aoStateSave": [],
 
         /**
          * Array of callback functions for state loading. Each array element is an
@@ -10084,14 +10084,14 @@
          *  @type array
          *  @default []
          */
-        "aoStateLoad":[],
+        "aoStateLoad": [],
 
         /**
          * State that was loaded from the cookie. Useful for back reference
          *  @type object
          *  @default null
          */
-        "oLoadedState":null,
+        "oLoadedState": null,
 
         /**
          * Source url for AJAX data for the table.
@@ -10100,7 +10100,7 @@
          *  @type string
          *  @default null
          */
-        "sAjaxSource":null,
+        "sAjaxSource": null,
 
         /**
          * Property from a given object from which to read the table data from. This
@@ -10110,14 +10110,14 @@
          * set a default use {@link DataTable.defaults}.
          *  @type string
          */
-        "sAjaxDataProp":null,
+        "sAjaxDataProp": null,
 
         /**
          * Note if draw should be blocked while getting data
          *  @type boolean
          *  @default true
          */
-        "bAjaxDataGet":true,
+        "bAjaxDataGet": true,
 
         /**
          * The last jQuery XHR object that was used for server-side data gathering.
@@ -10126,7 +10126,7 @@
          *  @type object
          *  @default null
          */
-        "jqXHR":null,
+        "jqXHR": null,
 
         /**
          * Function to get the server-side data.
@@ -10134,7 +10134,7 @@
          * set a default use {@link DataTable.defaults}.
          *  @type function
          */
-        "fnServerData":null,
+        "fnServerData": null,
 
         /**
          * Functions which are called prior to sending an Ajax request so extra
@@ -10142,7 +10142,7 @@
          *  @type array
          *  @default []
          */
-        "aoServerParams":[],
+        "aoServerParams": [],
 
         /**
          * Send the XHR HTTP method - GET or POST (could be PUT or DELETE if
@@ -10151,7 +10151,7 @@
          * set a default use {@link DataTable.defaults}.
          *  @type string
          */
-        "sServerMethod":null,
+        "sServerMethod": null,
 
         /**
          * Format numbers for display.
@@ -10159,7 +10159,7 @@
          * set a default use {@link DataTable.defaults}.
          *  @type function
          */
-        "fnFormatNumber":null,
+        "fnFormatNumber": null,
 
         /**
          * List of options that can be used for the user selectable length menu.
@@ -10168,7 +10168,7 @@
          *  @type array
          *  @default []
          */
-        "aLengthMenu":null,
+        "aLengthMenu": null,
 
         /**
          * Counter for the draws that the table does. Also used as a tracker for
@@ -10176,35 +10176,35 @@
          *  @type int
          *  @default 0
          */
-        "iDraw":0,
+        "iDraw": 0,
 
         /**
          * Indicate if a redraw is being done - useful for Ajax
          *  @type boolean
          *  @default false
          */
-        "bDrawing":false,
+        "bDrawing": false,
 
         /**
          * Draw index (iDraw) of the last error when parsing the returned data
          *  @type int
          *  @default -1
          */
-        "iDrawError":-1,
+        "iDrawError": -1,
 
         /**
          * Paging display length
          *  @type int
          *  @default 10
          */
-        "_iDisplayLength":10,
+        "_iDisplayLength": 10,
 
         /**
          * Paging start point - aiDisplay index
          *  @type int
          *  @default 0
          */
-        "_iDisplayStart":0,
+        "_iDisplayStart": 0,
 
         /**
          * Paging end point - aiDisplay index. Use fnDisplayEnd rather than
@@ -10213,7 +10213,7 @@
          *  @default 10
          *  @private
          */
-        "_iDisplayEnd":10,
+        "_iDisplayEnd": 10,
 
         /**
          * Server-side processing - number of records in the result set
@@ -10224,7 +10224,7 @@
          *  @default 0
          *  @private
          */
-        "_iRecordsTotal":0,
+        "_iRecordsTotal": 0,
 
         /**
          * Server-side processing - number of records in the current display set
@@ -10235,7 +10235,7 @@
          *  @default 0
          *  @private
          */
-        "_iRecordsDisplay":0,
+        "_iRecordsDisplay": 0,
 
         /**
          * Flag to indicate if jQuery UI marking and classes should be used.
@@ -10243,14 +10243,14 @@
          * set a default use {@link DataTable.defaults}.
          *  @type boolean
          */
-        "bJUI":null,
+        "bJUI": null,
 
         /**
          * The classes to use for the table
          *  @type object
          *  @default {}
          */
-        "oClasses":{},
+        "oClasses": {},
 
         /**
          * Flag attached to the settings object so you can check in the draw
@@ -10260,7 +10260,7 @@
          *  @default false
          *  @deprecated
          */
-        "bFiltered":false,
+        "bFiltered": false,
 
         /**
          * Flag attached to the settings object so you can check in the draw
@@ -10270,7 +10270,7 @@
          *  @default false
          *  @deprecated
          */
-        "bSorted":false,
+        "bSorted": false,
 
         /**
          * Indicate that if multiple rows are in the header and there is more than
@@ -10280,14 +10280,14 @@
          * set a default use {@link DataTable.defaults}.
          *  @type boolean
          */
-        "bSortCellsTop":null,
+        "bSortCellsTop": null,
 
         /**
          * Initialisation object that is used for the table
          *  @type object
          *  @default null
          */
-        "oInit":null,
+        "oInit": null,
 
         /**
          * Destroy callback functions - for plug-ins to attach themselves to the
@@ -10295,14 +10295,14 @@
          *  @type array
          *  @default []
          */
-        "aoDestroyCallback":[],
+        "aoDestroyCallback": [],
 
 
         /**
          * Get the number of records in the current record set, before filtering
          *  @type function
          */
-        "fnRecordsTotal":function () {
+        "fnRecordsTotal": function () {
             if (this.oFeatures.bServerSide) {
                 return parseInt(this._iRecordsTotal, 10);
             } else {
@@ -10314,7 +10314,7 @@
          * Get the number of records in the current record set, after filtering
          *  @type function
          */
-        "fnRecordsDisplay":function () {
+        "fnRecordsDisplay": function () {
             if (this.oFeatures.bServerSide) {
                 return parseInt(this._iRecordsDisplay, 10);
             } else {
@@ -10327,7 +10327,7 @@
          *  @type function
          *  @todo Should do away with _iDisplayEnd and calculate it on-the-fly here
          */
-        "fnDisplayEnd":function () {
+        "fnDisplayEnd": function () {
             if (this.oFeatures.bServerSide) {
                 if (this.oFeatures.bPaginate === false || this._iDisplayLength == -1) {
                     return this._iDisplayStart + this.aiDisplay.length;
@@ -10345,7 +10345,7 @@
          *  @type object
          *  @default null
          */
-        "oInstance":null,
+        "oInstance": null,
 
         /**
          * Unique identifier for each instance of the DataTables object. If there
@@ -10354,23 +10354,23 @@
          *  @type string
          *  @default null
          */
-        "sInstance":null,
+        "sInstance": null,
 
         /**
          * tabindex attribute value that is added to DataTables control elements, allowing
          * keyboard navigation of the table and its controls.
          */
-        "iTabIndex":0,
+        "iTabIndex": 0,
 
         /**
          * DIV container for the footer scrolling table if scrolling
          */
-        "nScrollHead":null,
+        "nScrollHead": null,
 
         /**
          * DIV container for the footer scrolling table if scrolling
          */
-        "nScrollFoot":null
+        "nScrollFoot": null
     };
 
     /**
@@ -10385,110 +10385,110 @@
     DataTable.ext = $.extend(true, {}, DataTable.models.ext);
 
     $.extend(DataTable.ext.oStdClasses, {
-        "sTable":"dataTable",
+        "sTable": "dataTable",
 
         /* Two buttons buttons */
-        "sPagePrevEnabled":"paginate_enabled_previous",
-        "sPagePrevDisabled":"paginate_disabled_previous",
-        "sPageNextEnabled":"paginate_enabled_next",
-        "sPageNextDisabled":"paginate_disabled_next",
-        "sPageJUINext":"",
-        "sPageJUIPrev":"",
+        "sPagePrevEnabled": "paginate_enabled_previous",
+        "sPagePrevDisabled": "paginate_disabled_previous",
+        "sPageNextEnabled": "paginate_enabled_next",
+        "sPageNextDisabled": "paginate_disabled_next",
+        "sPageJUINext": "",
+        "sPageJUIPrev": "",
 
         /* Full numbers paging buttons */
-        "sPageButton":"paginate_button",
-        "sPageButtonActive":"paginate_active",
-        "sPageButtonStaticDisabled":"paginate_button paginate_button_disabled",
-        "sPageFirst":"first",
-        "sPagePrevious":"previous",
-        "sPageNext":"next",
-        "sPageLast":"last",
+        "sPageButton": "paginate_button",
+        "sPageButtonActive": "paginate_active",
+        "sPageButtonStaticDisabled": "paginate_button paginate_button_disabled",
+        "sPageFirst": "first",
+        "sPagePrevious": "previous",
+        "sPageNext": "next",
+        "sPageLast": "last",
 
         /* Striping classes */
-        "sStripeOdd":"odd",
-        "sStripeEven":"even",
+        "sStripeOdd": "odd",
+        "sStripeEven": "even",
 
         /* Empty row */
-        "sRowEmpty":"dataTables_empty",
+        "sRowEmpty": "dataTables_empty",
 
         /* Features */
-        "sWrapper":"dataTables_wrapper",
-        "sFilter":"dataTables_filter",
-        "sInfo":"dataTables_info",
-        "sPaging":"dataTables_paginate paging_", /* Note that the type is postfixed */
-        "sLength":"dataTables_length",
-        "sProcessing":"dataTables_processing",
+        "sWrapper": "dataTables_wrapper",
+        "sFilter": "dataTables_filter",
+        "sInfo": "dataTables_info",
+        "sPaging": "dataTables_paginate paging_", /* Note that the type is postfixed */
+        "sLength": "dataTables_length",
+        "sProcessing": "dataTables_processing",
 
         /* Sorting */
-        "sSortAsc":"sorting_asc",
-        "sSortDesc":"sorting_desc",
-        "sSortable":"sorting", /* Sortable in both directions */
-        "sSortableAsc":"sorting_asc_disabled",
-        "sSortableDesc":"sorting_desc_disabled",
-        "sSortableNone":"sorting_disabled",
-        "sSortColumn":"sorting_", /* Note that an int is postfixed for the sorting order */
-        "sSortJUIAsc":"",
-        "sSortJUIDesc":"",
-        "sSortJUI":"",
-        "sSortJUIAscAllowed":"",
-        "sSortJUIDescAllowed":"",
-        "sSortJUIWrapper":"",
-        "sSortIcon":"",
+        "sSortAsc": "sorting_asc",
+        "sSortDesc": "sorting_desc",
+        "sSortable": "sorting", /* Sortable in both directions */
+        "sSortableAsc": "sorting_asc_disabled",
+        "sSortableDesc": "sorting_desc_disabled",
+        "sSortableNone": "sorting_disabled",
+        "sSortColumn": "sorting_", /* Note that an int is postfixed for the sorting order */
+        "sSortJUIAsc": "",
+        "sSortJUIDesc": "",
+        "sSortJUI": "",
+        "sSortJUIAscAllowed": "",
+        "sSortJUIDescAllowed": "",
+        "sSortJUIWrapper": "",
+        "sSortIcon": "",
 
         /* Scrolling */
-        "sScrollWrapper":"dataTables_scroll",
-        "sScrollHead":"dataTables_scrollHead",
-        "sScrollHeadInner":"dataTables_scrollHeadInner",
-        "sScrollBody":"dataTables_scrollBody",
-        "sScrollFoot":"dataTables_scrollFoot",
-        "sScrollFootInner":"dataTables_scrollFootInner",
+        "sScrollWrapper": "dataTables_scroll",
+        "sScrollHead": "dataTables_scrollHead",
+        "sScrollHeadInner": "dataTables_scrollHeadInner",
+        "sScrollBody": "dataTables_scrollBody",
+        "sScrollFoot": "dataTables_scrollFoot",
+        "sScrollFootInner": "dataTables_scrollFootInner",
 
         /* Misc */
-        "sFooterTH":""
+        "sFooterTH": ""
     });
 
 
     $.extend(DataTable.ext.oJUIClasses, DataTable.ext.oStdClasses, {
         /* Two buttons buttons */
-        "sPagePrevEnabled":"fg-button ui-button ui-state-default ui-corner-left",
-        "sPagePrevDisabled":"fg-button ui-button ui-state-default ui-corner-left ui-state-disabled",
-        "sPageNextEnabled":"fg-button ui-button ui-state-default ui-corner-right",
-        "sPageNextDisabled":"fg-button ui-button ui-state-default ui-corner-right ui-state-disabled",
-        "sPageJUINext":"ui-icon ui-icon-circle-arrow-e",
-        "sPageJUIPrev":"ui-icon ui-icon-circle-arrow-w",
+        "sPagePrevEnabled": "fg-button ui-button ui-state-default ui-corner-left",
+        "sPagePrevDisabled": "fg-button ui-button ui-state-default ui-corner-left ui-state-disabled",
+        "sPageNextEnabled": "fg-button ui-button ui-state-default ui-corner-right",
+        "sPageNextDisabled": "fg-button ui-button ui-state-default ui-corner-right ui-state-disabled",
+        "sPageJUINext": "ui-icon ui-icon-circle-arrow-e",
+        "sPageJUIPrev": "ui-icon ui-icon-circle-arrow-w",
 
         /* Full numbers paging buttons */
-        "sPageButton":"fg-button ui-button ui-state-default",
-        "sPageButtonActive":"fg-button ui-button ui-state-default ui-state-disabled",
-        "sPageButtonStaticDisabled":"fg-button ui-button ui-state-default ui-state-disabled",
-        "sPageFirst":"first ui-corner-tl ui-corner-bl",
-        "sPageLast":"last ui-corner-tr ui-corner-br",
+        "sPageButton": "fg-button ui-button ui-state-default",
+        "sPageButtonActive": "fg-button ui-button ui-state-default ui-state-disabled",
+        "sPageButtonStaticDisabled": "fg-button ui-button ui-state-default ui-state-disabled",
+        "sPageFirst": "first ui-corner-tl ui-corner-bl",
+        "sPageLast": "last ui-corner-tr ui-corner-br",
 
         /* Features */
-        "sPaging":"dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi " +
+        "sPaging": "dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi " +
             "ui-buttonset-multi paging_", /* Note that the type is postfixed */
 
         /* Sorting */
-        "sSortAsc":"ui-state-default",
-        "sSortDesc":"ui-state-default",
-        "sSortable":"ui-state-default",
-        "sSortableAsc":"ui-state-default",
-        "sSortableDesc":"ui-state-default",
-        "sSortableNone":"ui-state-default",
-        "sSortJUIAsc":"css_right ui-icon ui-icon-triangle-1-n",
-        "sSortJUIDesc":"css_right ui-icon ui-icon-triangle-1-s",
-        "sSortJUI":"css_right ui-icon ui-icon-carat-2-n-s",
-        "sSortJUIAscAllowed":"css_right ui-icon ui-icon-carat-1-n",
-        "sSortJUIDescAllowed":"css_right ui-icon ui-icon-carat-1-s",
-        "sSortJUIWrapper":"DataTables_sort_wrapper",
-        "sSortIcon":"DataTables_sort_icon",
+        "sSortAsc": "ui-state-default",
+        "sSortDesc": "ui-state-default",
+        "sSortable": "ui-state-default",
+        "sSortableAsc": "ui-state-default",
+        "sSortableDesc": "ui-state-default",
+        "sSortableNone": "ui-state-default",
+        "sSortJUIAsc": "css_right ui-icon ui-icon-triangle-1-n",
+        "sSortJUIDesc": "css_right ui-icon ui-icon-triangle-1-s",
+        "sSortJUI": "css_right ui-icon ui-icon-carat-2-n-s",
+        "sSortJUIAscAllowed": "css_right ui-icon ui-icon-carat-1-n",
+        "sSortJUIDescAllowed": "css_right ui-icon ui-icon-carat-1-s",
+        "sSortJUIWrapper": "DataTables_sort_wrapper",
+        "sSortIcon": "DataTables_sort_icon",
 
         /* Scrolling */
-        "sScrollHead":"dataTables_scrollHead ui-state-default",
-        "sScrollFoot":"dataTables_scrollFoot ui-state-default",
+        "sScrollHead": "dataTables_scrollHead ui-state-default",
+        "sScrollFoot": "dataTables_scrollFoot ui-state-default",
 
         /* Misc */
-        "sFooterTH":"ui-state-default"
+        "sFooterTH": "ui-state-default"
     });
 
 
@@ -10503,7 +10503,7 @@
          * Purpose:  Standard two button (forward/back) pagination
          * Scope:    jQuery.fn.dataTableExt.oPagination
          */
-        "two_button":{
+        "two_button": {
             /*
              * Function: oPagination.two_button.fnInit
              * Purpose:  Initialise dom elements required for pagination with forward/back buttons only
@@ -10512,7 +10512,7 @@
              *           node:nPaging - the DIV which contains this pagination control
              *           function:fnCallbackDraw - draw function which must be called on update
              */
-            "fnInit":function (oSettings, nPaging, fnCallbackDraw) {
+            "fnInit": function (oSettings, nPaging, fnCallbackDraw) {
                 var oLang = oSettings.oLanguage.oPaginate;
                 var oClasses = oSettings.oClasses;
                 var fnClickHandler = function (e) {
@@ -10533,8 +10533,8 @@
                 var nPrevious = els[0],
                     nNext = els[1];
 
-                oSettings.oApi._fnBindAction(nPrevious, {action:"previous"}, fnClickHandler);
-                oSettings.oApi._fnBindAction(nNext, {action:"next"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nPrevious, {action: "previous"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nNext, {action: "next"}, fnClickHandler);
 
                 /* ID the first elements only */
                 if (!oSettings.aanFeatures.p) {
@@ -10554,7 +10554,7 @@
              * Inputs:   object:oSettings - dataTables settings object
              *           function:fnCallbackDraw - draw function to call on page change
              */
-            "fnUpdate":function (oSettings, fnCallbackDraw) {
+            "fnUpdate": function (oSettings, fnCallbackDraw) {
                 if (!oSettings.aanFeatures.p) {
                     return;
                 }
@@ -10581,14 +10581,14 @@
          * Purpose:  Change the number of pages which can be seen
          * Scope:    jQuery.fn.dataTableExt.oPagination
          */
-        "iFullNumbersShowPages":5,
+        "iFullNumbersShowPages": 5,
 
         /*
          * Variable: full_numbers
          * Purpose:  Full numbers pagination
          * Scope:    jQuery.fn.dataTableExt.oPagination
          */
-        "full_numbers":{
+        "full_numbers": {
             /*
              * Function: oPagination.full_numbers.fnInit
              * Purpose:  Initialise dom elements required for pagination with a list of the pages
@@ -10597,7 +10597,7 @@
              *           node:nPaging - the DIV which contains this pagination control
              *           function:fnCallbackDraw - draw function which must be called on update
              */
-            "fnInit":function (oSettings, nPaging, fnCallbackDraw) {
+            "fnInit": function (oSettings, nPaging, fnCallbackDraw) {
                 var oLang = oSettings.oLanguage.oPaginate;
                 var oClasses = oSettings.oClasses;
                 var fnClickHandler = function (e) {
@@ -10619,10 +10619,10 @@
                     nNext = els[2],
                     nLast = els[3];
 
-                oSettings.oApi._fnBindAction(nFirst, {action:"first"}, fnClickHandler);
-                oSettings.oApi._fnBindAction(nPrev, {action:"previous"}, fnClickHandler);
-                oSettings.oApi._fnBindAction(nNext, {action:"next"}, fnClickHandler);
-                oSettings.oApi._fnBindAction(nLast, {action:"last"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nFirst, {action: "first"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nPrev, {action: "previous"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nNext, {action: "next"}, fnClickHandler);
+                oSettings.oApi._fnBindAction(nLast, {action: "last"}, fnClickHandler);
 
                 /* ID the first elements only */
                 if (!oSettings.aanFeatures.p) {
@@ -10641,7 +10641,7 @@
              * Inputs:   object:oSettings - dataTables settings object
              *           function:fnCallbackDraw - draw function to call on page change
              */
-            "fnUpdate":function (oSettings, fnCallbackDraw) {
+            "fnUpdate": function (oSettings, fnCallbackDraw) {
                 if (!oSettings.aanFeatures.p) {
                     return;
                 }
@@ -10656,7 +10656,7 @@
                 var anButtons, anStatic, nPaginateList;
                 var an = oSettings.aanFeatures.p;
                 var fnBind = function (j) {
-                    oSettings.oApi._fnBindAction(this, {"page":j + iStartButton - 1}, function (e) {
+                    oSettings.oApi._fnBindAction(this, {"page": j + iStartButton - 1}, function (e) {
                         /* Use the information in the element to jump to the required page */
                         oSettings.oApi._fnPageChange(oSettings, e.data.page);
                         fnCallbackDraw(oSettings);
@@ -10733,18 +10733,18 @@
         /*
          * text sorting
          */
-        "string-pre":function (a) {
+        "string-pre": function (a) {
             if (typeof a != 'string') {
                 a = (a !== null && a.toString) ? a.toString() : '';
             }
             return a.toLowerCase();
         },
 
-        "string-asc":function (x, y) {
+        "string-asc": function (x, y) {
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
         },
 
-        "string-desc":function (x, y) {
+        "string-desc": function (x, y) {
             return ((x < y) ? 1 : ((x > y) ? -1 : 0));
         },
 
@@ -10752,15 +10752,15 @@
         /*
          * html sorting (ignore html tags)
          */
-        "html-pre":function (a) {
+        "html-pre": function (a) {
             return a.replace(/<.*?>/g, "").toLowerCase();
         },
 
-        "html-asc":function (x, y) {
+        "html-asc": function (x, y) {
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
         },
 
-        "html-desc":function (x, y) {
+        "html-desc": function (x, y) {
             return ((x < y) ? 1 : ((x > y) ? -1 : 0));
         },
 
@@ -10768,7 +10768,7 @@
         /*
          * date sorting
          */
-        "date-pre":function (a) {
+        "date-pre": function (a) {
             var x = Date.parse(a);
 
             if (isNaN(x) || x === "") {
@@ -10777,11 +10777,11 @@
             return x;
         },
 
-        "date-asc":function (x, y) {
+        "date-asc": function (x, y) {
             return x - y;
         },
 
-        "date-desc":function (x, y) {
+        "date-desc": function (x, y) {
             return y - x;
         },
 
@@ -10789,15 +10789,15 @@
         /*
          * numerical sorting
          */
-        "numeric-pre":function (a) {
+        "numeric-pre": function (a) {
             return (a == "-" || a === "") ? 0 : a * 1;
         },
 
-        "numeric-asc":function (x, y) {
+        "numeric-asc": function (x, y) {
             return x - y;
         },
 
-        "numeric-desc":function (x, y) {
+        "numeric-desc": function (x, y) {
             return y - x;
         }
     });

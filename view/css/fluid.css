@@ -37,7 +37,7 @@ video {
 
 /* @iPhone < 480px - One column fluid.
 -------------------------------------------------------------- */
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
 
 }
 

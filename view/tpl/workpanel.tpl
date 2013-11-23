@@ -56,12 +56,6 @@
     <legend>Dominio</legend>
 
     <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-        <br>
-        <b id="funcion-paso-2-coment" style="color: orange;"></b>
-    </div>
-
-    <div class="da-form-row">
         <label>Dominio <span class="required">*</span> <img class="info" src="view/images/info_about.png"
                                                             style="margin-left: 10px;"
                                                             coment="Son los valores para los cuales <br>la función está definida."></label>
@@ -89,16 +83,6 @@
 <fieldset class="da-form-inline" id="paso-3">
 
     <legend>Interceptos</legend>
-
-    <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
 
     <div class="da-form-row">
         <label>Valor de Y <span class="required">*</span> = </label>
@@ -133,26 +117,6 @@
     <legend>Signos</legend>
 
     <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
         <label>Signos: <span class="required">*</span></label> <img class="info" src="view/images/info_about.png"
                                                                     style="margin-left: 10px;"
                                                                     coment="Los signos de la función se hallan<br> en los intervalos en los que no existe el dominio<br> o hay un corte con el eje X.">
@@ -176,32 +140,6 @@
 <fieldset class="da-form-inline" id="paso-5">
 
     <legend>Asíntotas</legend>
-
-    <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Signos: </label>
-
-        <div class="signos-paso-x"></div>
-    </div>
 
     <div class="da-form-row">
         <label>Asíntota Horizontal Izquierda: </label>
@@ -244,38 +182,6 @@
     <legend>Extremos</legend>
 
     <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Signos: </label>
-
-        <div class="signos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Asíntotas: </label>
-
-        <div class="asintota-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
         <label>Posibles Extremos: </label><img class="info" src="view/images/info_about.png" style="margin-left: 10px;"
                                                coment="Los extremos relativos se encuentran buscando<br> los valores por los que f '(x)=0.">
 
@@ -296,44 +202,6 @@
 <fieldset class="da-form-inline" id="paso-7">
 
     <legend>Monotonía</legend>
-
-    <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Signos: </label>
-
-        <div class="signos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Asíntotas: </label>
-
-        <div class="asintota-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Posibles Extremos: </label>
-
-        <div class="extremos-paso-x"></div>
-    </div>
 
     <div class="da-form-row">
         <label>Monotonía: <span class="required">*</span></label> <img class="info" src="view/images/info_about.png"
@@ -361,50 +229,6 @@
     <legend>Inflexión</legend>
 
     <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Signos: </label>
-
-        <div class="signos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Asíntotas: </label>
-
-        <div class="asintota-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Posibles Extremos: </label>
-
-        <div class="extremos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Monotonia: </label>
-
-        <div class="monotonia-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
         <label>Puntos de Inflexion: </label><img class="info" src="view/images/info_about.png"
                                                  style="margin-left: 10px;"
                                                  coment="Los puntos de inflexión se hallan<br> a partir de la segunda derivada f ''(x)">
@@ -422,56 +246,6 @@
 <fieldset class="da-form-inline" id="paso-9">
 
     <legend>Concavidad</legend>
-
-    <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
-    </div>
-
-    <div class="da-form-row">
-        <label>Dominio: </label>
-
-        <div class="dominio-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
-
-        <div class="y-paso-x"></div>
-        <br><br>
-        <label>Valor(es) de X: </label>
-
-        <div class="x-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Signos: </label>
-
-        <div class="signos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Asíntotas: </label>
-
-        <div class="asintota-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Posibles Extremos: </label>
-
-        <div class="extremos-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Monotonia: </label>
-
-        <div class="monotonia-paso-x"></div>
-    </div>
-
-    <div class="da-form-row">
-        <label>Puntos de Inflexion: </label>
-
-        <div class="inflexion-paso-x"></div>
-    </div>
 
     <div class="da-form-row">
         <label>Concavidad y Covexidad: <span class="required">*</span></label> <img class="info"
@@ -499,18 +273,18 @@
 
     <legend>Graficar</legend>
 
-    <div class="da-form-row">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
+    <div class="da-form-row" style="display: none;">
+    <label>Función: </label> <b class="funcion-paso-x"></b>
     </div>
 
-    <div class="da-form-row">
-        <label>Dominio: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Dominio: </label>
 
         <div class="dominio-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Valor de Y: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Valor de Y: </label>
 
         <div class="y-paso-x"></div>
         <br><br>
@@ -519,38 +293,38 @@
         <div class="x-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Signos: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Signos: </label>
 
         <div class="signos-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Asíntotas: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Asíntotas: </label>
 
         <div class="asintota-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Posibles Extremos: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Posibles Extremos: </label>
 
         <div class="extremos-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Monotonia: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Monotonia: </label>
 
         <div class="monotonia-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Puntos de Inflexion: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Puntos de Inflexion: </label>
 
         <div class="inflexion-paso-x"></div>
     </div>
 
-    <div class="da-form-row">
-        <label>Concavidad y Covexidad: </label>
+    <div class="da-form-row" style="display: none;">
+    <label>Concavidad y Covexidad: </label>
 
         <div class="concavidadConvexidad-paso-x"></div>
     </div>

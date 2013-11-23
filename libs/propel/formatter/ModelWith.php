@@ -92,8 +92,7 @@ class ModelWith
 
     public function setIsAdd($isAdd)
     {
-        $this->isAdd = $isAdd;
-        ;
+        $this->isAdd = $isAdd;;
     }
 
     public function isAdd()

@@ -1968,7 +1968,7 @@ class Smarty_Compiler extends Smarty
      *
      * @param string $type
      * @param string $name
-     * @param boolean? $delayed_loading
+     * @param boolean ? $delayed_loading
      */
     function _add_plugin($type, $name, $delayed_loading = null)
     {
@@ -2288,8 +2288,8 @@ class Smarty_Compiler extends Smarty
             || --$this->_cacheable_state > 0
         ) return '';
         return 'if ($this->caching && !$this->_cache_including): echo \'{/nocache:'
-            . $this->_cache_serial . '#' . ($this->_nocache_count++)
-            . '}\'; endif;';
+        . $this->_cache_serial . '#' . ($this->_nocache_count++)
+        . '}\'; endif;';
     }
 
 

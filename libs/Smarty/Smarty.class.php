@@ -1799,7 +1799,8 @@ class Smarty
         if (isset($cache_id))
             return (isset($compile_id)) ? $cache_id . '|' . $compile_id : $cache_id;
         elseif (isset($compile_id))
-            return $compile_id; else
+            return $compile_id;
+        else
             return null;
     }
 

@@ -18,8 +18,8 @@
     _.expire = 'expire_';
     _.expTime = 60 * 60 * 24 * 365;
     _.ls = window.localStorage;
-    _._url = { script:'src' };
-    _._mime = { script:'application/javascript' };
+    _._url = { script: 'src' };
+    _._mime = { script: 'application/javascript' };
     _.files = {};
     _.totalSize = 0;
     _.doneSize = 0;
@@ -27,13 +27,13 @@
     _.onprogress = null;
 
     _.fn = _.prototype = {
-        appendChild:function (label, attr, url) {
+        appendChild: function (label, attr, url) {
             var js = _.context.createElement(label);
             for (var key in attr)if (attr.hasOwnProperty(key)) js.setAttribute(key, attr[key]);
             js.setAttribute(_._url[label], url);
             _.target.appendChild(js);
         },
-        init:function () {
+        init: function () {
             var child = _.context.getElementsByTagName(_.tag);
             for (var i = 0; i < child.length; ++i) {
                 var attr = {};
@@ -42,7 +42,7 @@
                 _.fn.addChild('script', attr);
             }
         },
-        addChild:function (label, attr) {
+        addChild: function (label, attr) {
             var url = attr[_._url[label]]
                 , item, exp;
             if (!_.ls) {
@@ -63,8 +63,8 @@
                     _req.onprogress = function (e) {
                         if (!_.files[url]) {
                             _.files[url] = {
-                                size:_req.getResponseHeader("Content-Length") * 1,
-                                done:e.loaded
+                                size: _req.getResponseHeader("Content-Length") * 1,
+                                done: e.loaded
                             };
                             _.totalSize += _.files[url].size;
                             _.doneSize += e.loaded;
@@ -95,15 +95,15 @@
             url = window.URL.createObjectURL(a);
             _.fn.appendChild(label, attr, url);
         },
-        removeItem:function (url) {
+        removeItem: function (url) {
             if (!_.ls) return;
             _.ls.removeItem(_.expire + url);
             _.ls.removeItem(_.prefix + url);
         },
-        getBlob:function (jarray, type) {
+        getBlob: function (jarray, type) {
             var blob = null;
             try {
-                blob = new Blob(jarray, { type:type });
+                blob = new Blob(jarray, { type: type });
             }
             catch (e) {
                 window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder || window.MSBlobBuilder;

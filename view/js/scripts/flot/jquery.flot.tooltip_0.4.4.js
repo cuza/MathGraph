@@ -14,22 +14,22 @@
 
 (function ($) {
     var options = {
-        tooltip:false, //boolean
-        tooltipOpts:{
-            content:"%s | X: %x | Y: %y.2", //%s -> series label, %x -> X value, %y -> Y value, %x.2 -> precision of X value, %p.2 -> percentage of pie or stacked with precision
-            dateFormat:"%y-%0m-%0d",
-            shifts:{
-                x:10,
-                y:20
+        tooltip: false, //boolean
+        tooltipOpts: {
+            content: "%s | X: %x | Y: %y.2", //%s -> series label, %x -> X value, %y -> Y value, %x.2 -> precision of X value, %p.2 -> percentage of pie or stacked with precision
+            dateFormat: "%y-%0m-%0d",
+            shifts: {
+                x: 10,
+                y: 20
             },
-            defaultTheme:true,
-            labelRegex:null      //use regex to process label
+            defaultTheme: true,
+            labelRegex: null      //use regex to process label
         }
     };
 
     var init = function (plot) {
         var adjustLabel = null;
-        var tipPosition = {x:0, y:0};
+        var tipPosition = {x: 0, y: 0};
         var opts = plot.getOptions();
         var processed = false;
         var stackSums = {};
@@ -41,7 +41,7 @@
 
         var onMouseMove = function (e) {
 
-            var pos = {x:0, y:0};
+            var pos = {x: 0, y: 0};
             pos.x = e.pageX;
             pos.y = e.pageY;
 
@@ -78,18 +78,18 @@
             }
             else {
                 $tip = $('<div />').attr('id', 'flotTip');
-                $tip.appendTo('body').hide().css({position:'absolute'});
+                $tip.appendTo('body').hide().css({position: 'absolute'});
 
                 if (to.defaultTheme) {
                     $tip.css({
-                        'background':'rgba(0, 0, 0, .87)',
-                        'z-index':'10000',
-                        'padding':'0.4em 0.6em',
-                        'border-radius':'2px',
-                        'font-size':'11px',
-                        'border':'0px solid transparent',
-                        'text-shadow':'0 1px black;',
-                        'color':'#fff'
+                        'background': 'rgba(0, 0, 0, .87)',
+                        'z-index': '10000',
+                        'padding': '0.4em 0.6em',
+                        'border-radius': '2px',
+                        'font-size': '11px',
+                        'border': '0px solid transparent',
+                        'text-shadow': '0 1px black;',
+                        'color': '#fff'
                     });
                 }
             }
@@ -105,7 +105,7 @@
                         tipText = stringFormat(to.content, item);
                     }
 
-                    $tip.html(tipText).css({left:tipPosition.x + to.shifts.x, top:tipPosition.y + to.shifts.y}).show();
+                    $tip.html(tipText).css({left: tipPosition.x + to.shifts.x, top: tipPosition.y + to.shifts.y}).show();
                 }
                 else {
                     $tip.hide().html('');
@@ -207,9 +207,9 @@
     }
 
     $.plot.plugins.push({
-        init:init,
-        options:options,
-        name:'tooltip',
-        version:'0.4.4'
+        init: init,
+        options: options,
+        name: 'tooltip',
+        version: '0.4.4'
     });
 })(jQuery);

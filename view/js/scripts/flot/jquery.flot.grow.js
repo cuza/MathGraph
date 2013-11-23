@@ -24,14 +24,14 @@
 
 (function ($) {
     var options =
-    {    series:{
-        grow:{
-            active:true,
-            valueIndex:1,
-            stepDelay:20,
-            steps:100,
-            stepMode:"linear",
-            stepDirection:"up"
+    {    series: {
+        grow: {
+            active: true,
+            valueIndex: 1,
+            stepDelay: 20,
+            steps: 100,
+            stepMode: "linear",
+            stepDirection: "up"
         }
     }
     };
@@ -147,9 +147,9 @@
     }
 
     $.plot.plugins.push({
-        init:init,
-        options:options,
-        name:'grow',
-        version:'0.2'
+        init: init,
+        options: options,
+        name: 'grow',
+        version: '0.2'
     });
 })(jQuery);

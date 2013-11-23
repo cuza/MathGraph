@@ -25,7 +25,7 @@ class ModelCriterion extends Criterion
      * @param      Criteria $parent The outer class (this is an "inner" class).
      * @param      ColumnMap $column A Column object to help escaping the value
      * @param      mixed $value
-     * @param      string $comparison, among ModelCriteria::MODEL_CLAUSE
+     * @param      string $comparison , among ModelCriteria::MODEL_CLAUSE
      * @param      string $clause A simple pseudo-SQL clause, e.g. 'foo.BAR LIKE ?'
      */
     public function __construct(Criteria $outer, $column, $value = null, $comparison = ModelCriteria::MODEL_CLAUSE, $clause)
@@ -210,8 +210,8 @@ class ModelCriterion extends Criterion
         $crit = $obj;
 
         $isEquiv = ((($this->table === null && $crit->getTable() === null)
-            || ($this->table !== null && $this->table === $crit->getTable())
-        )
+                || ($this->table !== null && $this->table === $crit->getTable())
+            )
             && $this->clause === $crit->getClause()
             && $this->column === $crit->getColumn()
             && $this->comparison === $crit->getComparison());
