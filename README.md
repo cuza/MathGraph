@@ -14,7 +14,7 @@ For running MathGraph use:
 
 * a webserver like Apache or Nginx with a PHP 5.3 interpreter on it
 
-* a MySQL database with `user:root` and `password:root`
+* a MySQL database created with [this script](http://gitlab.umcc.cu/dave/mathgraph/blob/master/database.sql) and this settings on the server `user:mathgraph` and `password:mathgraph`
 
 ## License
 
@@ -22,4 +22,4 @@ MathGraph is licensed under the PHP and Zend licenses except as otherwise noted.
 
 ## Reporting Crashes
 
-Send your report crashes to [this email](mailto:dave.cuza90@gmail.com>) for improvements on the code.
+Send your report crashes to [this email](mailto:dave.cuza90@gmail.com) for improvements on the code.

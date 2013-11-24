@@ -10,8 +10,8 @@ $conf = array(
             'connection' =>
             array(
                 'dsn' => 'mysql:host=localhost;dbname=mathgraph',
-                'user' => 'root',
-                'password' => 'root',
+                'user' => 'mathgraph',
+                'password' => 'mathgraph',
             ),
         ),
     ),
