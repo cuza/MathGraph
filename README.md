@@ -12,9 +12,9 @@ The use of this tool seeks to rise the academic yield of the first year of the s
 
 For running MathGraph use:
 
- a webserver like Apache or Nginx with a PHP 5.3 interpreter on it
+* a webserver like Apache or Nginx with a PHP 5.3 interpreter on it
 
- a MySQL database with `user:root` and `password:root`
+* a MySQL database with `user:root` and `password:root`
 
 ## License
 
