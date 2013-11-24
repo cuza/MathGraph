@@ -1,6 +1,5 @@
-<?php /* Smarty version 2.6.26, created on 2013-11-22 11:46:07
-         compiled from workpanel.tpl */
-?>
+<?php /* Smarty version 2.6.26, created on 2013-11-23 21:35:56
+         compiled from workpanel.tpl */ ?>
 <div class="panelpasos">
 
 <div class="da-panel">
@@ -277,17 +276,17 @@
     <legend>Graficar</legend>
 
     <div class="da-form-row" style="display: none;">
-        <label>Función: </label> <b class="funcion-paso-x"></b>
+    <label>Función: </label> <b class="funcion-paso-x"></b>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Dominio: </label>
+    <label>Dominio: </label>
 
         <div class="dominio-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Valor de Y: </label>
+    <label>Valor de Y: </label>
 
         <div class="y-paso-x"></div>
         <br><br>
@@ -297,37 +296,37 @@
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Signos: </label>
+    <label>Signos: </label>
 
         <div class="signos-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Asíntotas: </label>
+    <label>Asíntotas: </label>
 
         <div class="asintota-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Posibles Extremos: </label>
+    <label>Posibles Extremos: </label>
 
         <div class="extremos-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Monotonia: </label>
+    <label>Monotonia: </label>
 
         <div class="monotonia-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Puntos de Inflexion: </label>
+    <label>Puntos de Inflexion: </label>
 
         <div class="inflexion-paso-x"></div>
     </div>
 
     <div class="da-form-row" style="display: none;">
-        <label>Concavidad y Covexidad: </label>
+    <label>Concavidad y Covexidad: </label>
 
         <div class="concavidadConvexidad-paso-x"></div>
     </div>
