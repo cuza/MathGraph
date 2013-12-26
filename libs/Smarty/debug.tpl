@@ -153,10 +153,12 @@
         if (self.name == '') {ldelim}
             var title = 'Console';
             {rdelim
+
         }
         else {ldelim}
             var title = 'Console_' + self.name;
             {rdelim
+
         }
         _smarty_console = window.open("", title.value, "width=680,height=600,resizable,scrollbars=yes");
         _smarty_console.document.write('{$debug_output|escape:'javascript'}');
