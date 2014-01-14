@@ -2,7 +2,7 @@
 
     <div>
         <h1><a href="index.php"> MathGraf </a></abbr></h1>
-        <b>El mejor sitio de gráficos en Cuba</b>
+        <b>Aprende más rápido a graficar</b>
     </div>
 
     <div class="menu">

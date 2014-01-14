@@ -1,5 +1,5 @@
 function EliminarSel(action) {
-    $("#dialog-ui").html("<p>Desea realmelte eliminar.</p>");
+    $("#dialog-ui").html("<p>¿Desea realmente eliminar?</p>");
 
     //Dialog Modal
     $("#dialog-ui").dialog({
@@ -26,7 +26,7 @@ function EliminarSel(action) {
 }
 
 function Eliminar(tipo, item) {
-    $("#dialog-ui").html("<p>Desea realmelte eliminar.</p>");
+    $("#dialog-ui").html("<p>¿Desea realmente eliminar?</p>");
 
     var html = "<form action='index.php' method='post' id='send-form'>" +
         "<input type='hidden' name='action' value='del" + tipo + "'/>" +
