@@ -1534,7 +1534,7 @@ function draw(curvas) {
         points: {show: false}
     });
     //console.log(curvas);
-    $.plot(
+    plot1 = $.plot(
         $(".simple-chart"), curvas,
         options);
 
@@ -1548,7 +1548,7 @@ function draw(curvas) {
         [0, ymin],
         [0, ymax]
     ];
-    $.jqplot('chart1', plot, {
+    plot2 = $.jqplot('chart1', plot, {
         series: series,
         axes: {
             xaxis: {min: xmin, max: xmax},
@@ -1558,10 +1558,10 @@ function draw(curvas) {
             show: true,
             sizeAdjust: 7.5
         },
-        cursor: {show: true, zoom: true}
+        cursor: {show: true, zoom: true, showTooltip: true}
     });
+    $(".reset-button").append("<button value=\"reset\" type=\"button\" onclick=\"plot2.resetZoom();\">Reset Zoom</button>")
 }
-
 
 $(function () {
     $(".info").mouseover(function (e) {

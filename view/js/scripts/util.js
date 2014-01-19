@@ -70,6 +70,7 @@ function Ver(tipo, item) {
         "</div>" +
         "<div id=\"chart1\" class=\"simple-chart-2\" style=\"height: 230px; width:450px;\">" +
         "</div>" +
+        "<button value=\"reset\" type=\"button\" onclick=\"plot2.resetZoom();\">Reset Zoom</button>" +
         "</div>"
     $("#dialog-ui").html(html);
     //Dialog Modal
