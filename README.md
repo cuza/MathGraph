@@ -1,5 +1,7 @@
 # MathGraph
 
+[![build status](http://gitlab.umcc.cu/gitlabci/projects/1/status.png?ref=master)](http://gitlab.umcc.cu/gitlabci/projects/1?ref=master)
+
 The concept of mathematical function is one of the most important concepts and not used only in mathematics, but in all the branches of the science. Its study in the superior level is approached in the Mathematical Basic discipline, corresponding to the Curriculum it Bases of all careers, including the career Computer Engineering of UMCC, that’s why it is necessary its correct understanding of the students. Still, when this content is approached in the precedent levels to the superior education, they are remarkable the inadequacies that introduce the students that arrive at this level related to its study, fundamentally what provokes an academic considerable mortality in the first years.
 
 The present diploma work has as main objective to develop an educational software that contributes to the treatment of the function concept in the students of first year of the career Computer Engineering. For the achievement of the objectives it becomes necessary to study the didactic treatment of the function concept as well as the main ones characteristic to keep in mind in the elaboration of an educational software.
