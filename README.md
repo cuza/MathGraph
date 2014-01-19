@@ -1,6 +1,4 @@
-# MathGraph
-
-[![build status](http://gitlab.umcc.cu/gitlabci/projects/1/status.png?ref=master)](http://gitlab.umcc.cu/gitlabci/projects/1?ref=master)
+# MathGraph [![build status](http://gitlab.umcc.cu/gitlabci/projects/1/status.png?ref=master)](http://gitlab.umcc.cu/gitlabci/projects/1?ref=master)
 
 The concept of mathematical function is one of the most important concepts and not used only in mathematics, but in all the branches of the science. Its study in the superior level is approached in the Mathematical Basic discipline, corresponding to the Curriculum it Bases of all careers, including the career Computer Engineering of UMCC, that’s why it is necessary its correct understanding of the students. Still, when this content is approached in the precedent levels to the superior education, they are remarkable the inadequacies that introduce the students that arrive at this level related to its study, fundamentally what provokes an academic considerable mortality in the first years.
 
