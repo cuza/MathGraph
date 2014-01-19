@@ -1,7 +1,7 @@
 <div class="cabecera">
 
     <div>
-        <h1><a href="index.php"> MathGraf </a></abbr></h1>
+        <h1><a href="index.php"> MathGraph </a></abbr></h1>
         <b>Aprende más rápido a graficar</b>
     </div>
 

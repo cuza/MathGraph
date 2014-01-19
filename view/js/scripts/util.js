@@ -80,7 +80,7 @@ function Ver(tipo, item) {
         width: "500",
         resizable: false
     }).dialog("open");
-    GraficarFuncEstudiante("(x)^(2)")
+    GraficarFuncEstudiante(item)
 }
 
 

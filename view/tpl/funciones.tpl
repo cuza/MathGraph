@@ -48,7 +48,7 @@
                             <td>{$f.desc}</td>
 
                             <td class="center peque">
-                                <a onclick="Ver('Funcion','{$f.id}')" href="#" class="da-button gray"> Ver </a>
+                                <a onclick="Ver('Funcion','{$f.funcion}')" href="#" class="da-button gray"> Ver </a>
                                 <a onclick="EditFuncion('{$f.id}','{$f.funcion}','{$f.desc}')" href="#"
                                    class="da-button gray"> Editar</a>
                                 <br>

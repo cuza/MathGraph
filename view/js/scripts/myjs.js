@@ -1533,7 +1533,7 @@ function draw(curvas) {
         color: "#999999",
         points: {show: false}
     });
-    console.log(curvas);
+    //console.log(curvas);
     $.plot(
         $(".simple-chart"), curvas,
         options);
@@ -1573,5 +1573,3 @@ $(function () {
         $("#tooltip").remove();
     });
 });
-
-	
