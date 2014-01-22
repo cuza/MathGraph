@@ -59,7 +59,7 @@ function Eliminar(tipo, item) {
 
 function Ver(tipo, item) {
     console.log(tipo, item)
-    var html = "<div class=\"graph\">" +
+    var graph_area = "<div class=\"graph\">" +
         "<div class=\"box chart\" align=\"left\">" +
         "<h4>" +
         "<span class=\"icon16 icomoon-icon-bars\"></span>" +
@@ -72,7 +72,7 @@ function Ver(tipo, item) {
         "</div>" +
         "<button value=\"reset\" type=\"button\" onclick=\"plot2.resetZoom();\">Reset Zoom</button>" +
         "</div>"
-    $("#dialog-ui").html(html);
+    $("#dialog-ui").html(graph_area);
     //Dialog Modal
     $("#dialog-ui").dialog({
         autoOpen: false,
