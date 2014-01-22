@@ -1560,7 +1560,8 @@ function draw(curvas) {
         },
         cursor: {show: true, zoom: true, showTooltip: true}
     });
-    $(".reset-button").append("<button value=\"reset\" type=\"button\" onclick=\"plot2.resetZoom();\">Reset Zoom</button>")
+    var reset_button = "<button value=\"reset\" type=\"button\" onclick=\"plot2.resetZoom();\">Cancelar Zoom</button>"
+    $(".reset-button").html(reset_button)
 }
 
 $(function () {
