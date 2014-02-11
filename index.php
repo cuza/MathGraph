@@ -20,5 +20,3 @@ if (isset($_SESSION['user'])) {
 } else {
     Despachar();
 }
-
-

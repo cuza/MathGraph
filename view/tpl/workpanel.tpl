@@ -142,7 +142,7 @@
     <legend>Asíntotas</legend>
 
     <div class="da-form-row">
-        <label>Asíntota Horizontal Izquierda: </label>
+        <label>Asíntota Horizontal Izquierda: y=</label>
 
         <div class="asintotas">
             <input type="text" id="asintota-izquierda" class="required" onchange="ProbarAsintotaIzquierda($(this))"/>
@@ -150,7 +150,7 @@
                  coment="Si el límite cuando x->-∞ tiende a un número,<br> decimos que hay asíntota horizontal por la izquierda.">
         </div>
         <br><br>
-        <label>Asíntota Horizontal Derecha: </label>
+        <label>Asíntota Horizontal Derecha: y=</label>
 
         <div class="asintotas">
             <input type="text" id="asintota-derecha" class="required" onchange="ProbarAsintotaDerecha($(this))"/>
@@ -158,15 +158,15 @@
                  coment="Si el límite cuando x->+∞ tiende a un número,<br> decimos que hay asíntota horizontal por la derecha.">
         </div>
         <br><br>
-        <label>Asíntotas Verticales: </label><img class="info" src="view/images/info_about.png"
-                                                  style="margin-left: 10px;"
+        <label>Asíntotas Verticales: x=</label><img class="info" src="view/images/info_about.png"
+                                                    style="margin-left: 10px;"
                                                   coment="Las asíntotas verticales ocurren<br> cuando la función tiende a infinito por un valor real de la variable.<br> Es decir, cuando el denominador es igual a 0."><br>
 
         <div class="asintotas">
             <input type="text" id="asintota-vertical-0" class="required" onchange="ProbarAsintotaVertical($(this))"/>
         </div>
         <br><br>
-        <label>Asíntota Oblicua: </label>
+        <label>Asíntota Oblicua: y=</label>
 
         <div class="asintotas">
             <input type="text" id="asintota-oblicua" class="required" onchange="ProbarAsintotaOblicua($(this))"/>
@@ -187,8 +187,8 @@
 
         <div class="extremos">
             <br><br>
-            <b>x</b><input type="text" id="extremos-x-0" class="required"/>
-            <b>y</b><input type="text" id="extremos-y-0" class="required"/>
+            <b>x= </b><input type="text" id="extremos-x-0" class="required"/>
+            <b>y= </b><input type="text" id="extremos-y-0" class="required"/>
             <select class="extremos-max-min" id="extremos-max-min-0" onchange="ProbarExtremo($(this))">
                 <option> ...</option>
                 <option> Máximo</option>
@@ -235,8 +235,8 @@
 
         <div class="inflexion">
             <br><br>
-            <b>x</b><input type="text" id="inflexion-x-0" class="required" onchange="ProbarInflexion($(this))"/>
-            <b>y</b><input type="text" id="inflexion-y-0" class="required" onchange="ProbarInflexion($(this))"/>
+            <b>x= </b><input type="text" id="inflexion-x-0" class="required" onchange="ProbarInflexion($(this))"/>
+            <b>y= </b><input type="text" id="inflexion-y-0" class="required" onchange="ProbarInflexion($(this))"/>
         </div>
     </div>
 
