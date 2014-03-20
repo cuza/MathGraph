@@ -1,0 +1,1 @@
+Don't delete this directory because it contains the compiled TPL for the proyect and Smarty can't create them if this folder doesn't exist

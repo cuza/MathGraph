@@ -20,4 +20,4 @@ nbproject
 .tm_properties
 
 # directorios de compilacion de las tpl's
-view/compile/*
+view/compile/*.php
