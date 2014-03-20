@@ -1,0 +1,222 @@
+.cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: #161616
+}
+
+.cabecera h1 {
+    color: #f5f5f5;
+    font-size: 22px;
+    margin-left: 50px;
+    position: relative;
+    top: 10px
+}
+
+.cabecera b {
+    color: #1c94c4;
+    font-size: 16px;
+    margin-left: 50px;
+    position: relative;
+    top: 5px;
+    left: 15px
+}
+
+.cabecera a {
+    color: #f5f5f5;
+    text-decoration: none
+}
+
+.sepcabecera {
+    width: 100%;
+    height: 5px;
+    background-color: #1c94c4
+}
+
+.graph {
+    float: left;
+    width: 38%;
+    padding: 1%
+}
+
+.panelpasos {
+    float: left;
+    width: 58%;
+    padding: 1%
+}
+
+a.button-funcion:hover, a.button-potencia:hover, a.button-clear:hover, a.button-operador:hover, a.button-numero:hover {
+    text-decoration: none
+}
+
+a.button-funciondialog:hover, a.button-potencia:hover, a.button-clear:hover, a.button-operador:hover, a.button-numero:hover {
+    text-decoration: none
+}
+
+.ui-widget-header {
+    border: 1px solid #000;
+    background: #1c94c4 50% 50% repeat-x
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: 1px solid #aaa;
+    background: #bce5f7 50% 50% repeat-x;
+    font-weight: bold;
+    color: #222
+}
+
+.dominio-items input, .dominio-items select {
+    width: 50px !important
+}
+
+.x-items input, .x-items select {
+    width: 50px !important
+}
+
+.y-items input, .y-items select {
+    width: 50px !important
+}
+
+.signos-items input, .signos-items select {
+    width: 50px !important
+}
+
+.asintotas input, .asintotas select {
+    width: 50px !important
+}
+
+.extremos input, .extremos select {
+    width: 50px !important
+}
+
+.inflexion input, .inflexion select {
+    width: 50px !important
+}
+
+.monotonia-items input, .monotonia-items select {
+    width: 50px !important
+}
+
+.concavidadConvexidad-items input, .concavidadConvexidad-items select {
+    width: 50px !important
+}
+
+.panellogin {
+    margin: 0 auto;
+    width: 48%;
+    padding: 1%
+}
+
+.panellogin input[type=submit] {
+    float: right
+}
+
+.menu {
+    float: right;
+    margin-right: 20px
+}
+
+.menu ul {
+    list-style: none
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-bottom: 0;
+    background-color: #1c94c4;
+    position: relative;
+    top: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #444;
+    -webkit-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5)
+}
+
+.menu ul li a {
+    color: #444;
+    text-decoration: none
+}
+
+.select {
+    font-size: 17px !important;
+    color: #fff !important
+}
+
+.editor {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1%
+}
+
+.center {
+    text-align: center
+}
+
+.peque {
+    width: 20px
+}
+
+.peque .da-button {
+    width: 40px
+}
+
+.peque a.da-button {
+    text-decoration: none
+}
+
+input[type='text'].peque {
+    width: 200px !important
+}
+
+.home {
+    width: 800px;
+    color: #000;
+    font-size: 18px !important;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: justify;
+    float: left
+}
+
+.im {
+    width: 250px;
+    color: #000;
+    font-size: 18px !important;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: justify;
+    float: left
+}
+
+.bienvenido {
+    color: #808080;
+    font-size: 23px;
+    padding-left: 20%;
+    margin-top: 15px
+}
+
+.escala input {
+    width: 50px !important
+}
+
+#wait {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -243px;
+    background-color: rgba(242, 242, 242, 0.5);
+    height: 250px;
+    padding-top: 140px
+}
