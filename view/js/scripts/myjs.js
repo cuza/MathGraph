@@ -184,7 +184,7 @@ function IrPaso2() {
             }
             else {
                 $(".y-paso-x").html("Este valor no esta definido.");
-                $("#paso-3-y").parent().prepend('Este valor no esta definido.');
+                $("#paso-3-y").parent().prepend('Este valor no está definido.');
                 $("#paso-3-y").remove();
             }
 
@@ -317,8 +317,8 @@ function IrPaso2() {
                     mon += "<b id='paso-7-monotonia-b-" + index + "'>" + val + " = </b>" +
                         "<select class='monotonia-dominio' id='paso-7-monotonia-" + index + "' onchange='ProbarMonotonia($(this))'>" +
                         "<option> ... </option>" +
-                        "<option> + </option>" +
-                        "<option> - </option>" +
+                        "<option> Creciente </option>" +
+                        "<option> Decreciente </option>" +
                         "</select> <br>";
 
                     mons += "<b>" + value + " </b> &nbsp&nbsp&nbsp";
@@ -345,7 +345,7 @@ function IrPaso2() {
                         "<select class='concavidadConvexidad-dominio' id='paso-9-concavidadConvexidad-" + index + "' onchange='ProbarConcavidadConvexidad($(this))'>" +
                         "<option> ... </option>" +
                         "<option> Convexa </option>" +
-                        "<option> Concava </option>" +
+                        "<option> Cóncava </option>" +
                         "</select> <br>";
 
                     mons += "<b>" + value + " </b> &nbsp&nbsp&nbsp";
@@ -1180,7 +1180,7 @@ function ProbarInflexion(obj) {
             }
             else {
                 MarcarError(8);
-                alert("Punto de Inflexion Incorrecto.");
+                alert("Punto de Inflexión Incorrecto.");
                 obj.val("");
                 $("#inflexion-x-" + id).val("");
                 $("#inflexion-y-" + id).val("");

@@ -213,8 +213,8 @@
             <b id="paso-7-monotonia-b-0"></b>
             <select class="monotonia-dominio" id="paso-7-monotonia-0" onchange="ProbarMonotonia($(this))">
                 <option> ...</option>
-                <option> +</option>
-                <option> -</option>
+                <option> Creciente</option>
+                <option> Decreciente</option>
             </select>
         </div>
         <br>
@@ -229,7 +229,7 @@
     <legend>Inflexión</legend>
 
     <div class="da-form-row">
-        <label>Puntos de Inflexion: </label><img class="info" src="view/images/info_about.png"
+        <label>Puntos de Inflexión: </label><img class="info" src="view/images/info_about.png"
                                                  style="margin-left: 10px;"
                                                  coment="Los puntos de inflexión se hallan<br> a partir de la segunda derivada f ''(x)">
 
@@ -260,7 +260,7 @@
                     onchange="ProbarConcavidadConvexidad($(this))">
                 <option> ...</option>
                 <option> Convexa</option>
-                <option> Concava</option>
+                <option> Cóncava</option>
             </select>
         </div>
         <br>
@@ -318,7 +318,7 @@
     </div>
 
     <div class="da-form-row" style="display: none;">
-    <label>Puntos de Inflexion: </label>
+        <label>Puntos de Inflexión: </label>
 
         <div class="inflexion-paso-x"></div>
     </div>

@@ -7,19 +7,21 @@
 -- Versión del servidor: 5.5.20
 -- Versión de PHP: 5.3.9
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
 --
 -- Base de datos: `mathgraph`
 --
-CREATE DATABASE `mathgraph` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE `mathgraph`
+  DEFAULT CHARACTER SET utf8
+  COLLATE utf8_general_ci;
 USE `mathgraph`;
 
 -- --------------------------------------------------------
@@ -29,9 +31,9 @@ USE `mathgraph`;
 --
 
 CREATE TABLE IF NOT EXISTS `alumno` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `iduser` int(11) NOT NULL,
-  `idprofesor` int(11) NOT NULL,
+  `id`         INT(11) NOT NULL AUTO_INCREMENT,
+  `iduser`     INT(11) NOT NULL,
+  `idprofesor` INT(11) NOT NULL,
   PRIMARY KEY (`id`)
 )
   ENGINE =InnoDB
@@ -46,10 +48,10 @@ CREATE TABLE IF NOT EXISTS `alumno` (
 --
 
 CREATE TABLE IF NOT EXISTS `error` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `idalumno` int(11) NOT NULL,
-  `paso` int(2) NOT NULL,
-  `fecha` date NOT NULL,
+  `id`       INT(11) NOT NULL AUTO_INCREMENT,
+  `idalumno` INT(11) NOT NULL,
+  `paso`     INT(2)  NOT NULL,
+  `fecha`    DATE    NOT NULL,
   PRIMARY KEY (`id`)
 )
   ENGINE =InnoDB
@@ -65,10 +67,10 @@ CREATE TABLE IF NOT EXISTS `error` (
 --
 
 CREATE TABLE IF NOT EXISTS `func` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `func` text NOT NULL,
-  `desc` text NOT NULL,
-  `idprofesor` int(11) NOT NULL,
+  `id`         INT(11) NOT NULL AUTO_INCREMENT,
+  `func`       TEXT    NOT NULL,
+  `desc`       TEXT    NOT NULL,
+  `idprofesor` INT(11) NOT NULL,
   PRIMARY KEY (`id`)
 )
   ENGINE =InnoDB
@@ -83,11 +85,11 @@ CREATE TABLE IF NOT EXISTS `func` (
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nick` text NOT NULL,
-  `pass` text NOT NULL,
-  `name` text NOT NULL,
-  `role` char(1) NOT NULL,
+  `id`   INT(11) NOT NULL AUTO_INCREMENT,
+  `nick` TEXT    NOT NULL,
+  `pass` TEXT    NOT NULL,
+  `name` TEXT    NOT NULL,
+  `role` CHAR(1) NOT NULL,
   PRIMARY KEY (`id`)
 )
   ENGINE =InnoDB
@@ -101,6 +103,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`id`, `nick`, `pass`, `name`, `role`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'A');
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;

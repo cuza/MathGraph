@@ -30,7 +30,7 @@
                     <thead>
                     <tr>
                         <th class="no_sort"><input type="checkbox" id="check_all_item"/></th>
-                        <th>Funcion</th>
+                        <th>Función</th>
                         <th>Descripción</th>
 
                         <th class="no_sort center">Opciones</th>

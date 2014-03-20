@@ -36,7 +36,7 @@
             nextButtonLabel: 'Siguiente',
             prevButtonLabel: 'Anterior',
             submitButtonLabel: 'Graficar',
-            forwardOnly: true,
+            forwardOnly: false,
             onLeaveStep: null,
             onShowStep: null,
             onBeforeSubmit: null

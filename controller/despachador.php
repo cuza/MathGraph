@@ -357,7 +357,7 @@ function ProcesarPaso1()
     if ($inter != "no") {
         foreach ($inter as $i) {
             $h = explode(" ", $i);
-            $c = "Concava";
+            $c = "Cóncava";
             if ($h[1] == "-")
                 $c = "Convexa";
             $res[] = $h[0] . " " . $c;

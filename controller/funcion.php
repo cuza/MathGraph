@@ -2049,9 +2049,9 @@ function Monotonia($func, $extremos)
 
         $mon = "cte";
         if ($y1 > $y2)
-            $mon = "+";
+            $mon = "Creciente";
         if ($y1 < $y2)
-            $mon = "-";
+            $mon = "Decreciente";
 
         if ($i == 0)
             $res[] = "(-oo," . round($e, 2) . ") " . $mon;
@@ -2065,9 +2065,9 @@ function Monotonia($func, $extremos)
             $y2 = $f->GetY();
             $mon = "cte";
             if ($y1 > $y2)
-                $mon = "-";
+                $mon = "Decreciente";
             if ($y1 < $y2)
-                $mon = "+";
+                $mon = "Creciente";
             $res[] = "(" . round($e, 2) . ",+oo) " . $mon;
         }
         $i++;
