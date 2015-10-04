@@ -14,7 +14,7 @@ For running MathGraph use:
 
 * a webserver like Apache or Nginx with a PHP 5.3 interpreter on it
 
-* a MySQL database created with [this script](http://gitlab.umcc.cu/dave/mathgraph/blob/master/database.sql) and this settings on the server `user:mathgraph` and `password:mathgraph`
+* a MySQL database created with [this script](http://gitlab.brightsoft.com/dave/mathgraph/blob/master/database.sql) and this settings on the server `user:mathgraph` and `password:mathgraph`
 
 ## License
 
